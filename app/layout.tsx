@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import "./globals.css";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -29,7 +30,10 @@ export default function RootLayout({
       className={`${dmSans.variable} ${dmSerif.variable}`}
       style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
     >
-      <body className="min-h-screen">{children}</body>
+      <body className="min-h-screen">
+        <SmoothScroll />
+        {children}
+      </body>
     </html>
   );
 }

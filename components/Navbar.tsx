@@ -41,7 +41,8 @@ export default function Navbar() {
         }}
       >
         {/* Logo */}
-        <div
+        <a
+          href="#"
           style={{
             fontFamily: "'JetBrains Mono', 'Courier New', monospace",
             fontSize: "0.9rem",
@@ -51,6 +52,7 @@ export default function Navbar() {
             display: "flex",
             alignItems: "center",
             minWidth: 0,
+            textDecoration: "none",
           }}
         >
           <span style={{ color: "#4d9fff", flexShrink: 0 }}>BMP</span>
@@ -58,7 +60,7 @@ export default function Navbar() {
           <span className="hide-xs" style={{ fontSize: "0.8rem", color: "#c0d0e0", whiteSpace: "nowrap" }}>
             Bioinformatics Mentorship Program
           </span>
-        </div>
+        </a>
 
         {/* Nav links */}
         <div style={{ display: "flex", alignItems: "center", gap: 20 }}>

@@ -34,8 +34,8 @@ const solutions = [
   },
   {
     icon: "🔁",
-    title: "Lifetime recordings + 1 month of email support",
-    body: "Miss something live? Re-watch any session. Got stuck applying it to your data afterward? Email support is included for a full month after the program ends.",
+    title: "Lifetime recordings",
+    body: "Miss something live? Re-watch any session and revisit every lesson at your own pace — forever.",
     accent: "#7fff9f",
   },
 ];

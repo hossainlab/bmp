@@ -139,6 +139,18 @@ const stats = [
   { value: "100%", label: "Research Output" },
 ];
 
+const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
+function photoSrc(path: string) {
+  // Encode each path segment individually (handles spaces, parentheses, etc.)
+  // then prepend basePath for GitHub Pages deployment
+  const encoded = path
+    .split("/")
+    .map((seg) => encodeURIComponent(seg))
+    .join("/");
+  return `${BASE}${encoded}`;
+}
+
 function getInitials(name: string) {
   return name
     .split(" ")
@@ -209,7 +221,7 @@ function Card({ m }: { m: Mentee }) {
         >
           {m.photo ? (
             <Image
-              src={m.photo}
+              src={photoSrc(m.photo)}
               alt={m.name}
               width={48}
               height={48}
