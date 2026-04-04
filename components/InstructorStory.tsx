@@ -47,7 +47,7 @@ export default function InstructorStory() {
           }}
         >
           <p>
-            With over a decade of experience in computational biology and cancer genomics research, Md. Jubayer Hossain has guided hundreds of researchers through independent bioinformatics projects. His mentees have published in high-impact journals and advanced to positions in top research institutions and biotech companies.
+            With over five years of experience in computational biology and cancer genomics research, Md. Jubayer Hossain has guided hundreds of researchers through independent bioinformatics projects. His mentees have published in high-impact journals and advanced to positions in top research institutions and biotech companies.
           </p>
           <p>
             As Founder & CEO of DeepBio Ltd, Jubayer bridges the gap between cutting-edge research and accessible training. He understands the exact obstacles researchers face when learning NGS data analysis — and has built proven pipelines and curricula that accelerate that journey.

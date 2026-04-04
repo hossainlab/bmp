@@ -56,7 +56,7 @@ export default function Navbar() {
           <span style={{ color: "#4d9fff", flexShrink: 0 }}>BMP</span>
           <span className="hide-xs" style={{ color: "#6a8aaa", margin: "0 6px", flexShrink: 0 }}>·</span>
           <span className="hide-xs" style={{ fontSize: "0.8rem", color: "#c0d0e0", whiteSpace: "nowrap" }}>
-            Bioinformatics Mentorship
+            Bioinformatics Mentorship Program
           </span>
         </div>
 
