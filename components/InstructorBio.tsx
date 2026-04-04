@@ -1,8 +1,8 @@
 const stats = [
-  { value: "5+", label: "Years in bioinformatics & computational biology" },
+  { value: "5+", label: "Years of Research Experience" },
+  { value: "5+", label: "Years of Mentoring Experience" },
   { value: "3K+", label: "Students trained since 2020" },
-  { value: "8", label: "Live sessions monthly" },
-  { value: "20", label: "Max cohort size" },
+  { value: "20+", label: "Publications" }
 ];
 
 import Image from "next/image";

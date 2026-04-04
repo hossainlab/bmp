@@ -7,6 +7,7 @@ import Solutions from "@/components/Solutions";
 import Curriculum from "@/components/Curriculum";
 import WhatsIncluded from "@/components/WhatsIncluded";
 import InstructorBio from "@/components/InstructorBio";
+import MenteesFeedback from "@/components/MenteesFeedback";
 import EnrollCTA from "@/components/EnrollCTA";
 import Footer from "@/components/Footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Curriculum />
         <WhatsIncluded />
         <InstructorBio />
+        <MenteesFeedback />
         <EnrollCTA />
       </main>
       <Footer />
