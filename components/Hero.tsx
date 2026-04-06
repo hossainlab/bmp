@@ -286,7 +286,7 @@ export default function Hero() {
                     "0 0 36px rgba(77,159,255,0.28)";
                 }}
               >
-                Apply for Cohort 5 →
+                Apply for Cohort 01 →
               </a>
 
               <a
