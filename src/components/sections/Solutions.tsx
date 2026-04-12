@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./Solutions.module.css";
+
 
 const solutions = [
   {
@@ -45,24 +45,24 @@ export default function Solutions() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className={styles.section}>
-      <div className={styles.inner}>
-        <p className={styles.eyebrow}>How This Program Solves It</p>
+    <section className="sol-section">
+      <div className="sol-inner">
+        <p className="sol-eyebrow">How This Program Solves It</p>
 
-        <h2 className={styles.heading}>
+        <h2 className="sol-heading">
           Everything designed
           <br />
           for the absolute beginner
         </h2>
-        <p className={styles.subtext}>
+        <p className="sol-subtext">
           Every obstacle has a specific solution built into this program. Here&apos;s how.
         </p>
 
-        <div className={styles.grid}>
+        <div className="sol-grid">
           {solutions.map((s, i) => (
             <div
               key={i}
-              className={styles.card}
+              className="sol-card"
               style={{
                 border: `1px solid ${hoveredIndex === i ? s.accent + "44" : "var(--border)"}`,
                 transform: hoveredIndex === i ? "translateY(-3px)" : "translateY(0)",
@@ -71,7 +71,7 @@ export default function Solutions() {
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <div
-                className={styles.iconBox}
+                className="sol-icon-box"
                 style={{
                   background: s.accent + "18",
                   border: `1px solid ${s.accent}30`,
@@ -79,8 +79,8 @@ export default function Solutions() {
               >
                 {s.icon}
               </div>
-              <h4 className={styles.cardTitle}>{s.title}</h4>
-              <p className={styles.cardBody}>{s.body}</p>
+              <h4 className="sol-card-title">{s.title}</h4>
+              <p className="sol-card-body">{s.body}</p>
             </div>
           ))}
         </div>

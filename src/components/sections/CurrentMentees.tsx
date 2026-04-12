@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./CurrentMentees.module.css";
+
 
 type CurrentMentee = {
   name: string;
@@ -63,9 +63,9 @@ function getInitials(name: string) {
 
 function MenteeCard({ m }: { m: CurrentMentee }) {
   return (
-    <div className={styles.card}>
+    <div className="cm-card">
       {/* Square photo area */}
-      <div className={styles.photoArea}>
+      <div className="cm-photo-area">
         {m.photo ? (
           <Image
             src={photoSrc(m.photo)}
@@ -74,17 +74,17 @@ function MenteeCard({ m }: { m: CurrentMentee }) {
             style={{ objectFit: "cover" }}
           />
         ) : (
-          <div className={styles.initials}>{getInitials(m.name)}</div>
+          <div className="cm-initials">{getInitials(m.name)}</div>
         )}
         {/* Hover overlay */}
-        <div className={styles.photoOverlay} />
+        <div className="cm-photo-overlay" />
       </div>
 
       {/* Info */}
-      <div className={styles.info}>
-        <div className={styles.name}>{m.name}</div>
-        <div className={styles.university}>{m.university}</div>
-        <div className={styles.department}>{m.department}</div>
+      <div className="cm-info">
+        <div className="cm-name">{m.name}</div>
+        <div className="cm-university">{m.university}</div>
+        <div className="cm-department">{m.department}</div>
       </div>
     </div>
   );
@@ -92,26 +92,25 @@ function MenteeCard({ m }: { m: CurrentMentee }) {
 
 export default function CurrentMentees() {
   return (
-    <section id="current-mentees" className={styles.section}>
+    <section id="current-mentees" className="cm-section">
       {/* Background glow */}
-      <div className={styles.bgGlow} />
 
       {/* Section header */}
-      <div className={styles.header}>
-        <p className={styles.eyebrow}>Current Cohort</p>
-        <h2 className={styles.heading}>
+      <div className="cm-header">
+        <p className="cm-eyebrow">Current Cohort</p>
+        <h2 className="cm-heading">
           Currently{" "}
-          <em className={styles.headingEm}>Enrolled Mentees</em>
+          <em className="cm-heading-em">Enrolled Mentees</em>
         </h2>
-        <p className={styles.subtext}>
+        <p className="cm-subtext">
           Meet the researchers currently building their bioinformatics skills
           through our structured 1-on-1 mentorship program.
         </p>
       </div>
 
       {/* Mentee cards */}
-      <div className={styles.gridWrapper}>
-        <div className={styles.grid}>
+      <div className="cm-grid-wrapper">
+        <div className="cm-grid">
           {currentMentees.map((m) => (
             <MenteeCard key={m.name} m={m} />
           ))}

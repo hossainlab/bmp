@@ -1,4 +1,4 @@
-import styles from "./EnrollCTA.module.css";
+
 
 const schedule = [
   { label: "Program Duration", value: "12 weeks" },
@@ -10,56 +10,55 @@ const schedule = [
 
 export default function EnrollCTA() {
   return (
-    <section id="enroll" className={styles.section}>
+    <section id="enroll" className="enroll-section">
       {/* background glow */}
-      <div className={styles.bgGlow} />
 
-      <div className={styles.inner}>
-        <p className={styles.eyebrow}>Enrollment</p>
+      <div className="enroll-inner">
+        <p className="enroll-eyebrow">Enrollment</p>
 
-        <h2 className={styles.heading}>
+        <h2 className="enroll-heading">
           Ready to move from consumer
           <br />
-          <span className={styles.headingGradient}>to independent researcher?</span>
+          <span className="enroll-heading-gradient">to independent researcher?</span>
         </h2>
 
-        <p className={styles.subtext}>
+        <p className="enroll-subtext">
           This is an intensive, hands-on program for serious researchers. Limited to 20 participants to ensure personalized mentorship and accountability toward publication.
         </p>
 
         {/* Schedule grid */}
-        <div className={styles.scheduleRow}>
+        <div className="enroll-schedule-row">
           {schedule.map((s) => (
-            <div key={s.label} className={styles.scheduleChip}>
-              <div className={styles.chipLabel}>{s.label}</div>
-              <div className={styles.chipValue}>{s.value}</div>
+            <div key={s.label} className="enroll-schedule-chip">
+              <div className="enroll-chip-label">{s.label}</div>
+              <div className="enroll-chip-value">{s.value}</div>
             </div>
           ))}
         </div>
 
-        <p className={styles.scheduleNote}>
+        <p className="enroll-schedule-note">
           Session times and cohort start dates coordinated based on mentor and participant availability.
         </p>
 
         {/* Pricing */}
-        <div className={`${styles.pricingGrid} stack-on-mobile`}>
+        <div className="enroll-pricing-grid stack-on-mobile">
           {/* Monthly fee */}
-          <div className={styles.feeCard}>
-            <div className={styles.feeBanner}>Monthly Fee</div>
-            <div className={styles.feeBody}>
-              <div className={styles.feeAmount}>10,200 BDT</div>
-              <div className={styles.feeSub}>Payable by the 5th of each month</div>
+          <div className="enroll-fee-card">
+            <div className="enroll-fee-banner">Monthly Fee</div>
+            <div className="enroll-fee-body">
+              <div className="enroll-fee-amount">10,200 BDT</div>
+              <div className="enroll-fee-sub">Payable by the 5th of each month</div>
             </div>
           </div>
 
           {/* Commitment */}
-          <div className={styles.commitCard}>
-            <div className={styles.commitBody}>
-              <div className={styles.commitTitle}>12-week commitment</div>
-              <div className={styles.commitSub}>
+          <div className="enroll-commit-card">
+            <div className="enroll-commit-body">
+              <div className="enroll-commit-title">12-week commitment</div>
+              <div className="enroll-commit-sub">
                 Complete research project + publication pathway
               </div>
-              <div className={styles.commitNote}>
+              <div className="enroll-commit-note">
                 Non-refundable once month commences
               </div>
             </div>
@@ -67,23 +66,23 @@ export default function EnrollCTA() {
         </div>
 
         {/* Main CTA */}
-        <div className={styles.ctaBlock}>
-          <p className={styles.ctaNote}>
+        <div className="enroll-cta-block">
+          <p className="enroll-cta-note">
             Selected applicants will be notified within 5 business days.
           </p>
           <a
             href="https://tinyurl.com/bmp-application"
             target="_blank"
             rel="noopener noreferrer"
-            className={styles.ctaBtn}
+            className="enroll-cta-btn"
           >
             Apply for Next Cohort →
           </a>
-          <p className={styles.ctaFooter}>
+          <p className="enroll-cta-footer">
             Questions about the program?{" "}
             <a
               href="mailto:info@mdjubayerhossain.com"
-              className={styles.ctaLink}
+              className="enroll-cta-link"
             >
               Contact Md. Jubayer Hossain directly.
             </a>

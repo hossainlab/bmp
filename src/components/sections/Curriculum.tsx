@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./Curriculum.module.css";
+
 
 const sessions = [
   {
@@ -65,48 +65,48 @@ export default function Curriculum() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="curriculum" className={styles.section}>
-      <div className={styles.inner}>
-        <p className={styles.eyebrow}>12-Week Roadmap</p>
+    <section id="curriculum" className="cur-section">
+      <div className="cur-inner">
+        <p className="cur-eyebrow">12-Week Roadmap</p>
 
-        <h2 className={styles.heading}>
+        <h2 className="cur-heading">
           A structured journey from research question to publication.
         </h2>
-        <p className={styles.subtext}>
+        <p className="cur-subtext">
           From opening a terminal for the first time to submitting your data to
           NCBI GEO — every step, every tool, every concept.
         </p>
 
-        <div className={styles.list}>
+        <div className="cur-list">
           {sessions.map((s, i) => {
             const isOpen = open === i;
             return (
               <div
                 key={i}
-                className={`${styles.item} ${isOpen ? styles.itemOpen : styles.itemClosed}`}
+                className={`cur-item ${isOpen ? "cur-item-open" : "cur-item-closed"}`}
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  className={styles.trigger}
+                  className="cur-trigger"
                 >
-                  <span className={styles.sessionBadge}>SESSION {s.num}</span>
-                  <span className={styles.triggerMeta}>
-                    <span className={styles.category}>{s.category}</span>
-                    <span className={styles.title}>{s.title}</span>
+                  <span className="cur-session-badge">SESSION {s.num}</span>
+                  <span className="cur-trigger-meta">
+                    <span className="cur-category">{s.category}</span>
+                    <span className="cur-title">{s.title}</span>
                   </span>
                   <span
-                    className={`${styles.chevron} ${isOpen ? styles.chevronOpen : styles.chevronClosed}`}
+                    className={`cur-chevron ${isOpen ? "cur-chevron-open" : "cur-chevron-closed"}`}
                   >
                     +
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className={styles.body}>
-                    <p className={styles.bodyText}>{s.body}</p>
-                    <div className={styles.tags}>
+                  <div className="cur-body">
+                    <p className="cur-body-text">{s.body}</p>
+                    <div className="cur-tags">
                       {s.tags.map((t) => (
-                        <span key={t} className={styles.tag}>
+                        <span key={t} className="cur-tag">
                           {t}
                         </span>
                       ))}

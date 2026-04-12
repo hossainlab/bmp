@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import styles from "./MenteesFeedback.module.css";
+
 
 type Mentee = {
   name: string;
@@ -161,20 +161,20 @@ function getInitials(name: string) {
 
 function Card({ m }: { m: Mentee }) {
   return (
-    <div className={styles.card}>
+    <div className="mf-card">
       {/* Large decorative left curly quote */}
-      <div className={styles.quoteGlyph}>&#8220;</div>
+      <div className="mf-quote-glyph">&#8220;</div>
 
       {/* Quote text */}
-      <p className={styles.quoteText}>{m.quote}</p>
+      <p className="mf-quote-text">{m.quote}</p>
 
       {/* Divider */}
-      <div className={styles.divider} />
+      <div className="mf-divider" />
 
       {/* Profile row */}
-      <div className={styles.profile}>
+      <div className="mf-profile">
         {/* Avatar */}
-        <div className={styles.avatar}>
+        <div className="mf-avatar">
           {m.photo ? (
             <Image
               src={photoSrc(m.photo)}
@@ -184,22 +184,22 @@ function Card({ m }: { m: Mentee }) {
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           ) : (
-            <div className={styles.avatarInitials}>{getInitials(m.name)}</div>
+            <div className="mf-avatar-initials">{getInitials(m.name)}</div>
           )}
         </div>
 
         {/* Name / university / dept */}
         <div>
-          <div className={styles.profileName}>{m.name}</div>
-          <div className={styles.profileUniversity}>{m.university}</div>
-          <div className={styles.profileDept}>{m.department}</div>
+          <div className="mf-profile-name">{m.name}</div>
+          <div className="mf-profile-university">{m.university}</div>
+          <div className="mf-profile-dept">{m.department}</div>
         </div>
       </div>
 
       {/* Stars */}
-      <div className={styles.stars}>
+      <div className="mf-stars">
         {[1, 2, 3, 4, 5].map((i) => (
-          <span key={i} className={styles.star}>★</span>
+          <span key={i} className="mf-star">★</span>
         ))}
       </div>
     </div>
@@ -211,39 +211,38 @@ export default function MenteesFeedback() {
   const row2 = [...mentees].reverse();
 
   return (
-    <section id="testimonials" className={styles.section}>
+    <section id="testimonials" className="mf-section">
       {/* Background glow */}
-      <div className={styles.bgGlow} />
 
       {/* Section header */}
-      <div className={styles.header}>
-        <p className={styles.eyebrow}>Mentee Testimonials</p>
-        <h2 className={styles.heading}>
+      <div className="mf-header">
+        <p className="mf-eyebrow">Mentee Testimonials</p>
+        <h2 className="mf-heading">
           Researchers Who{" "}
-          <em className={styles.headingEm}>Leveled Up</em>
+          <em className="mf-heading-em">Leveled Up</em>
         </h2>
-        <p className={styles.subtext}>
+        <p className="mf-subtext">
           Hear directly from mentees across 12+ universities who transformed their
           research capabilities through structured bioinformatics mentorship.
         </p>
       </div>
 
       {/* Stats row */}
-      <div className={styles.statsRow}>
+      <div className="mf-stats-row">
         {stats.map((s, i) => (
           <div
             key={s.label}
-            className={`${styles.statCell} ${i < stats.length - 1 ? styles.statCellBorder : ""}`}
+            className={`mf-stat-cell ${i < stats.length - 1 ? "mf-stat-cell-border" : ""}`}
           >
-            <div className={styles.statValue}>{s.value}</div>
-            <div className={styles.statLabel}>{s.label}</div>
+            <div className="mf-stat-value">{s.value}</div>
+            <div className="mf-stat-label">{s.label}</div>
           </div>
         ))}
       </div>
 
       {/* Scrolling row 1 — left */}
-      <div className={`${styles.scrollFade} ${styles.rowMargin}`}>
-        <div className={styles.scrollLeft}>
+      <div className="mf-scroll-fade mf-row-margin">
+        <div className="mf-scroll-left">
           {[...row1, ...row1].map((m, i) => (
             <Card key={`r1-${i}`} m={m} />
           ))}
@@ -251,8 +250,8 @@ export default function MenteesFeedback() {
       </div>
 
       {/* Scrolling row 2 — right */}
-      <div className={styles.scrollFade}>
-        <div className={styles.scrollRight}>
+      <div className="mf-scroll-fade">
+        <div className="mf-scroll-right">
           {[...row2, ...row2].map((m, i) => (
             <Card key={`r2-${i}`} m={m} />
           ))}

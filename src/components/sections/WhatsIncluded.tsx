@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import styles from "./WhatsIncluded.module.css";
+
 
 const items = [
   {
@@ -41,34 +41,34 @@ export default function WhatsIncluded() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className={styles.section}>
-      <div className={styles.inner}>
-        <p className={styles.eyebrow}>What&apos;s Included</p>
+    <section className="wi-section">
+      <div className="wi-inner">
+        <p className="wi-eyebrow">What&apos;s Included</p>
 
-        <h2 className={styles.heading}>
+        <h2 className="wi-heading">
           Everything you need,
           <br />
           nothing you don&apos;t
         </h2>
-        <p className={styles.subtext}>
+        <p className="wi-subtext">
           One enrollment covers the full program experience — tools, support, and materials.
         </p>
 
-        <div className={styles.grid}>
+        <div className="wi-grid">
           {items.map((item, i) => (
             <div
               key={i}
-              className={styles.item}
+              className="wi-item"
               style={{
                 border: `1px solid ${hoveredIndex === i ? "#05966933" : "var(--border)"}`,
               }}
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <span className={styles.check}>✓</span>
+              <span className="wi-check">✓</span>
               <div>
-                <div className={styles.itemTitle}>{item.title}</div>
-                <div className={styles.itemSub}>{item.sub}</div>
+                <div className="wi-item-title">{item.title}</div>
+                <div className="wi-item-sub">{item.sub}</div>
               </div>
             </div>
           ))}
