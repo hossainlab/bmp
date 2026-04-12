@@ -51,7 +51,7 @@ export default function Hero() {
         <h1 className="hero-heading">
           Become the{" "}
           <span className="hero-heading-highlight">Bioinformatics</span>
-          {" "}Research Expert
+          {" "} Expert
         </h1>
 
         {/* Subtitle */}
