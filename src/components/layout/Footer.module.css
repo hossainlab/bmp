@@ -1,0 +1,50 @@
+/* Footer.module.css */
+
+.footer {
+  border-top: 1px solid var(--border);
+  background: #0a0e14;
+  padding: 36px 24px;
+  text-align: center;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.brand {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.82rem;
+  color: var(--text-label);
+}
+
+.brandName {
+  color: #4d9fff;
+  font-weight: 700;
+}
+
+.copyright {
+  font-size: 0.78rem;
+  color: #3a5a7a;
+}
+
+.links {
+  display: flex;
+  gap: 20px;
+}
+
+.link {
+  font-size: 0.78rem;
+  color: #3a5a7a;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--text-muted);
+}

@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import styles from "./Curriculum.module.css";
 
 const sessions = [
   {
@@ -64,157 +65,48 @@ export default function Curriculum() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section
-      id="curriculum"
-      style={{
-        padding: "100px 24px",
-        background: "#0a0e14",
-        borderTop: "1px solid #1e2a38",
-      }}
-    >
-      <div style={{ maxWidth: 860, margin: "0 auto" }}>
-        <p
-          style={{
-            fontFamily: "monospace",
-            fontSize: "0.68rem",
-            letterSpacing: "0.18em",
-            textTransform: "uppercase",
-            color: "#4a6a8a",
-            marginBottom: 16,
-          }}
-        >
-          12-Week Roadmap
-        </p>
+    <section id="curriculum" className={styles.section}>
+      <div className={styles.inner}>
+        <p className={styles.eyebrow}>12-Week Roadmap</p>
 
-        <h2
-          style={{
-            fontFamily: "var(--font-dm-serif), serif",
-            fontSize: "clamp(1.7rem, 3vw, 2.4rem)",
-            color: "#e8edf5",
-            marginBottom: 16,
-            lineHeight: 1.2,
-          }}
-        >
+        <h2 className={styles.heading}>
           A structured journey from research question to publication.
         </h2>
-        <p
-          style={{
-            fontSize: "0.97rem",
-            color: "#8a9ab0",
-            lineHeight: 1.7,
-            marginBottom: 56,
-          }}
-        >
+        <p className={styles.subtext}>
           From opening a terminal for the first time to submitting your data to
           NCBI GEO — every step, every tool, every concept.
         </p>
 
-        <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+        <div className={styles.list}>
           {sessions.map((s, i) => {
             const isOpen = open === i;
             return (
               <div
                 key={i}
-                style={{
-                  background: "#111720",
-                  border: `1px solid ${isOpen ? "#4d9fff44" : "#1e2a38"}`,
-                  borderRadius: 12,
-                  overflow: "hidden",
-                  transition: "border-color 0.2s",
-                }}
+                className={`${styles.item} ${isOpen ? styles.itemOpen : styles.itemClosed}`}
               >
                 <button
                   onClick={() => setOpen(isOpen ? null : i)}
-                  style={{
-                    width: "100%",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    padding: "22px 24px",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 18,
-                    textAlign: "left",
-                  }}
+                  className={styles.trigger}
                 >
-                  <span
-                    style={{
-                      fontFamily: "monospace",
-                      fontSize: "0.68rem",
-                      color: "#4d9fff",
-                      background: "rgba(77,159,255,0.1)",
-                      border: "1px solid rgba(77,159,255,0.2)",
-                      borderRadius: 4,
-                      padding: "3px 8px",
-                      flexShrink: 0,
-                    }}
-                  >
-                    SESSION {s.num}
+                  <span className={styles.sessionBadge}>SESSION {s.num}</span>
+                  <span className={styles.triggerMeta}>
+                    <span className={styles.category}>{s.category}</span>
+                    <span className={styles.title}>{s.title}</span>
                   </span>
-                  <div style={{ flex: 1 }}>
-                    <div
-                      style={{
-                        fontSize: "0.72rem",
-                        color: "#4a6a8a",
-                        fontFamily: "monospace",
-                        letterSpacing: "0.08em",
-                        textTransform: "uppercase",
-                        marginBottom: 4,
-                      }}
-                    >
-                      {s.category}
-                    </div>
-                    <div
-                      style={{
-                        fontSize: "0.95rem",
-                        fontWeight: 600,
-                        color: "#e8edf5",
-                      }}
-                    >
-                      {s.title}
-                    </div>
-                  </div>
                   <span
-                    style={{
-                      color: "#4a6a8a",
-                      fontSize: "1.1rem",
-                      transition: "transform 0.2s",
-                      transform: isOpen ? "rotate(45deg)" : "rotate(0deg)",
-                      flexShrink: 0,
-                    }}
+                    className={`${styles.chevron} ${isOpen ? styles.chevronOpen : styles.chevronClosed}`}
                   >
                     +
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div style={{ padding: "0 24px 24px 24px" }}>
-                    <p
-                      style={{
-                        fontSize: "0.88rem",
-                        color: "#8a9ab0",
-                        lineHeight: 1.75,
-                        marginBottom: 18,
-                        borderTop: "1px solid #1e2a38",
-                        paddingTop: 18,
-                      }}
-                    >
-                      {s.body}
-                    </p>
-                    <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                  <div className={styles.body}>
+                    <p className={styles.bodyText}>{s.body}</p>
+                    <div className={styles.tags}>
                       {s.tags.map((t) => (
-                        <span
-                          key={t}
-                          style={{
-                            fontFamily: "monospace",
-                            fontSize: "0.7rem",
-                            background: "rgba(77,159,255,0.06)",
-                            border: "1px solid rgba(77,159,255,0.15)",
-                            color: "#6aabff",
-                            borderRadius: 4,
-                            padding: "3px 9px",
-                          }}
-                        >
+                        <span key={t} className={styles.tag}>
                           {t}
                         </span>
                       ))}

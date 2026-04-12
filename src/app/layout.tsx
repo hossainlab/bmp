@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import SmoothScroll from "@/components/SmoothScroll";
+import SmoothScroll from "@/components/ui/SmoothScroll";
 
-const dmSans = DM_Sans({
+const poppins = Poppins({
   subsets: ["latin"],
   variable: "--font-dm-sans",
-  weight: ["400", "500", "600"],
-});
-
-const dmSerif = DM_Serif_Display({
-  subsets: ["latin"],
-  variable: "--font-dm-serif",
-  weight: "400",
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -27,8 +22,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${dmSans.variable} ${dmSerif.variable}`}
+      className={poppins.variable}
       style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
+      suppressHydrationWarning
     >
       <body className="min-h-screen">
         <SmoothScroll />

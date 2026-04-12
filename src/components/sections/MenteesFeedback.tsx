@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import styles from "./MenteesFeedback.module.css";
 
 type Mentee = {
   name: string;
@@ -142,8 +143,6 @@ const stats = [
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
 function photoSrc(path: string) {
-  // Encode each path segment individually (handles spaces, parentheses, etc.)
-  // then prepend basePath for GitHub Pages deployment
   const encoded = path
     .split("/")
     .map((seg) => encodeURIComponent(seg))
@@ -162,63 +161,20 @@ function getInitials(name: string) {
 
 function Card({ m }: { m: Mentee }) {
   return (
-    <div
-      style={{
-        width: 340,
-        flexShrink: 0,
-        background: "linear-gradient(145deg, #111720, #0d1219)",
-        border: "1px solid #1e2a38",
-        borderRadius: 16,
-        padding: "22px 24px 20px",
-        marginRight: 16,
-        display: "flex",
-        flexDirection: "column",
-        cursor: "default",
-      }}
-    >
+    <div className={styles.card}>
       {/* Large decorative left curly quote */}
-      <div
-        style={{
-          fontSize: "3.2rem",
-          color: "rgba(77,159,255,0.2)",
-          lineHeight: 0.85,
-          marginBottom: 14,
-          fontFamily: "Georgia, 'Times New Roman', serif",
-          userSelect: "none",
-        }}
-      >
-        &#8220;
-      </div>
+      <div className={styles.quoteGlyph}>&#8220;</div>
 
-      {/* Quote text — full, no clamp */}
-      <p
-        style={{
-          fontSize: "0.875rem",
-          color: "#8a9ab0",
-          lineHeight: 1.7,
-          marginBottom: 20,
-          flex: 1,
-        }}
-      >
-        {m.quote}
-      </p>
+      {/* Quote text */}
+      <p className={styles.quoteText}>{m.quote}</p>
 
       {/* Divider */}
-      <div style={{ height: 1, background: "#1a2535", marginBottom: 16 }} />
+      <div className={styles.divider} />
 
       {/* Profile row */}
-      <div style={{ display: "flex", alignItems: "flex-start", gap: 12 }}>
+      <div className={styles.profile}>
         {/* Avatar */}
-        <div
-          style={{
-            width: 48,
-            height: 48,
-            borderRadius: "50%",
-            overflow: "hidden",
-            flexShrink: 0,
-            border: "2px solid rgba(77,159,255,0.25)",
-          }}
-        >
+        <div className={styles.avatar}>
           {m.photo ? (
             <Image
               src={photoSrc(m.photo)}
@@ -228,65 +184,22 @@ function Card({ m }: { m: Mentee }) {
               style={{ objectFit: "cover", width: "100%", height: "100%" }}
             />
           ) : (
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                background: "linear-gradient(135deg, #4d9fff, #b97fff)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                fontSize: "0.8rem",
-                fontWeight: 700,
-                color: "#fff",
-              }}
-            >
-              {getInitials(m.name)}
-            </div>
+            <div className={styles.avatarInitials}>{getInitials(m.name)}</div>
           )}
         </div>
 
         {/* Name / university / dept */}
         <div>
-          <div
-            style={{
-              fontSize: "0.875rem",
-              fontWeight: 600,
-              color: "#d8e4f0",
-              lineHeight: 1.3,
-              marginBottom: 3,
-            }}
-          >
-            {m.name}
-          </div>
-          <div
-            style={{
-              fontSize: "0.72rem",
-              color: "#3a7abf",
-              lineHeight: 1.4,
-              marginBottom: 2,
-            }}
-          >
-            {m.university}
-          </div>
-          <div
-            style={{
-              fontSize: "0.67rem",
-              color: "#3a5070",
-              lineHeight: 1.4,
-            }}
-          >
-            {m.department}
-          </div>
+          <div className={styles.profileName}>{m.name}</div>
+          <div className={styles.profileUniversity}>{m.university}</div>
+          <div className={styles.profileDept}>{m.department}</div>
         </div>
       </div>
 
       {/* Stars */}
-      <div style={{ display: "flex", gap: 3, marginTop: 14 }}>
+      <div className={styles.stars}>
         {[1, 2, 3, 4, 5].map((i) => (
-          <span key={i} style={{ color: "#f0c040", fontSize: "0.75rem" }}>
-            ★
-          </span>
+          <span key={i} className={styles.star}>★</span>
         ))}
       </div>
     </div>
@@ -298,174 +211,39 @@ export default function MenteesFeedback() {
   const row2 = [...mentees].reverse();
 
   return (
-    <section
-      id="testimonials"
-      style={{
-        padding: "100px 0",
-        background: "#0a0e14",
-        borderTop: "1px solid #1a2535",
-        overflow: "hidden",
-        position: "relative",
-      }}
-    >
-      <style>{`
-        @keyframes scrollLeft {
-          from { transform: translateX(0); }
-          to   { transform: translateX(-50%); }
-        }
-        @keyframes scrollRight {
-          from { transform: translateX(-50%); }
-          to   { transform: translateX(0); }
-        }
-        .scroll-left {
-          display: flex;
-          align-items: stretch;
-          width: max-content;
-          animation: scrollLeft 60s linear infinite;
-        }
-        .scroll-right {
-          display: flex;
-          align-items: stretch;
-          width: max-content;
-          animation: scrollRight 55s linear infinite;
-        }
-        .scroll-left:hover,
-        .scroll-right:hover {
-          animation-play-state: paused;
-        }
-        .scroll-fade {
-          -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-          mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-        }
-      `}</style>
-
+    <section id="testimonials" className={styles.section}>
       {/* Background glow */}
-      <div
-        style={{
-          position: "absolute",
-          top: "40%",
-          left: "50%",
-          transform: "translateX(-50%)",
-          width: 900,
-          height: 500,
-          borderRadius: "50%",
-          background:
-            "radial-gradient(ellipse, rgba(77,159,255,0.04) 0%, transparent 70%)",
-          pointerEvents: "none",
-        }}
-      />
+      <div className={styles.bgGlow} />
 
       {/* Section header */}
-      <div
-        style={{
-          maxWidth: 700,
-          margin: "0 auto 52px",
-          textAlign: "center",
-          padding: "0 24px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
-        <p
-          style={{
-            fontFamily: "monospace",
-            fontSize: "0.68rem",
-            letterSpacing: "0.18em",
-            textTransform: "uppercase",
-            color: "#4a6a8a",
-            marginBottom: 16,
-          }}
-        >
-          Mentee Testimonials
-        </p>
-        <h2
-          style={{
-            fontFamily: "var(--font-dm-serif), serif",
-            fontSize: "clamp(1.9rem, 3.5vw, 2.8rem)",
-            color: "#e8edf5",
-            lineHeight: 1.15,
-            marginBottom: 18,
-            letterSpacing: "-0.01em",
-          }}
-        >
+      <div className={styles.header}>
+        <p className={styles.eyebrow}>Mentee Testimonials</p>
+        <h2 className={styles.heading}>
           Researchers Who{" "}
-          <em
-            style={{
-              fontStyle: "italic",
-              background: "linear-gradient(135deg, #4d9fff 0%, #7fff9f 100%)",
-              WebkitBackgroundClip: "text",
-              WebkitTextFillColor: "transparent",
-              backgroundClip: "text",
-            }}
-          >
-            Leveled Up
-          </em>
+          <em className={styles.headingEm}>Leveled Up</em>
         </h2>
-        <p
-          style={{
-            fontSize: "0.97rem",
-            color: "#8a9ab0",
-            lineHeight: 1.75,
-            maxWidth: 520,
-            margin: "0 auto",
-          }}
-        >
+        <p className={styles.subtext}>
           Hear directly from mentees across 12+ universities who transformed their
           research capabilities through structured bioinformatics mentorship.
         </p>
       </div>
 
       {/* Stats row */}
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexWrap: "wrap",
-          marginBottom: 64,
-          padding: "0 24px",
-          position: "relative",
-          zIndex: 1,
-        }}
-      >
+      <div className={styles.statsRow}>
         {stats.map((s, i) => (
           <div
             key={s.label}
-            style={{
-              textAlign: "center",
-              padding: "20px 44px",
-              borderRight:
-                i < stats.length - 1 ? "1px solid #1e2a38" : "none",
-            }}
+            className={`${styles.statCell} ${i < stats.length - 1 ? styles.statCellBorder : ""}`}
           >
-            <div
-              style={{
-                fontFamily: "var(--font-dm-serif), serif",
-                fontSize: "2.3rem",
-                color: "#4d9fff",
-                lineHeight: 1,
-                marginBottom: 5,
-              }}
-            >
-              {s.value}
-            </div>
-            <div
-              style={{
-                fontSize: "0.77rem",
-                color: "#4a6a8a",
-                letterSpacing: "0.06em",
-                textTransform: "uppercase",
-                fontFamily: "monospace",
-              }}
-            >
-              {s.label}
-            </div>
+            <div className={styles.statValue}>{s.value}</div>
+            <div className={styles.statLabel}>{s.label}</div>
           </div>
         ))}
       </div>
 
       {/* Scrolling row 1 — left */}
-      <div className="scroll-fade" style={{ marginBottom: 16 }}>
-        <div className="scroll-left">
+      <div className={`${styles.scrollFade} ${styles.rowMargin}`}>
+        <div className={styles.scrollLeft}>
           {[...row1, ...row1].map((m, i) => (
             <Card key={`r1-${i}`} m={m} />
           ))}
@@ -473,8 +251,8 @@ export default function MenteesFeedback() {
       </div>
 
       {/* Scrolling row 2 — right */}
-      <div className="scroll-fade">
-        <div className="scroll-right">
+      <div className={styles.scrollFade}>
+        <div className={styles.scrollRight}>
           {[...row2, ...row2].map((m, i) => (
             <Card key={`r2-${i}`} m={m} />
           ))}
