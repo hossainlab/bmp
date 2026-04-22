@@ -22,7 +22,17 @@
       "mcp__playwright__browser_press_key",
       "Bash(cat:*)",
       "Bash(npx tsc:*)",
-      "Bash(do echo:*)"
+      "Bash(do echo:*)",
+      "mcp__playwright__browser_tabs",
+      "Bash(netstat:*)",
+      "Bash(kill:*)",
+      "mcp__playwright__browser_click",
+      "mcp__playwright__browser_navigate_back",
+      "mcp__playwright__browser_hover",
+      "mcp__playwright__browser_network_requests",
+      "WebFetch(domain:jbengler.de)",
+      "Bash(start npm:*)",
+      "Bash(curl:*)"
     ]
   }
 }

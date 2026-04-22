@@ -20,7 +20,7 @@ const currentMentees: CurrentMentee[] = [
     name: "Md. Liakot Ali",
     university: "University of Chittagong",
     department: "Department of Pharmacy",
-    photo: null,
+    photo: "/Current_Mentees_Photo/Md. Liakot Ali.png",
   },
   {
     name: "Mahim Hassan Chowdhury",
@@ -39,6 +39,18 @@ const currentMentees: CurrentMentee[] = [
     university: "Inha University, South Korea",
     department: "Department of Biomedical Science",
     photo: "/Current_Mentees_Photo/Enam Ahmed.jpg",
+  },
+  {
+    name: "Supriya Dewanjee",
+    university: "Asian University for Women",
+    department: "Department of Bioinformatics",
+    photo: "/Current_Mentees_Photo/SupriyaDewanjee.jpeg",
+  },
+  {
+    name: "Md Mobasser Hosain",
+    university: "University of Development Alternative",
+    department: "Department of Molecular Medicine and Bioinformatics",
+    photo: "/Current_Mentees_Photo/Md Mobasser Hosain .jpg",
   },
 ];
 

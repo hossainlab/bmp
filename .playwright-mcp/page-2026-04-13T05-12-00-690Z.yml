@@ -1,0 +1,786 @@
+- generic [ref=e1]:
+  - link "Skip to main page content" [ref=e2] [cursor=pointer]:
+    - /url: "#article-details"
+  - generic [ref=e6]:
+    - img "U.S. flag" [ref=e7]
+    - paragraph [ref=e8]: An official website of the United States government
+    - button "Here's how you know" [ref=e9] [cursor=pointer]
+  - banner [ref=e10]:
+    - generic [ref=e12]:
+      - link "NCBI Logo" [ref=e14] [cursor=pointer]:
+        - /url: https://www.ncbi.nlm.nih.gov/
+        - img "NIH NLM Logo" [ref=e15]
+      - link "Log in" [ref=e17] [cursor=pointer]:
+        - /url: https://account.ncbi.nlm.nih.gov/?back_url=https%3A%2F%2Fpubmed.ncbi.nlm.nih.gov%2F41540266%2F
+  - navigation "access keys":
+    - link "Access keys" [ref=e18] [cursor=pointer]:
+      - /url: https://www.ncbi.nlm.nih.gov/guide/browsers/#ncbi_accesskeys
+    - link "NCBI Homepage" [ref=e19] [cursor=pointer]:
+      - /url: https://www.ncbi.nlm.nih.gov
+    - link "MyNCBI Homepage" [ref=e20] [cursor=pointer]:
+      - /url: /myncbi/
+    - link "Main Content" [ref=e21] [cursor=pointer]:
+      - /url: "#maincontent"
+    - link "Main Navigation" [ref=e22] [cursor=pointer]:
+      - /url: "#"
+  - navigation "Main page content below"
+  - search [ref=e23]:
+    - generic [ref=e24]:
+      - link "Pubmed Logo" [ref=e25] [cursor=pointer]:
+        - /url: /
+        - img "pubmed logo" [ref=e26]
+      - search [ref=e27]:
+        - generic [ref=e28]:
+          - generic [ref=e29]: "Search:"
+          - generic [ref=e30]:
+            - combobox "Search:" [active] [ref=e31]
+            - status [ref=e32]
+          - button "Search" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - link "Advanced" [ref=e36] [cursor=pointer]:
+          - /url: /advanced/
+        - navigation "User guide" [ref=e37]:
+          - link "User Guide" [ref=e38] [cursor=pointer]:
+            - /url: /help/
+  - generic [ref=e39]:
+    - generic [ref=e42]:
+      - region "save, email, send to" [ref=e44]:
+        - button "Save" [ref=e45] [cursor=pointer]
+        - button "Email" [ref=e46] [cursor=pointer]
+        - button "Send to" [ref=e48] [cursor=pointer]
+      - region [ref=e49]:
+        - button "Display options" [ref=e50] [cursor=pointer]:
+          - generic [ref=e51]: Display options
+    - generic: "* * * *"
+  - generic [ref=e52]:
+    - complementary [ref=e53]:
+      - generic [ref=e54]:
+        - generic [ref=e56]:
+          - heading "Full text links" [level=3] [ref=e57]
+          - generic [ref=e58]:
+            - link "Nature Publishing Group full text link" [ref=e59] [cursor=pointer]:
+              - /url: https://doi.org/10.1038/s41590-025-02406-1
+              - img "Nature Publishing Group full text link" [ref=e60]
+            - link "Free full text at PubMed Central" [ref=e61] [cursor=pointer]:
+              - /url: https://pmc.ncbi.nlm.nih.gov/articles/pmid/41540266/
+        - generic [ref=e62]:
+          - heading "Actions" [level=3] [ref=e63]
+          - generic [ref=e64]:
+            - button "Open dialog with citation text in different styles" [ref=e65] [cursor=pointer]: Cite
+            - button "Save article in MyNCBI collections." [ref=e67] [cursor=pointer]: Collections
+            - button "Permalink" [ref=e69] [cursor=pointer]
+        - navigation "Page navigation" [ref=e70]:
+          - generic [ref=e71]:
+            - heading "Page navigation" [level=3] [ref=e72]
+            - list [ref=e73]:
+              - listitem [ref=e74]:
+                - link "navigate to Title & authors section" [ref=e75] [cursor=pointer]:
+                  - /url: "#heading"
+                  - text: Title & authors
+              - listitem [ref=e76]:
+                - link "navigate to Abstract section" [ref=e77] [cursor=pointer]:
+                  - /url: "#abstract"
+                  - text: Abstract
+              - listitem [ref=e78]:
+                - link "navigate to Conflict of interest statement section" [ref=e79] [cursor=pointer]:
+                  - /url: "#conflict-of-interest"
+                  - text: Conflict of interest statement
+              - listitem [ref=e80]:
+                - link "navigate to Figures section" [ref=e81] [cursor=pointer]:
+                  - /url: "#figures"
+                  - text: Figures
+              - listitem [ref=e82]:
+                - link "navigate to Similar articlessection" [ref=e83] [cursor=pointer]:
+                  - /url: "#similar"
+                  - text: Similar articles
+              - listitem [ref=e84]:
+                - link "navigate to Cited bysection" [ref=e85] [cursor=pointer]:
+                  - /url: "#citedby"
+                  - text: Cited by
+              - listitem [ref=e86]:
+                - link "navigate to References section" [ref=e87] [cursor=pointer]:
+                  - /url: "#references"
+                  - text: References
+              - listitem [ref=e88]:
+                - link "navigate to MeSH terms section" [ref=e89] [cursor=pointer]:
+                  - /url: "#mesh-terms"
+                  - text: MeSH terms
+              - listitem [ref=e90]:
+                - link "navigate to Substances section" [ref=e91] [cursor=pointer]:
+                  - /url: "#substances"
+                  - text: Substances
+              - listitem [ref=e92]:
+                - link "navigate to Related informationsection" [ref=e93] [cursor=pointer]:
+                  - /url: "#related-links"
+                  - text: Related information
+              - listitem [ref=e94]:
+                - link "navigate to Grants and funding section" [ref=e95] [cursor=pointer]:
+                  - /url: "#grants"
+                  - text: Grants and funding
+              - listitem [ref=e96]:
+                - link "navigate to LinkOut - more resources section" [ref=e97] [cursor=pointer]:
+                  - /url: "#linkout"
+                  - text: LinkOut - more resources
+    - main [ref=e98]:
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - generic [ref=e102]:
+            - button "Toggle dropdown menu for journal Nature immunology" [ref=e104] [cursor=pointer]: Nat Immunol
+            - text: .
+            - generic [ref=e105]: 2026 Mar;27(3):503-515.
+          - generic [ref=e106]: "doi: 10.1038/s41590-025-02406-1."
+          - generic [ref=e107]: Epub 2026 Jan 15.
+        - heading "A GDF-15-GFRAL axis controls autoimmune T cell responses during neuroinflammation" [level=1] [ref=e108]
+        - generic [ref=e111]:
+          - generic [ref=e112]:
+            - link "Jana K Sonner" [ref=e113] [cursor=pointer]:
+              - /url: /?term=Sonner+JK&cauthor_id=41540266
+            - superscript [ref=e114]:
+              - link "1" [ref=e115] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e116] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e117]:
+            - link "Audrey Kahn" [ref=e118] [cursor=pointer]:
+              - /url: /?term=Kahn+A&cauthor_id=41540266
+            - superscript [ref=e119]:
+              - link "1" [ref=e120] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e121] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e122]:
+            - link "Lars Binkle-Ladisch" [ref=e123] [cursor=pointer]:
+              - /url: /?term=Binkle-Ladisch+L&cauthor_id=41540266
+            - superscript [ref=e124]:
+              - link "1" [ref=e125] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e126] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e127]:
+            - link "Jan Broder Engler" [ref=e128] [cursor=pointer]:
+              - /url: /?term=Engler+JB&cauthor_id=41540266
+            - superscript [ref=e129]:
+              - link "1" [ref=e130] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e131] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e132]:
+            - link "Beatrice Haack" [ref=e133] [cursor=pointer]:
+              - /url: /?term=Haack+B&cauthor_id=41540266
+            - superscript [ref=e134]:
+              - link "3" [ref=e135] [cursor=pointer]:
+                - /url: "#full-view-affiliation-3"
+            - text: ","
+          - generic [ref=e136]:
+            - link "Christina Zeiler" [ref=e137] [cursor=pointer]:
+              - /url: /?term=Zeiler+C&cauthor_id=41540266
+            - superscript [ref=e138]:
+              - link "1" [ref=e139] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e140] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e141]:
+            - link "Lisa Unger" [ref=e142] [cursor=pointer]:
+              - /url: /?term=Unger+L&cauthor_id=41540266
+            - superscript [ref=e143]:
+              - link "1" [ref=e144] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e145] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e146]:
+            - link "Simone Bauer" [ref=e147] [cursor=pointer]:
+              - /url: /?term=Bauer+S&cauthor_id=41540266
+            - superscript [ref=e148]:
+              - link "1" [ref=e149] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e150] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e151]:
+            - link "Felix Fischbach" [ref=e152] [cursor=pointer]:
+              - /url: /?term=Fischbach+F&cauthor_id=41540266
+            - superscript [ref=e153]:
+              - link "1" [ref=e154] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e155] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e156]:
+            - link "Giovanni Almanzar" [ref=e157] [cursor=pointer]:
+              - /url: /?term=Almanzar+G&cauthor_id=41540266
+            - superscript [ref=e158]:
+              - link "4" [ref=e159] [cursor=pointer]:
+                - /url: "#full-view-affiliation-4"
+            - text: ","
+          - generic [ref=e160]:
+            - link "Mark Walkenhorst" [ref=e161] [cursor=pointer]:
+              - /url: /?term=Walkenhorst+M&cauthor_id=41540266
+            - superscript [ref=e162]:
+              - link "1" [ref=e163] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e164] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e165]:
+            - link "Christina Mayer" [ref=e166] [cursor=pointer]:
+              - /url: /?term=Mayer+C&cauthor_id=41540266
+            - superscript [ref=e167]:
+              - link "1" [ref=e168] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e169] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e170]:
+            - link "Aneta Kolakowska" [ref=e171] [cursor=pointer]:
+              - /url: /?term=Kolakowska+A&cauthor_id=41540266
+            - superscript [ref=e172]:
+              - link "1" [ref=e173] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e174] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e175]:
+            - link "Sebastian Graute" [ref=e176] [cursor=pointer]:
+              - /url: /?term=Graute+S&cauthor_id=41540266
+            - superscript [ref=e177]:
+              - link "5" [ref=e178] [cursor=pointer]:
+                - /url: "#full-view-affiliation-5"
+            - text: ","
+          - generic [ref=e179]:
+            - link "Caren Ramien" [ref=e180] [cursor=pointer]:
+              - /url: /?term=Ramien+C&cauthor_id=41540266
+            - superscript [ref=e181]:
+              - link "1" [ref=e182] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e183] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e184]:
+            - link "Ingo Winschel" [ref=e185] [cursor=pointer]:
+              - /url: /?term=Winschel+I&cauthor_id=41540266
+            - superscript [ref=e186]:
+              - link "1" [ref=e187] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e188] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e189]:
+            - link "Nicola Rothammer" [ref=e190] [cursor=pointer]:
+              - /url: /?term=Rothammer+N&cauthor_id=41540266
+            - superscript [ref=e191]:
+              - link "1" [ref=e192] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e193] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e194]:
+            - link "Markus Heine" [ref=e195] [cursor=pointer]:
+              - /url: /?term=Heine+M&cauthor_id=41540266
+            - superscript [ref=e196]:
+              - link "5" [ref=e197] [cursor=pointer]:
+                - /url: "#full-view-affiliation-5"
+            - text: ","
+          - generic [ref=e198]:
+            - link "Verena Horneffer-van der Sluis" [ref=e199] [cursor=pointer]:
+              - /url: /?term=Horneffer-van+der+Sluis+V&cauthor_id=41540266
+            - superscript [ref=e200]:
+              - link "6" [ref=e201] [cursor=pointer]:
+                - /url: "#full-view-affiliation-6"
+            - text: ","
+          - generic [ref=e202]:
+            - link "Vincent Thiemann" [ref=e203] [cursor=pointer]:
+              - /url: /?term=Thiemann+V&cauthor_id=41540266
+            - superscript [ref=e204]:
+              - link "3" [ref=e205] [cursor=pointer]:
+                - /url: "#full-view-affiliation-3"
+            - text: ","
+          - generic [ref=e206]:
+            - link "Vanessa Vieira" [ref=e207] [cursor=pointer]:
+              - /url: /?term=Vieira+V&cauthor_id=41540266
+            - superscript [ref=e208]:
+              - link "1" [ref=e209] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e210] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e211]:
+            - link "Nina Meurs" [ref=e212] [cursor=pointer]:
+              - /url: /?term=Meurs+N&cauthor_id=41540266
+            - superscript [ref=e213]:
+              - link "1" [ref=e214] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "2" [ref=e215] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+            - text: ","
+          - generic [ref=e216]:
+            - link "Thomas Renné" [ref=e217] [cursor=pointer]:
+              - /url: /?term=Renn%C3%A9+T&cauthor_id=41540266
+            - superscript [ref=e218]:
+              - link "6" [ref=e219] [cursor=pointer]:
+                - /url: "#full-view-affiliation-6"
+              - link "7" [ref=e220] [cursor=pointer]:
+                - /url: "#full-view-affiliation-7"
+              - link "8" [ref=e221] [cursor=pointer]:
+                - /url: "#full-view-affiliation-8"
+            - text: ","
+          - generic [ref=e222]:
+            - link "Martina Prelog" [ref=e223] [cursor=pointer]:
+              - /url: /?term=Prelog+M&cauthor_id=41540266
+            - superscript [ref=e224]:
+              - link "4" [ref=e225] [cursor=pointer]:
+                - /url: "#full-view-affiliation-4"
+            - text: ","
+          - generic [ref=e226]:
+            - link "Sebastian Beck Jørgensen" [ref=e227] [cursor=pointer]:
+              - /url: /?term=J%C3%B8rgensen+SB&cauthor_id=41540266
+            - superscript [ref=e228]:
+              - link "9" [ref=e229] [cursor=pointer]:
+                - /url: "#full-view-affiliation-9"
+            - text: ","
+          - generic [ref=e230]:
+            - link "Randy J Seeley" [ref=e231] [cursor=pointer]:
+              - /url: /?term=Seeley+RJ&cauthor_id=41540266
+            - superscript [ref=e232]:
+              - link "10" [ref=e233] [cursor=pointer]:
+                - /url: "#full-view-affiliation-10"
+            - text: ","
+          - generic [ref=e234]:
+            - link "Anke Diemert" [ref=e235] [cursor=pointer]:
+              - /url: /?term=Diemert+A&cauthor_id=41540266
+            - superscript [ref=e236]:
+              - link "11" [ref=e237] [cursor=pointer]:
+                - /url: "#full-view-affiliation-11"
+            - text: ","
+          - generic [ref=e238]:
+            - link "Petra C Arck" [ref=e239] [cursor=pointer]:
+              - /url: /?term=Arck+PC&cauthor_id=41540266
+            - superscript [ref=e240]:
+              - link "2" [ref=e241] [cursor=pointer]:
+                - /url: "#full-view-affiliation-2"
+              - link "11" [ref=e242] [cursor=pointer]:
+                - /url: "#full-view-affiliation-11"
+            - text: ","
+          - generic [ref=e243]:
+            - link "Stefan M Gold" [ref=e244] [cursor=pointer]:
+              - /url: /?term=Gold+SM&cauthor_id=41540266
+            - superscript [ref=e245]:
+              - link "1" [ref=e246] [cursor=pointer]:
+                - /url: "#full-view-affiliation-1"
+              - link "12" [ref=e247] [cursor=pointer]:
+                - /url: "#full-view-affiliation-12"
+            - text: ","
+          - generic [ref=e248]:
+            - link "Joerg Heeren" [ref=e249] [cursor=pointer]:
+              - /url: /?term=Heeren+J&cauthor_id=41540266
+            - superscript [ref=e250]:
+              - link "5" [ref=e251] [cursor=pointer]:
+                - /url: "#full-view-affiliation-5"
+            - text: ","
+          - generic [ref=e252]:
+            - link "Jörg Wischhusen" [ref=e253] [cursor=pointer]:
+              - /url: /?term=Wischhusen+J&cauthor_id=41540266
+            - superscript [ref=e254]:
+              - link "3" [ref=e255] [cursor=pointer]:
+                - /url: "#full-view-affiliation-3"
+            - text: ","
+          - generic [ref=e256]:
+            - link "Manuel A Friese" [ref=e257] [cursor=pointer]:
+              - /url: /?term=Friese+MA&cauthor_id=41540266
+            - superscript [ref=e258]:
+              - link "13" [ref=e259] [cursor=pointer]:
+                - /url: "#full-view-affiliation-13"
+              - link "14" [ref=e260] [cursor=pointer]:
+                - /url: "#full-view-affiliation-14"
+        - generic [ref=e261]:
+          - text: Affiliations
+          - button "Expand" [ref=e262] [cursor=pointer]
+        - list [ref=e263]:
+          - listitem [ref=e264]:
+            - generic [ref=e265]:
+              - text: "PMID:"
+              - strong [ref=e266]: "41540266"
+          - listitem [ref=e267]:
+            - generic [ref=e268]:
+              - text: "PMCID:"
+              - link "PMC12956584" [ref=e269] [cursor=pointer]:
+                - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC12956584/
+          - listitem [ref=e270]:
+            - generic [ref=e271]:
+              - text: "DOI:"
+              - link "external, opens in new tab. 10.1038/s41590-025-02406-1" [ref=e272] [cursor=pointer]:
+                - /url: https://doi.org/10.1038/s41590-025-02406-1
+                - text: 10.1038/s41590-025-02406-1
+      - text: …
+      - generic [ref=e273]:
+        - heading "Abstract" [level=2] [ref=e274]
+        - paragraph [ref=e276]: Inflammatory activity during multiple sclerosis (MS) often improves during pregnancy, suggesting that pregnancy-related immune adaptations affect the disease. Here we show that growth/differentiation factor-15 (GDF-15) increases during pregnancy and correlates with a reduced rate of MS relapses. GDF-15 also accumulates in the inflamed central nervous system, and its absence impairs inflammation resolution in a mouse model of MS. GDF-15 suppresses autoimmune T cell responses through an indirect signaling pathway involving the activation of GDNF family receptor α-like (GFRAL) on brainstem neurons. Therapeutic approaches, including neuronal gene delivery, recombinant GDF-15 administration and targeted chemogenetic activation of GFRAL-positive neurons induce β-adrenergic signaling and norepinephrine synthesis in the spleen, leading to decreased expression of integrins on T cells required for transmigration across the blood-brain barrier and confer protection against neuroinflammation in preclinical models of MS. These findings position GDF-15 as a crucial neuroimmune mediator and the GDF-15-GFRAL axis as promising target for MS.
+      - paragraph [ref=e277]: © 2026. The Author(s).
+      - paragraph [ref=e278]:
+        - link "PubMed Disclaimer" [ref=e279] [cursor=pointer]:
+          - /url: /disclaimer/
+      - generic [ref=e280]:
+        - heading "Conflict of interest statement" [level=2] [ref=e281]
+        - paragraph [ref=e283]: "Competing interests: S.B.J. is an employee of Novo Nordisk, a pharmaceutical company producing and selling medicine for the treatment of diabetes and obesity. R.J.S. has received research support from Novo Nordisk, Fractyl, Astra Zeneca, Congruence Therapeutics, Eli Lilly, Bullfrog AI, Glyscend Therapeutics and Amgen. R.J.S. has served as a paid consultant for Novo Nordisk, Eli Lilly, CinRx, Fractyl, Structure Therapeutics, Crinetics, Amgen, Congruence Therapeutics and Nuanced Health. R.J.S. has equity in Bullfrog AI, Nuanced Health, Coro Bio and Rewind. J.W. is an inventor on patents related to GDF-15 as a biomarker and therapeutic target in cancer, and a cofounder and shareholder of the biotech company CatalYm. The other authors declare no competing interests."
+      - generic [ref=e284]:
+        - heading "Figures" [level=2] [ref=e285]
+        - generic [ref=e286]:
+          - figure [ref=e287] [cursor=pointer]:
+            - button "Fig. 1" [ref=e288]:
+              - img "Fig. 1" [ref=e289]
+            - strong [ref=e292]:
+              - paragraph [ref=e293]: Fig. 1. GDF-15 is induced in pregnancy…
+          - figure [ref=e294] [cursor=pointer]:
+            - button "Fig. 2" [ref=e295]:
+              - img "Fig. 2" [ref=e296]
+            - strong [ref=e299]:
+              - paragraph [ref=e300]: Fig. 2. GDF-15 delivery is protective in…
+          - figure [ref=e301] [cursor=pointer]:
+            - button "Fig. 3" [ref=e302]:
+              - img "Fig. 3" [ref=e303]
+            - strong [ref=e306]:
+              - paragraph [ref=e307]:
+                - text: Fig. 3. GDF-15 delivery suppresses peripheral CD4
+                - superscript [ref=e308]: …
+          - figure [ref=e309] [cursor=pointer]:
+            - button "Fig. 4" [ref=e310]:
+              - img "Fig. 4" [ref=e311]
+            - strong [ref=e314]:
+              - paragraph [ref=e315]: Fig. 4. GDF-15 delivery activates β-adrenergic signaling…
+          - figure [ref=e316] [cursor=pointer]:
+            - button "Fig. 5" [ref=e317]:
+              - img "Fig. 5" [ref=e318]
+            - strong [ref=e321]:
+              - paragraph [ref=e322]: Fig. 5. GDF-15-mediated protection from neuroinflammation is…
+          - figure [ref=e323] [cursor=pointer]:
+            - button "Fig. 6" [ref=e324]:
+              - img "Fig. 6" [ref=e325]
+            - strong [ref=e328]:
+              - paragraph [ref=e329]:
+                - text: Fig. 6. Chemogenetic activation of GFRAL
+                - superscript [ref=e330]: +
+                - text: …
+        - button "All figures (17)" [ref=e332] [cursor=pointer]
+      - generic [ref=e333]:
+        - heading "Similar articles" [level=2] [ref=e334]
+        - list [ref=e335]:
+          - listitem [ref=e336]:
+            - generic [ref=e337]:
+              - 'link "Growth/Differentiation Factor-15 (GDF-15): From Biomarker to Novel Targetable Immune Checkpoint." [ref=e338] [cursor=pointer]':
+                - /url: /32508832/
+              - generic [ref=e339]:
+                - generic [ref=e340]: Wischhusen J, Melero I, Fridman WH.
+                - generic [ref=e341]: "Front Immunol. 2020 May 19;11:951. doi: 10.3389/fimmu.2020.00951. eCollection 2020."
+                - generic [ref=e342]: "PMID: 32508832"
+                - generic [ref=e343]: Free PMC article.
+                - generic [ref=e344]: Review.
+          - listitem [ref=e345]:
+            - generic [ref=e346]:
+              - link "GDNF family receptor alpha-like (GFRAL) expression is restricted to the caudal brainstem." [ref=e347] [cursor=pointer]:
+                - /url: /39608751/
+              - generic [ref=e348]:
+                - generic [ref=e349]: Hes C, Gui LT, Bay A, Alvarez F, Katz P, Paul T, Bozadjieva-Kramer N, Seeley RJ, Piccirillo CA, Sabatini PV.
+                - generic [ref=e350]: "Mol Metab. 2025 Jan;91:102070. doi: 10.1016/j.molmet.2024.102070. Epub 2024 Nov 26."
+                - generic [ref=e351]: "PMID: 39608751"
+                - generic [ref=e352]: Free PMC article.
+          - listitem [ref=e353]:
+            - generic [ref=e354]:
+              - link "GDF15 mediates adiposity resistance through actions on GFRAL neurons in the hindbrain AP/NTS." [ref=e355] [cursor=pointer]:
+                - /url: /31152154/
+              - generic [ref=e356]:
+                - generic [ref=e357]: Tsai VW, Zhang HP, Manandhar R, Schofield P, Christ D, Lee-Ng KKM, Lebhar H, Marquis CP, Husaini Y, Brown DA, Breit SN.
+                - generic [ref=e358]: "Int J Obes (Lond). 2019 Dec;43(12):2370-2380. doi: 10.1038/s41366-019-0365-5. Epub 2019 May 31."
+                - generic [ref=e359]: "PMID: 31152154"
+          - listitem [ref=e360]:
+            - generic [ref=e361]:
+              - link "Brainstem BDNF neurons are downstream of GFRAL/GLP1R signalling." [ref=e362] [cursor=pointer]:
+                - /url: /39737892/
+              - generic [ref=e363]:
+                - generic [ref=e364]: Feetham CH, Collabolletta V, Worth AA, Shoop R, Groom S, Harding C, Boutagouga Boudjadja M, Coskun T, Emmerson PJ, D'Agostino G, Luckman SM.
+                - generic [ref=e365]: "Nat Commun. 2024 Dec 30;15(1):10749. doi: 10.1038/s41467-024-54367-y."
+                - generic [ref=e366]: "PMID: 39737892"
+                - generic [ref=e367]: Free PMC article.
+          - listitem [ref=e368]:
+            - generic [ref=e369]:
+              - 'link "Targeting the GDF15 Signalling for Obesity Treatment: Recent Advances and Emerging Challenges." [ref=e370] [cursor=pointer]':
+                - /url: /39700016/
+              - generic [ref=e371]:
+                - generic [ref=e372]: Zhang J, Sun J, Li J, Xia H.
+                - generic [ref=e373]: "J Cell Mol Med. 2024 Dec;28(24):e70251. doi: 10.1111/jcmm.70251."
+                - generic [ref=e374]: "PMID: 39700016"
+                - generic [ref=e375]: Free PMC article.
+                - generic [ref=e376]: Review.
+        - link "See all similar articles" [ref=e378] [cursor=pointer]:
+          - /url: /?linkname=pubmed_pubmed&from_uid=41540266
+      - generic [ref=e379]:
+        - heading "Cited by" [level=2] [ref=e380]
+        - list [ref=e381]:
+          - listitem [ref=e382]:
+            - generic [ref=e383]:
+              - link "Pregnancy quenches inflammation through neuroimmune crosstalk." [ref=e384] [cursor=pointer]:
+                - /url: /41639391/
+              - generic [ref=e385]:
+                - generic [ref=e386]: Korn T.
+                - generic [ref=e387]: "Nat Immunol. 2026 Mar;27(3):386-387. doi: 10.1038/s41590-026-02418-5."
+                - generic [ref=e388]: "PMID: 41639391"
+                - generic [ref=e389]: No abstract available.
+      - generic [ref=e390]:
+        - heading "References" [level=2] [ref=e391]
+        - generic [ref=e393]:
+          - list [ref=e394]:
+            - listitem [ref=e395]:
+              - list [ref=e396]:
+                - listitem [ref=e397]:
+                  - text: Woo, M. S., Engler, J. B. & Friese, M. A. The neuropathobiology of multiple sclerosis. Nat. Rev. Neurosci.25, 493–513 (2024). -
+                  - link "external, opens in new tab. DOI" [ref=e398] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41583-024-00823-z
+                    - text: DOI
+                  - text: "-"
+                  - link "PubMed" [ref=e399] [cursor=pointer]:
+                    - /url: /38789516/
+            - listitem [ref=e400]:
+              - list [ref=e401]:
+                - listitem [ref=e402]:
+                  - text: Attfield, K. E., Jensen, L. T., Kaufmann, M., Friese, M. A. & Fugger, L. The immunology of multiple sclerosis. Nat. Rev. Immunol.22, 734–750 (2022). -
+                  - link "external, opens in new tab. DOI" [ref=e403] [cursor=pointer]:
+                    - /url: https://doi.org/10.1038/s41577-022-00718-z
+                    - text: DOI
+                  - text: "-"
+                  - link "PubMed" [ref=e404] [cursor=pointer]:
+                    - /url: /35508809/
+            - listitem [ref=e405]:
+              - list [ref=e406]:
+                - listitem [ref=e407]:
+                  - text: "Schubert, C. et al. Postpartum relapse risk in multiple sclerosis: a systematic review and meta-analysis. J. Neurol. Neurosurg. Psychiatry94, 718–725 (2023). -"
+                  - link "external, opens in new tab. DOI" [ref=e408] [cursor=pointer]:
+                    - /url: https://doi.org/10.1136/jnnp-2022-330533
+                    - text: DOI
+                  - text: "-"
+                  - link "PubMed" [ref=e409] [cursor=pointer]:
+                    - /url: /36807056/
+            - listitem [ref=e410]:
+              - list [ref=e411]:
+                - listitem [ref=e412]:
+                  - text: "Gold, S. M. & Voskuhl, R. R. Pregnancy and multiple sclerosis: from molecular mechanisms to clinical application. Semin. Immunopathol.38, 709–718 (2016). -"
+                  - link "external, opens in new tab. DOI" [ref=e413] [cursor=pointer]:
+                    - /url: https://doi.org/10.1007/s00281-016-0584-y
+                    - text: DOI
+                  - text: "-"
+                  - link "PubMed" [ref=e414] [cursor=pointer]:
+                    - /url: /27501960/
+            - listitem [ref=e415]:
+              - list [ref=e416]:
+                - listitem [ref=e417]:
+                  - text: Piccinni, M. P. et al. How pregnancy can affect autoimmune diseases progression?. Clin. Mol. Allergy14, 11 (2016). -
+                  - link "external, opens in new tab. DOI" [ref=e418] [cursor=pointer]:
+                    - /url: https://doi.org/10.1186/s12948-016-0048-x
+                    - text: DOI
+                  - text: "-"
+                  - link "PMC" [ref=e419] [cursor=pointer]:
+                    - /url: https://pmc.ncbi.nlm.nih.gov/articles/PMC5025626/
+                  - text: "-"
+                  - link "PubMed" [ref=e420] [cursor=pointer]:
+                    - /url: /27651750/
+          - button "Show all 68 references" [ref=e422] [cursor=pointer]
+      - generic [ref=e423]:
+        - heading "MeSH terms" [level=2] [ref=e424]
+        - list [ref=e425]:
+          - listitem [ref=e426]:
+            - button "Toggle dropdown menu for keyword Animals" [ref=e428] [cursor=pointer]: Animals
+          - listitem [ref=e429]:
+            - button "Toggle dropdown menu for keyword Autoimmunity" [ref=e431] [cursor=pointer]: Autoimmunity
+          - listitem [ref=e432]:
+            - button "Toggle dropdown menu for keyword Disease Models, Animal" [ref=e434] [cursor=pointer]: Disease Models, Animal
+          - listitem [ref=e435]:
+            - button "Toggle dropdown menu for keyword Encephalomyelitis, Autoimmune, Experimental* / immunology" [ref=e437] [cursor=pointer]: Encephalomyelitis, Autoimmune, Experimental* / immunology
+          - listitem [ref=e438]:
+            - button "Toggle dropdown menu for keyword Female" [ref=e440] [cursor=pointer]: Female
+          - listitem [ref=e441]:
+            - button "Toggle dropdown menu for keyword Glial Cell Line-Derived Neurotrophic Factor Receptors* / genetics" [ref=e443] [cursor=pointer]: Glial Cell Line-Derived Neurotrophic Factor Receptors* / genetics
+          - listitem [ref=e444]:
+            - button "Toggle dropdown menu for keyword Glial Cell Line-Derived Neurotrophic Factor Receptors* / immunology" [ref=e446] [cursor=pointer]: Glial Cell Line-Derived Neurotrophic Factor Receptors* / immunology
+          - listitem [ref=e447]:
+            - button "Toggle dropdown menu for keyword Glial Cell Line-Derived Neurotrophic Factor Receptors* / metabolism" [ref=e449] [cursor=pointer]: Glial Cell Line-Derived Neurotrophic Factor Receptors* / metabolism
+          - listitem [ref=e450]:
+            - button "Toggle dropdown menu for keyword Growth Differentiation Factor 15* / genetics" [ref=e452] [cursor=pointer]: Growth Differentiation Factor 15* / genetics
+          - listitem [ref=e453]:
+            - button "Toggle dropdown menu for keyword Growth Differentiation Factor 15* / immunology" [ref=e455] [cursor=pointer]: Growth Differentiation Factor 15* / immunology
+          - listitem [ref=e456]:
+            - button "Toggle dropdown menu for keyword Growth Differentiation Factor 15* / metabolism" [ref=e458] [cursor=pointer]: Growth Differentiation Factor 15* / metabolism
+          - listitem [ref=e459]:
+            - button "Toggle dropdown menu for keyword Humans" [ref=e461] [cursor=pointer]: Humans
+          - listitem [ref=e462]:
+            - button "Toggle dropdown menu for keyword Mice" [ref=e464] [cursor=pointer]: Mice
+          - listitem [ref=e465]:
+            - button "Toggle dropdown menu for keyword Mice, Inbred C57BL" [ref=e467] [cursor=pointer]: Mice, Inbred C57BL
+          - listitem [ref=e468]:
+            - button "Toggle dropdown menu for keyword Multiple Sclerosis* / immunology" [ref=e470] [cursor=pointer]: Multiple Sclerosis* / immunology
+          - listitem [ref=e471]:
+            - button "Toggle dropdown menu for keyword Multiple Sclerosis* / metabolism" [ref=e473] [cursor=pointer]: Multiple Sclerosis* / metabolism
+          - listitem [ref=e474]:
+            - button "Toggle dropdown menu for keyword Neurons / immunology" [ref=e476] [cursor=pointer]: Neurons / immunology
+          - listitem [ref=e477]:
+            - button "Toggle dropdown menu for keyword Neurons / metabolism" [ref=e479] [cursor=pointer]: Neurons / metabolism
+          - listitem [ref=e480]:
+            - button "Toggle dropdown menu for keyword Pregnancy" [ref=e482] [cursor=pointer]: Pregnancy
+          - listitem [ref=e483]:
+            - button "Toggle dropdown menu for keyword Signal Transduction / immunology" [ref=e485] [cursor=pointer]: Signal Transduction / immunology
+          - listitem [ref=e486]:
+            - button "Toggle dropdown menu for keyword T-Lymphocytes* / immunology" [ref=e488] [cursor=pointer]: T-Lymphocytes* / immunology
+      - generic [ref=e489]:
+        - heading "Substances" [level=2] [ref=e490]
+        - list [ref=e491]:
+          - listitem [ref=e492]:
+            - button "Toggle dropdown menu for keyword Growth Differentiation Factor 15" [ref=e494] [cursor=pointer]: Growth Differentiation Factor 15
+          - listitem [ref=e495]:
+            - button "Toggle dropdown menu for keyword Glial Cell Line-Derived Neurotrophic Factor Receptors" [ref=e497] [cursor=pointer]: Glial Cell Line-Derived Neurotrophic Factor Receptors
+          - listitem [ref=e498]:
+            - button "Toggle dropdown menu for keyword Gdf15 protein, mouse" [ref=e500] [cursor=pointer]: Gdf15 protein, mouse
+      - generic [ref=e501]:
+        - heading "Related information" [level=2] [ref=e502]
+        - list [ref=e503]:
+          - listitem [ref=e504]:
+            - link "GEO DataSets" [ref=e505] [cursor=pointer]:
+              - /url: https://www.ncbi.nlm.nih.gov/gds?linkname=pubmed_gds&from_uid=41540266
+          - listitem [ref=e506]:
+            - link "GEO Profiles" [ref=e507] [cursor=pointer]:
+              - /url: https://www.ncbi.nlm.nih.gov/geoprofiles?linkname=pubmed_geoprofiles&from_uid=41540266
+          - listitem [ref=e508]:
+            - link "Related Project" [ref=e509] [cursor=pointer]:
+              - /url: https://www.ncbi.nlm.nih.gov/bioproject?linkname=pubmed_bioproject&from_uid=41540266
+          - listitem [ref=e510]:
+            - link "SRA" [ref=e511] [cursor=pointer]:
+              - /url: https://www.ncbi.nlm.nih.gov/sra?linkname=pubmed_sra&from_uid=41540266
+      - generic [ref=e512]:
+        - heading "Grants and funding" [level=2] [ref=e513]
+        - list [ref=e515]:
+          - listitem [ref=e516]:
+            - link "255154572, 534829736, 405358801/Deutsche Forschungsgemeinschaft (German Research Foundation)" [ref=e517] [cursor=pointer]:
+              - /url: /?term=255154572%2C+534829736%2C+405358801%2FDeutsche+Forschungsgemeinschaft+%28German+Research+Foundation%29%5BGrants+and+Funding%5D&sort=date&sort_order=desc
+          - listitem [ref=e518]:
+            - link "523862973/Deutsche Forschungsgemeinschaft (German Research Foundation)" [ref=e519] [cursor=pointer]:
+              - /url: /?term=523862973%2FDeutsche+Forschungsgemeinschaft+%28German+Research+Foundation%29%5BGrants+and+Funding%5D&sort=date&sort_order=desc
+          - listitem [ref=e520]:
+            - link "255154572, 534829736/Deutsche Forschungsgemeinschaft (German Research Foundation)" [ref=e521] [cursor=pointer]:
+              - /url: /?term=255154572%2C+534829736%2FDeutsche+Forschungsgemeinschaft+%28German+Research+Foundation%29%5BGrants+and+Funding%5D&sort=date&sort_order=desc
+          - listitem [ref=e522]:
+            - link "534829736/Deutsche Forschungsgemeinschaft (German Research Foundation)" [ref=e523] [cursor=pointer]:
+              - /url: /?term=534829736%2FDeutsche+Forschungsgemeinschaft+%28German+Research+Foundation%29%5BGrants+and+Funding%5D&sort=date&sort_order=desc
+          - listitem [ref=e524]:
+            - link "P1200009/Gemeinnützige Hertie-Stiftung (Hertie Foundation)" [ref=e525] [cursor=pointer]:
+              - /url: /?term=P1200009%2FGemeinn%C3%BCtzige+Hertie-Stiftung+%28Hertie+Foundation%29%5BGrants+and+Funding%5D&sort=date&sort_order=desc
+        - button "Show all 7 grants" [ref=e527] [cursor=pointer]
+      - generic [ref=e528]:
+        - heading "LinkOut - more resources" [level=2] [ref=e529]
+        - list [ref=e530]:
+          - listitem [ref=e531]:
+            - heading "Full Text Sources" [level=3] [ref=e532]
+            - list [ref=e533]:
+              - listitem [ref=e534]:
+                - link "external, opens in new tab. Nature Publishing Group" [ref=e535] [cursor=pointer]:
+                  - /url: https://doi.org/10.1038/s41590-025-02406-1
+                  - text: Nature Publishing Group
+              - listitem [ref=e536]:
+                - link "PubMed Central" [ref=e537] [cursor=pointer]:
+                  - /url: https://pmc.ncbi.nlm.nih.gov/articles/pmid/41540266/
+          - listitem [ref=e538]:
+            - heading "Medical" [level=3] [ref=e539]
+            - list [ref=e540]:
+              - listitem [ref=e541]:
+                - link "MedlinePlus Health Information" [ref=e542] [cursor=pointer]:
+                  - /url: https://medlineplus.gov/multiplesclerosis.html
+    - option "AMA"
+    - option "APA"
+    - option "MLA"
+    - option "NLM" [selected]
+  - generic [ref=e543]:
+    - complementary "Links to NCBI Literature Resources" [ref=e544]:
+      - generic [ref=e545]:
+        - paragraph [ref=e546]: NCBI Literature Resources
+        - paragraph [ref=e547]:
+          - link "MeSH" [ref=e548] [cursor=pointer]:
+            - /url: https://www.ncbi.nlm.nih.gov/mesh/
+          - link "PMC" [ref=e549] [cursor=pointer]:
+            - /url: https://www.ncbi.nlm.nih.gov/pmc/
+          - link "Bookshelf" [ref=e550] [cursor=pointer]:
+            - /url: https://www.ncbi.nlm.nih.gov/books
+          - link "Disclaimer" [ref=e551] [cursor=pointer]:
+            - /url: /disclaimer/
+        - paragraph [ref=e552]: The PubMed wordmark and PubMed logo are registered trademarks of the U.S. Department of Health and Human Services (HHS). Unauthorized use of these marks is strictly prohibited.
+    - contentinfo [ref=e553]:
+      - generic [ref=e554]:
+        - generic [ref=e555]: Follow NCBI
+        - generic [ref=e557]:
+          - link "Twitter" [ref=e558] [cursor=pointer]:
+            - /url: https://twitter.com/ncbi
+            - img "Twitter" [ref=e559]
+          - link "Facebook" [ref=e562] [cursor=pointer]:
+            - /url: https://www.facebook.com/ncbi.nlm
+            - img "Facebook" [ref=e563]
+          - link "LinkedIn" [ref=e564] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/ncbinlm
+            - img "LinkedIn" [ref=e565]
+          - link "GitHub" [ref=e566] [cursor=pointer]:
+            - /url: https://github.com/ncbi
+            - img "GitHub" [ref=e567]
+          - link "Blog" [ref=e570] [cursor=pointer]:
+            - /url: https://ncbiinsights.ncbi.nlm.nih.gov/
+            - img [ref=e571]
+      - generic [ref=e574]:
+        - generic [ref=e575]:
+          - generic [ref=e576]:
+            - paragraph [ref=e577]:
+              - link "Connect with NLM" [ref=e578] [cursor=pointer]:
+                - /url: https://www.nlm.nih.gov/socialmedia/index.html
+            - list [ref=e579]:
+              - listitem [ref=e580]:
+                - link "Twitter" [ref=e581] [cursor=pointer]:
+                  - /url: https://twitter.com/NLM_NIH
+                  - img "Twitter" [ref=e582]
+              - listitem [ref=e586]:
+                - link "Facebook" [ref=e587] [cursor=pointer]:
+                  - /url: https://www.facebook.com/nationallibraryofmedicine
+                  - img "SM-Facebook" [ref=e588]
+              - listitem [ref=e593]:
+                - link "Youtube" [ref=e594] [cursor=pointer]:
+                  - /url: https://www.youtube.com/user/NLMNIH
+                  - img "SM-Youtube" [ref=e595]
+          - paragraph [ref=e600]:
+            - text: National Library of Medicine
+            - link "8600 Rockville Pike Bethesda, MD 20894" [ref=e601] [cursor=pointer]:
+              - /url: https://www.google.com/maps/place/8600+Rockville+Pike,+Bethesda,+MD+20894/@38.9959508,-77.101021,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c95e25765ddb:0x19156f88b27635b8!8m2!3d38.9959508!4d-77.0988323
+              - text: 8600 Rockville Pike
+              - text: Bethesda, MD 20894
+          - paragraph [ref=e603]:
+            - link "Web Policies" [ref=e604] [cursor=pointer]:
+              - /url: https://www.nlm.nih.gov/web_policies.html
+            - link "FOIA" [ref=e605] [cursor=pointer]:
+              - /url: https://www.nih.gov/institutes-nih/nih-office-director/office-communications-public-liaison/freedom-information-act-office
+            - link "HHS Vulnerability Disclosure" [ref=e606] [cursor=pointer]:
+              - /url: https://www.hhs.gov/vulnerability-disclosure-policy/index.html
+          - paragraph [ref=e608]:
+            - link "Help" [ref=e609] [cursor=pointer]:
+              - /url: https://support.nlm.nih.gov/?pagename=pubmed%3Apubmed%3Aabstract%3ANONE
+            - link "Accessibility" [ref=e610] [cursor=pointer]:
+              - /url: https://www.nlm.nih.gov/accessibility.html
+            - link "Careers" [ref=e611] [cursor=pointer]:
+              - /url: https://www.nlm.nih.gov/careers/careers.html
+        - navigation [ref=e614]:
+          - list [ref=e615]:
+            - listitem [ref=e616]:
+              - link "NLM" [ref=e617] [cursor=pointer]:
+                - /url: //www.nlm.nih.gov/
+            - listitem [ref=e618]:
+              - link "NIH" [ref=e619] [cursor=pointer]:
+                - /url: https://www.nih.gov/
+            - listitem [ref=e620]:
+              - link "HHS" [ref=e621] [cursor=pointer]:
+                - /url: https://www.hhs.gov/
+            - listitem [ref=e622]:
+              - link "USA.gov" [ref=e623] [cursor=pointer]:
+                - /url: https://www.usa.gov/

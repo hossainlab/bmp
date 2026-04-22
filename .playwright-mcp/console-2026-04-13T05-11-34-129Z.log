@@ -1,0 +1,4 @@
+[    1074ms] Unexpected token ':'
+[    1659ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://jbengler.de/favicon.ico:0
+[   25902ms] [LOG] Using JS NCBI alert, no server-side one @ https://cdn.ncbi.nlm.nih.gov/pubmed/9fea6d21-07b4-4726-b151-fb89a024b8ad/core/dismissable-ncbi-alert.js:52
+[   31802ms] Unexpected token ':'

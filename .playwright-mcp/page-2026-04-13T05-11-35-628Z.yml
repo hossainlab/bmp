@@ -1,0 +1,166 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner
+    - main [ref=e3]:
+      - generic [ref=e5]:
+        - img [ref=e8]
+        - heading "👋 Hi, my name is Jan Broder Engler. I am a scientist and software developer." [level=1] [ref=e11]:
+          - text: 👋 Hi, my name is
+          - emphasis [ref=e12]: Jan Broder Engler
+          - text: . I am a scientist and software developer.
+        - generic [ref=e14]:
+          - link "ORCID" [ref=e15] [cursor=pointer]:
+            - /url: https://orcid.org/0000-0002-3169-2076
+          - link "GitHub" [ref=e16] [cursor=pointer]:
+            - /url: https://github.com/jbengler
+          - link "Bluesky" [ref=e17] [cursor=pointer]:
+            - /url: https://bsky.app/profile/jbengler.de
+      - generic [ref=e19]:
+        - generic [ref=e20]:
+          - generic [ref=e22]:
+            - heading "Science" [level=2] [ref=e23]
+            - heading "I am a Senior Scientist at the Institute of Neuroimmunology and Multiple Sclerosis, where I develop strategies to protect neurons against neuroinflammation." [level=3] [ref=e24]:
+              - text: I am a
+              - emphasis [ref=e25]: Senior Scientist
+              - text: at the Institute of Neuroimmunology and Multiple Sclerosis, where I develop strategies to protect neurons against neuroinflammation.
+          - generic [ref=e26]:
+            - link "Nature Immunology A GDF-15-GFRAL axis controls autoimmune T cell responses during neuroinflammation. 2026" [ref=e28] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/41540266/
+              - img [ref=e29]
+              - generic [ref=e30]:
+                - heading "Nature Immunology" [level=3] [ref=e31]
+                - paragraph [ref=e32]: A GDF-15-GFRAL axis controls autoimmune T cell responses during neuroinflammation.
+                - paragraph [ref=e33]: "2026"
+            - link "Cell The immunoproteasome disturbs neuronal metabolism and drives neurodegeneration in multiple sclerosis. 2025" [ref=e35] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/40532699/
+              - img [ref=e36]
+              - generic [ref=e37]:
+                - heading "Cell" [level=3] [ref=e38]
+                - paragraph [ref=e39]: The immunoproteasome disturbs neuronal metabolism and drives neurodegeneration in multiple sclerosis.
+                - paragraph [ref=e40]: "2025"
+            - link "Nature Communications Protective effect of TCR-mediated MAIT cell activation during experimental autoimmune encephalomyelitis. 2024" [ref=e42] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/39468055/
+              - img [ref=e43]
+              - generic [ref=e44]:
+                - heading "Nature Communications" [level=3] [ref=e45]
+                - paragraph [ref=e46]: Protective effect of TCR-mediated MAIT cell activation during experimental autoimmune encephalomyelitis.
+                - paragraph [ref=e47]: "2024"
+            - link "Nature Reviews Neuroscience The neuropathobiology of multiple sclerosis. 2024" [ref=e49] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/38789516/
+              - img [ref=e50]
+              - generic [ref=e51]:
+                - heading "Nature Reviews Neuroscience" [level=3] [ref=e52]
+                - paragraph [ref=e53]: The neuropathobiology of multiple sclerosis.
+                - paragraph [ref=e54]: "2024"
+            - link "Science Advances MicroRNA-92a-CPEB3 axis protects neurons against inflammatory neurodegeneration. 2023" [ref=e56] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/38000031/
+              - img [ref=e57]
+              - generic [ref=e58]:
+                - heading "Science Advances" [level=3] [ref=e59]
+                - paragraph [ref=e60]: MicroRNA-92a-CPEB3 axis protects neurons against inflammatory neurodegeneration.
+                - paragraph [ref=e61]: "2023"
+            - link "Science Advances G9a dictates neuronal vulnerability to inflammatory stress via transcriptional control of ferroptosis. 2022" [ref=e63] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/35930635/
+              - img [ref=e64]
+              - generic [ref=e65]:
+                - heading "Science Advances" [level=3] [ref=e66]
+                - paragraph [ref=e67]: G9a dictates neuronal vulnerability to inflammatory stress via transcriptional control of ferroptosis.
+                - paragraph [ref=e68]: "2022"
+            - link "Med Identifying CNS-colonizing T cells as potential therapeutic targets to prevent progression of multiple sclerosis. 2021" [ref=e70] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/33748804/
+              - img [ref=e71]
+              - generic [ref=e72]:
+                - heading "Med" [level=3] [ref=e73]
+                - paragraph [ref=e74]: Identifying CNS-colonizing T cells as potential therapeutic targets to prevent progression of multiple sclerosis.
+                - paragraph [ref=e75]: "2021"
+            - link "Nature Neuroscience Bassoon proteinopathy drives neurodegeneration in multiple sclerosis. 2019" [ref=e77] [cursor=pointer]:
+              - /url: https://pubmed.ncbi.nlm.nih.gov/31011226/
+              - img [ref=e78]
+              - generic [ref=e79]:
+                - heading "Nature Neuroscience" [level=3] [ref=e80]
+                - paragraph [ref=e81]: Bassoon proteinopathy drives neurodegeneration in multiple sclerosis.
+                - paragraph [ref=e82]: "2019"
+        - link "More on PubMed" [ref=e85] [cursor=pointer]:
+          - /url: https://pubmed.ncbi.nlm.nih.gov/?term=Engler+JB%5BAuthor%5D&sort=date
+  - generic [ref=e88]:
+    - generic [ref=e90]:
+      - heading "Software development" [level=2] [ref=e91]
+      - heading "I develop open-source software tools to make code-based data visualization accessible to everyone." [level=3] [ref=e92]
+    - generic [ref=e93]:
+      - link "Tidyplots The goal of tidyplots is to streamline the creation of publication-ready plots for scientific papers. 2024" [ref=e95] [cursor=pointer]:
+        - /url: https://tidyplots.org
+        - img [ref=e96]
+        - generic [ref=e97]:
+          - heading "Tidyplots" [level=3] [ref=e98]
+          - paragraph [ref=e99]:
+            - text: The goal of
+            - emphasis [ref=e100]: tidyplots
+            - text: is to streamline the creation of publication-ready plots for scientific papers.
+          - paragraph [ref=e101]: "2024"
+      - link "iMeta Tidyplots empowers life scientists with easy code-based data visualization. 2025" [ref=e103] [cursor=pointer]:
+        - /url: https://doi.org/10.1002/imt2.70018
+        - img [ref=e104]
+        - generic [ref=e105]:
+          - heading "iMeta" [level=3] [ref=e106]
+          - paragraph [ref=e107]: Tidyplots empowers life scientists with easy code-based data visualization.
+          - paragraph [ref=e108]: "2025"
+      - link "Tidyheatmaps The goal of tidyheatmaps is to simplify the generation of publication-ready heatmaps from tidy data. 2024" [ref=e110] [cursor=pointer]:
+        - /url: https://jbengler.github.io/tidyheatmaps/
+        - img [ref=e111]
+        - generic [ref=e112]:
+          - heading "Tidyheatmaps" [level=3] [ref=e113]
+          - paragraph [ref=e114]:
+            - text: The goal of
+            - emphasis [ref=e115]: tidyheatmaps
+            - text: is to simplify the generation of publication-ready heatmaps from tidy data.
+          - paragraph [ref=e116]: "2024"
+    - link "More on GitHub" [ref=e119] [cursor=pointer]:
+      - /url: https://github.com/jbengler
+  - generic [ref=e122]:
+    - generic [ref=e124]:
+      - heading "Funding" [level=2] [ref=e125]
+      - heading "I am grateful to the individuals and institutions that support my work." [level=3] [ref=e126]
+    - generic [ref=e127]:
+      - link [ref=e129] [cursor=pointer]:
+        - /url: https://inims.de
+        - img [ref=e130]
+      - link [ref=e132] [cursor=pointer]:
+        - /url: https://www.uke.de/kliniken-institute/zentren/zentrum-für-molekulare-neurobiologie-(zmnh)/index.html
+        - img [ref=e133]
+      - link [ref=e135] [cursor=pointer]:
+        - /url: https://www.uke.de
+        - img [ref=e136]
+      - link [ref=e138] [cursor=pointer]:
+        - /url: https://www.ghst.de/en/studying-the-brain/creating-structures/hertie-network-of-excellence-in-clinical-neuroscience
+        - img [ref=e139]
+      - link [ref=e141] [cursor=pointer]:
+        - /url: https://www.dfg.de
+        - img [ref=e142]
+      - link [ref=e144] [cursor=pointer]:
+        - /url: https://www.uke.de/allgemein/presse/pressemitteilungen/detailseite_156289.html
+        - img [ref=e145]
+      - link [ref=e147] [cursor=pointer]:
+        - /url: https://www.hamburg.de/politik-und-verwaltung/behoerden/behoerde-fuer-wissenschaft-forschung-gleichstellung-und-bezirke/unsere-themen/forschung-und-wissenstransfer/
+        - img [ref=e148]
+  - generic [ref=e151]:
+    - generic [ref=e153]:
+      - heading "Jan Broder Engler" [level=3] [ref=e154]
+      - paragraph [ref=e155]: Scientist and software developer
+      - paragraph [ref=e156]:
+        - link "Website" [ref=e157] [cursor=pointer]:
+          - /url: https://jbengler.de
+        - text: "|"
+        - link "ORCID" [ref=e158] [cursor=pointer]:
+          - /url: https://orcid.org/0000-0002-3169-2076
+        - text: "|"
+        - link "GitHub" [ref=e159] [cursor=pointer]:
+          - /url: https://github.com/jbengler
+        - text: "|"
+        - link "Bluesky" [ref=e160] [cursor=pointer]:
+          - /url: https://bsky.app/profile/jbengler.de
+        - text: "|"
+        - link "LinkedIn" [ref=e161] [cursor=pointer]:
+          - /url: https://www.linkedin.com/in/JanBroderEngler
+    - generic [ref=e163]:
+      - paragraph [ref=e164]: Copyright © 2026 Jan Broder Engler. All rights reserved.
+      - paragraph
