@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 
-const poppins = Poppins({
+const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-dm-sans",
+  variable: "--font-dm-sans", // Keeping variable name to avoid breaking existing styles
   weight: ["400", "500", "600", "700", "800"],
   display: "swap",
 });
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={poppins.variable}
+      className={inter.variable}
       style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
       suppressHydrationWarning
     >

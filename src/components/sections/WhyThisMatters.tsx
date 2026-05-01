@@ -62,7 +62,7 @@ export default function WhyThisMatters() {
           Transition from data consumer to independent researcher
         </h2>
         <p className="wtm-subtext">
-          Whether you're in academia or industry, the ability to analyze your
+          Whether you&apos;re in academia or industry, the ability to analyze your
           own sequencing data is rapidly becoming a baseline expectation — not a
           bonus skill.
         </p>
@@ -106,7 +106,7 @@ export default function WhyThisMatters() {
         <h2 className="wtm-heading">NGS analysis is no longer optional</h2>
         <p className="wtm-subtext">
           Sequencing data is generated in labs of every scale. The question is
-          no longer whether your research involves it — it's whether you can
+          no longer whether your research involves it — it&apos;s whether you can
           work with it directly.
         </p>
 

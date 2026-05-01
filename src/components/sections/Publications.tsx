@@ -29,8 +29,9 @@ const publications = [
   },
 ];
 
-function pageUrl(slug: string) {
-  return `${BASE}/publications/${slug}/${slug}_page-0001.jpg`;
+function pageUrl(slug: string, pageNum: number) {
+  const paddedPage = pageNum.toString().padStart(4, '0');
+  return `${BASE}/publications/${slug}/${slug}_page-${paddedPage}.jpg`;
 }
 
 export default function Publications() {
@@ -53,7 +54,9 @@ export default function Publications() {
               className="pub-box"
             >
               <div className="pub-pages-wrap">
-                <Image src={pageUrl(pub.slug)} alt={pub.title} fill sizes="380px" className="pub-page-img" quality={95} />
+                <Image src={pageUrl(pub.slug, 3)} alt={`${pub.title} pg 3`} width={160} height={220} className="pub-page-img pub-page-left" quality={85} />
+                <Image src={pageUrl(pub.slug, 2)} alt={`${pub.title} pg 2`} width={160} height={220} className="pub-page-img pub-page-right" quality={85} />
+                <Image src={pageUrl(pub.slug, 1)} alt={`${pub.title} pg 1`} width={175} height={240} className="pub-page-img pub-page-center" quality={95} priority />
               </div>
 
               <div className="pub-text">

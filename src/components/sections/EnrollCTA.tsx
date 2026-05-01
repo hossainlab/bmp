@@ -71,7 +71,7 @@ export default function EnrollCTA() {
             Selected applicants will be notified within 5 business days.
           </p>
           <a
-            href="https://tinyurl.com/bmp-application"
+            href="https://forms.gle/uEvaGfskpwmqdWBX9"
             target="_blank"
             rel="noopener noreferrer"
             className="enroll-cta-btn"

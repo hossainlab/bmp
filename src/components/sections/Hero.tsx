@@ -6,15 +6,20 @@ const keywords = [
   { text: "volcano plot", top: "38%", left: "7%", rotate: "-5deg" },
   { text: "heatmap", top: "55%", left: "3%", rotate: "12deg" },
   { text: "FASTQ", top: "68%", left: "8%", rotate: "-8deg" },
+  { text: "Seurat", top: "20%", left: "15%", rotate: "10deg" },
+  { text: "Scanpy", top: "45%", left: "18%", rotate: "-12deg" },
   { text: "TCGA", top: "18%", right: "4%", rotate: "10deg" },
   { text: "Salmon", top: "32%", right: "6%", rotate: "-12deg" },
   { text: "GO enrichment", top: "48%", right: "2%", rotate: "6deg" },
   { text: "PCA", top: "62%", right: "7%", rotate: "-10deg" },
+  { text: "CellRanger", top: "30%", right: "18%", rotate: "15deg" },
+  { text: "scVI", top: "70%", right: "15%", rotate: "-5deg" },
   { text: "p-value", top: "75%", right: "3%", rotate: "15deg" },
   { text: "GTEx", top: "82%", left: "12%", rotate: "5deg" },
   { text: "STAR", top: "78%", right: "12%", rotate: "-7deg" },
   { text: "featureCounts", top: "8%", left: "18%", rotate: "4deg" },
   { text: "limma", top: "85%", left: "25%", rotate: "-3deg" },
+  { text: "Squidpy", top: "88%", left: "5%", rotate: "8deg" },
   { text: "GEO", top: "10%", right: "18%", rotate: "-6deg" },
   { text: "ggplot2", top: "88%", right: "22%", rotate: "8deg" },
 ];
@@ -26,7 +31,17 @@ export default function Hero() {
     <section className="hero-section">
       {/* Floating keywords background */}
       <div className="hero-keywords" aria-hidden="true">
-        {keywords.map((kw) => (
+        {/* Glowing Orbs */}
+        <div 
+          className="absolute rounded-full pointer-events-none opacity-[0.15] animate-float-slow"
+          style={{ top: "-10%", left: "-10%", width: "50vw", height: "50vw", minWidth: "400px", minHeight: "400px", background: "var(--accent-blue)", filter: "blur(120px)" }}
+        />
+        <div 
+          className="absolute rounded-full pointer-events-none opacity-[0.15] animate-float-slow"
+          style={{ bottom: "-10%", right: "-10%", width: "60vw", height: "50vw", minWidth: "400px", minHeight: "400px", background: "var(--accent-green)", filter: "blur(120px)", animationDelay: "2s" }}
+        />
+
+        {keywords.map((kw, i) => (
           <span
             key={kw.text}
             style={{
@@ -36,22 +51,28 @@ export default function Hero() {
               transform: `rotate(${kw.rotate})`,
             }}
           >
-            {kw.text}
+            <span 
+              className="inline-block animate-float-slow" 
+              style={{ animationDelay: `${(i % 5) * 1.5}s` }}
+            >
+              {kw.text}
+            </span>
           </span>
         ))}
       </div>
 
       <div className="hero-inner">
         {/* Badge */}
-        <p className="hero-badge">
-          🔬 Already 3,000+ mentees trained! 🔬
-        </p>
+        <div className="flex justify-center mb-8">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 text-slate-200 text-sm font-semibold tracking-wide border border-slate-700 shadow-sm transition-all hover:shadow hover:bg-slate-800 hover:border-slate-600 font-dm-sans">
+            Over 3,000 researchers trained
+            <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </div>
+        </div>
 
         {/* Heading */}
         <h1 className="hero-heading">
-          Become the{" "}
-          <span className="hero-heading-highlight">Bioinformatics</span>
-          {" "} Expert
+          Master <span className="hero-heading-highlight">Bioinformatics.</span>
         </h1>
 
         {/* Subtitle */}
@@ -77,7 +98,7 @@ export default function Hero() {
 
         {/* CTA */}
         <a
-          href="https://tinyurl.com/bmp-application"
+          href="https://forms.gle/uEvaGfskpwmqdWBX9"
           target="_blank"
           rel="noopener noreferrer"
           className="hero-cta"

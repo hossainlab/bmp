@@ -5,6 +5,7 @@ export default function Footer() {
   const [year, setYear] = useState(2026);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setYear(new Date().getFullYear());
   }, []);
 
