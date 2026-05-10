@@ -21,8 +21,8 @@ export default function InstructorBio() {
               <Image
                 src={`${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/jubayer.jpg`}
                 alt="Md. Jubayer Hossain"
-                width={200}
-                height={200}
+                width={400}
+                height={400}
                 className="bio-photo"
               />
             </div>

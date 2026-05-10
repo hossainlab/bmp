@@ -53,10 +53,10 @@ export default function TutorialSidebar({ sections }: TutorialSidebarProps) {
   return (
     <div className="hidden lg:block fixed z-20 inset-0 top-[3.8125rem] left-[max(0px,calc(50%-45rem))] right-auto w-[19.5rem] pb-10 px-8 overflow-y-auto">
       <nav className="relative lg:text-sm lg:leading-6 mt-10">
-        <div className="mb-4 text-xs font-semibold uppercase tracking-wider text-slate-400">
+        <div className="mb-4 text-xs font-semibold uppercase tracking-wider text-[var(--text-label)]">
           Contents
         </div>
-        <ul className="space-y-3 border-l border-slate-700">
+        <ul className="space-y-3 border-l border-[var(--border)]">
           {sections.map((section) => (
             <li key={section.id}>
               <a
@@ -64,8 +64,8 @@ export default function TutorialSidebar({ sections }: TutorialSidebarProps) {
                 onClick={(e) => scrollToSection(e, section.id)}
                 className={`block pl-4 -ml-px border-l-2 py-1 transition-colors ${
                   activeSection === section.id
-                    ? "text-cyan-400 border-cyan-400 font-semibold"
-                    : "text-slate-400 border-transparent hover:border-slate-400 hover:text-slate-50"
+                    ? "text-[var(--accent-blue)] border-[var(--accent-blue)] font-semibold"
+                    : "text-[var(--text-muted)] border-transparent hover:border-[var(--text-muted)] hover:text-[var(--text-primary)]"
                 }`}
               >
                 {section.title}
@@ -74,14 +74,14 @@ export default function TutorialSidebar({ sections }: TutorialSidebarProps) {
           ))}
         </ul>
         
-        <div className="mt-10 p-5 bg-gradient-to-br from-cyan-950 to-slate-900 rounded-xl border border-cyan-900">
-          <h4 className="font-semibold text-slate-50 mb-2">Want to learn more?</h4>
-          <p className="text-slate-400 mb-4 text-sm">Join our 12-week intensive mentorship program and master these skills on real-world projects.</p>
+        <div className="mt-10 p-5 bg-[var(--bg-alt)] rounded-xl border border-[var(--border)] shadow-sm">
+          <h4 className="font-semibold text-[var(--text-primary)] mb-2">Want to learn more?</h4>
+          <p className="text-[var(--text-muted)] mb-4 text-sm">Join our 12-week intensive mentorship program and master these skills on real-world projects.</p>
           <a
             href="https://forms.gle/uEvaGfskpwmqdWBX9"
             target="_blank"
             rel="noopener noreferrer"
-            className="block w-full py-2 px-4 bg-cyan-500 hover:bg-cyan-600 text-white text-center rounded-lg font-medium transition-colors"
+            className="block w-full py-2 px-4 bg-[var(--accent-blue)] hover:opacity-90 text-white text-center rounded-lg font-medium transition-all shadow-sm"
           >
             Apply Now
           </a>

@@ -46,9 +46,7 @@ export default function WhatsIncluded() {
         <p className="wi-eyebrow">What&apos;s Included</p>
 
         <h2 className="wi-heading">
-          Everything you need,
-          <br />
-          nothing you don&apos;t
+          What&apos;s Included
         </h2>
         <p className="wi-subtext">
           One enrollment covers the full program experience — tools, support, and materials.

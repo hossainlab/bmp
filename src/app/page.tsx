@@ -2,7 +2,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
 import WhyThisMatters from "@/components/sections/WhyThisMatters";
-import InstructorStory from "@/components/sections/InstructorStory";
 import WhyBeginnersGetStuck from "@/components/sections/WhyBeginnersGetStuck";
 import Solutions from "@/components/sections/Solutions";
 import Curriculum from "@/components/sections/Curriculum";
@@ -20,7 +19,6 @@ export default function Home() {
       <main>
         <Hero />
         <WhyThisMatters />
-        <InstructorStory />
         <WhyBeginnersGetStuck />
         <Solutions />
         <Curriculum />

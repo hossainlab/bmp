@@ -17,9 +17,7 @@ export default function EnrollCTA() {
         <p className="enroll-eyebrow">Enrollment</p>
 
         <h2 className="enroll-heading">
-          Ready to move from consumer
-          <br />
-          <span className="enroll-heading-gradient">to independent researcher?</span>
+          Start Your <span className="enroll-heading-gradient">Journey</span>
         </h2>
 
         <p className="enroll-subtext">

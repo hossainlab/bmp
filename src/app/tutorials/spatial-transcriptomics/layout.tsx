@@ -20,7 +20,7 @@ export default function SpatialTutorialLayout({
   return (
     <>
       <Navbar />
-      <div className="bg-slate-950 min-h-screen pt-24 font-dm-sans">
+      <div className="bg-[var(--bg)] min-h-screen pt-24 font-dm-sans">
         <div className="max-w-[90rem] mx-auto px-4 sm:px-6 md:px-8">
           <TutorialSidebar sections={SECTIONS} />
           <div className="lg:pl-[19.5rem]">

@@ -50,12 +50,10 @@ export default function Solutions() {
         <p className="sol-eyebrow">How This Program Solves It</p>
 
         <h2 className="sol-heading">
-          Everything designed
-          <br />
-          for the absolute beginner
+          Our Solution
         </h2>
         <p className="sol-subtext">
-          Every obstacle has a specific solution built into this program. Here&apos;s how.
+          We built this program to solve every specific bottleneck for beginners.
         </p>
 
         <div className="sol-grid">

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
+import AnnouncementBar from "@/components/layout/AnnouncementBar";
 
 const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-dm-sans", // Keeping variable name to avoid breaking existing styles
-  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter",
+  weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
 });
 
@@ -23,7 +24,6 @@ export default function RootLayout({
     <html
       lang="en"
       className={inter.variable}
-      style={{ fontFamily: "var(--font-dm-sans), sans-serif" }}
       suppressHydrationWarning
     >
       <body className="min-h-screen">

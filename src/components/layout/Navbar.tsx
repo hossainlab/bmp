@@ -1,36 +1,8 @@
 "use client";
 import { useState, useEffect } from "react";
-
 import Link from "next/link";
-
-function HelixIcon({ size = 28 }: { size?: number }) {
-  return (
-    <svg
-      width={size}
-      height={size}
-      viewBox="0 0 32 32"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      style={{ flexShrink: 0 }}
-    >
-      {/* Strand A */}
-      <path d="M7 5 C24 5 8 27 25 27" stroke="#06b6d4" strokeWidth="2.4" strokeLinecap="round"/>
-      {/* Strand B */}
-      <path d="M25 5 C8 5 24 27 7 27" stroke="#14b8a6" strokeWidth="2.4" strokeLinecap="round"/>
-      {/* Rung — upper */}
-      <line x1="13.5" y1="7.5" x2="18.5" y2="7.5" stroke="rgba(255,255,255,0.2)" strokeWidth="1.4" strokeLinecap="round"/>
-      {/* Rung — lower */}
-      <line x1="13.5" y1="24.5" x2="18.5" y2="24.5" stroke="rgba(255,255,255,0.2)" strokeWidth="1.4" strokeLinecap="round"/>
-      {/* Endpoint nodes */}
-      <circle cx="7"  cy="5"  r="2.2" fill="#06b6d4"/>
-      <circle cx="25" cy="5"  r="2.2" fill="#14b8a6"/>
-      <circle cx="25" cy="27" r="2.2" fill="#06b6d4"/>
-      <circle cx="7"  cy="27" r="2.2" fill="#14b8a6"/>
-      {/* Centre crossing node */}
-      <circle cx="16" cy="16" r="2.5" fill="#f8fafc" opacity="0.92"/>
-    </svg>
-  );
-}
+import { Logo } from "@/components/ui/Logo";
+import AnnouncementBar from "./AnnouncementBar";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -48,16 +20,21 @@ export default function Navbar() {
       suppressHydrationWarning
       className="navbar-header"
       style={{
-        background: scrolled ? "rgba(15, 23, 42, 0.92)" : "transparent",
-        borderBottom: scrolled ? "1px solid rgba(51, 65, 85, 0.8)" : "1px solid transparent",
-        backdropFilter: scrolled ? "blur(16px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(16px)" : "none",
+        background: scrolled ? "rgba(255, 255, 255, 0.95)" : "white",
+        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid var(--border)",
+        backdropFilter: scrolled ? "blur(20px)" : "none",
+        WebkitBackdropFilter: scrolled ? "blur(20px)" : "none",
       }}
     >
+      <AnnouncementBar />
       <div className="navbar-inner">
         {/* Logo */}
-        <Link href="/" className="navbar-logo-link">
-          <HelixIcon size={28} />
+        <Link 
+          href="/" 
+          className="navbar-logo-link"
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+        >
+          <Logo size={28} />
           <div>
             <div className="navbar-wordmark">BMP</div>
             <div className="navbar-subtitle">Bioinformatics Mentorship Program</div>
@@ -74,7 +51,7 @@ export default function Navbar() {
           </a>
           <a
             className="navbar-nav-link navbar-schedule-link"
-            href="https://tinyurl.com/bmp-schedule"
+            href="https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

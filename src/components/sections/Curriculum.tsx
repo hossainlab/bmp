@@ -70,11 +70,10 @@ export default function Curriculum() {
         <p className="cur-eyebrow">12-Week Roadmap</p>
 
         <h2 className="cur-heading">
-          A structured journey from research question to publication.
+          12-Week Roadmap
         </h2>
         <p className="cur-subtext">
-          From opening a terminal for the first time to submitting your data to
-          NCBI GEO — every step, every tool, every concept.
+          A structured journey from raw data to a publication-ready manuscript.
         </p>
 
         <div className="cur-list">

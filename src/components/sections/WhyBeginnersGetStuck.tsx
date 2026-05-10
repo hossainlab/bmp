@@ -32,10 +32,10 @@ export default function WhyBeginnersGetStuck() {
       <div className="stuck-inner">
         <p className="stuck-eyebrow">The Real Obstacles</p>
 
-        <h2 className="stuck-heading">Why beginners get stuck</h2>
+        <h2 className="stuck-heading">The Obstacles</h2>
         <p className="stuck-subtext">
-          The biology isn&apos;t the hard part. Here&apos;s what actually blocks
-          researchers from getting started.
+          The biology isn&apos;t the hard part. Here is what actually blocks
+          researchers from starting.
         </p>
 
         <div className="stuck-list">

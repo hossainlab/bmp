@@ -33,11 +33,11 @@ export default function Hero() {
       <div className="hero-keywords" aria-hidden="true">
         {/* Glowing Orbs */}
         <div 
-          className="absolute rounded-full pointer-events-none opacity-[0.15] animate-float-slow"
+          className="absolute rounded-full pointer-events-none opacity-[0.08] animate-float-slow"
           style={{ top: "-10%", left: "-10%", width: "50vw", height: "50vw", minWidth: "400px", minHeight: "400px", background: "var(--accent-blue)", filter: "blur(120px)" }}
         />
         <div 
-          className="absolute rounded-full pointer-events-none opacity-[0.15] animate-float-slow"
+          className="absolute rounded-full pointer-events-none opacity-[0.08] animate-float-slow"
           style={{ bottom: "-10%", right: "-10%", width: "60vw", height: "50vw", minWidth: "400px", minHeight: "400px", background: "var(--accent-green)", filter: "blur(120px)", animationDelay: "2s" }}
         />
 
@@ -64,7 +64,7 @@ export default function Hero() {
       <div className="hero-inner">
         {/* Badge */}
         <div className="flex justify-center mb-8">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-900 text-slate-200 text-sm font-semibold tracking-wide border border-slate-700 shadow-sm transition-all hover:shadow hover:bg-slate-800 hover:border-slate-600 font-dm-sans">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100 text-slate-600 text-sm font-semibold tracking-wide border border-slate-200 shadow-sm transition-all hover:shadow hover:bg-slate-50 hover:border-slate-300 font-dm-sans">
             Over 3,000 researchers trained
             <svg className="w-4 h-4 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
           </div>
@@ -87,9 +87,10 @@ export default function Hero() {
           <Image
             src={`${BASE}/jubayer.jpg`}
             alt="Md. Jubayer Hossain"
-            width={44}
-            height={44}
+            width={120}
+            height={120}
             className="hero-mentor-photo"
+            priority
           />
           <span>
             Mentored by <strong>Md. Jubayer Hossain</strong>

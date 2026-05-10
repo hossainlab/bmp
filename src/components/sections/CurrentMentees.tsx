@@ -111,12 +111,10 @@ export default function CurrentMentees() {
       <div className="cm-header">
         <p className="cm-eyebrow">Current Cohort</p>
         <h2 className="cm-heading">
-          Currently{" "}
-          <em className="cm-heading-em">Enrolled Mentees</em>
+          Current Cohort
         </h2>
         <p className="cm-subtext">
-          Meet the researchers currently building their bioinformatics skills
-          through our structured 1-on-1 mentorship program.
+          Meet the researchers currently building their bioinformatics portfolios.
         </p>
       </div>
 

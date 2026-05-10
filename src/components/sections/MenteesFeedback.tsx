@@ -217,13 +217,9 @@ export default function MenteesFeedback() {
       {/* Section header */}
       <div className="mf-header">
         <p className="mf-eyebrow">Mentee Testimonials</p>
-        <h2 className="mf-heading">
-          Researchers Who{" "}
-          <em className="mf-heading-em">Leveled Up</em>
-        </h2>
+        <h2 className="mf-heading">Mentee Feedback</h2>
         <p className="mf-subtext">
-          Hear directly from mentees across 12+ universities who transformed their
-          research capabilities through structured bioinformatics mentorship.
+          Direct feedback from mentees across 12+ universities who transformed their research.
         </p>
       </div>
 

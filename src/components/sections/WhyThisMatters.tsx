@@ -58,13 +58,9 @@ export default function WhyThisMatters() {
         {/* Label */}
         <p className="wtm-eyebrow">Program Outcomes</p>
 
-        <h2 className="wtm-heading">
-          Transition from data consumer to independent researcher
-        </h2>
+        <h2 className="wtm-heading">Research Independence</h2>
         <p className="wtm-subtext">
-          Whether you&apos;re in academia or industry, the ability to analyze your
-          own sequencing data is rapidly becoming a baseline expectation — not a
-          bonus skill.
+          Computational skills are now a baseline requirement for modern life sciences research.
         </p>
 
         {/* Cards */}
@@ -103,11 +99,9 @@ export default function WhyThisMatters() {
 
         {/* NGS sub-section */}
         <p className="wtm-eyebrow">Why This Matters</p>
-        <h2 className="wtm-heading">NGS analysis is no longer optional</h2>
+        <h2 className="wtm-heading">Critical Skills</h2>
         <p className="wtm-subtext">
-          Sequencing data is generated in labs of every scale. The question is
-          no longer whether your research involves it — it&apos;s whether you can
-          work with it directly.
+          The question is no longer if your research involves NGS data, but whether you can analyze it directly.
         </p>
 
         <div className="wtm-grid">
