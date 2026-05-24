@@ -207,13 +207,13 @@ export default function SingleCellTutorial() {
           </p>
           
           <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-                      <Link 
-                        href="/apply"
-                        className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-colors shadow-sm"
-                      >
-                        Join the Mentorship Program
-                      </Link>
-                    </div>
+            <Link 
+              href="/apply"
+              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-colors shadow-sm"
+            >
+              Join the Mentorship Program
+            </Link>
+            <a 
               href="https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
