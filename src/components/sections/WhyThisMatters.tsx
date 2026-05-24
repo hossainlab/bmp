@@ -4,23 +4,23 @@ import { useState } from "react";
 const cards = [
   {
     num: "01",
-    label: "Computational Independence",
-    title: "Stop waiting. Start analyzing.",
-    body: "By the end of this program, you run your own pipelines, interpret your own results, and make decisions grounded in data — without depending on a collaborator or waiting weeks for someone else's availability.",
+    label: "Strategic Roadmap",
+    title: "A Career Path for Global Research",
+    body: "Receive a complete bioinformatics roadmap tailored for career advancement in international academia and industry. Understand exactly what you need to master to be competitive in USA and European graduate programs.",
     accent: "#2563eb",
   },
   {
     num: "02",
-    label: "A Publication to Your Name",
-    title: "Leave with work you can submit",
-    body: "You don't just learn techniques — you apply them to a real research question and produce a manuscript-ready output. Reproducible code, polished figures, a structured methods section, and a results narrative ready for journal submission.",
+    label: "Publication Pathway",
+    title: "Independent Research Excellence",
+    body: "The program prepares every participant for independent publication. While there is no authorship guarantee, you will master the manuscript writing and data standards required to lead your own research projects.",
     accent: "#059669",
   },
   {
     num: "03",
-    label: "A Researcher Who Can Do Both",
-    title: "Rare, competitive, and in demand",
-    body: "Most researchers are strong on one side. You'll leave this program fluent in both. That combination — deep biological understanding paired with hands-on data analysis — is what separates candidates in applications, fellowships, and hiring.",
+    label: "Reproducible Portfolio",
+    title: "GitHub-Ready Research Assets",
+    body: "Build a complete, end-to-end research portfolio hosted on GitHub. Demonstrate your technical mastery with reproducible code, Nextflow pipelines, and production-grade visualizations to prospective supervisors and employers.",
     accent: "#7c3aed",
   },
 ];

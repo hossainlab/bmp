@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Spatial Transcriptomics | Bioinformatics Mentorship",
   description: "Learn how to map gene expression to tissue architecture using spatial transcriptomics data analysis.",
@@ -100,14 +102,12 @@ export default function SpatialTutorial() {
           </p>
           
           <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://forms.gle/uEvaGfskpwmqdWBX9"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              href="/apply"
               className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-purple-700 bg-white hover:bg-purple-50 transition-colors shadow-sm"
             >
               Apply Now
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -11,8 +11,8 @@ const obstacles = [
   },
   {
     icon: "💻",
-    title: "Personal computers simply can't handle the compute",
-    body: "Genome indexing, alignment, and quantification require significant RAM and storage. These jobs need a server or HPC — and most beginners have no path to one.",
+    title: "The Compute Gap — Personal hardware vs. Production-grade data",
+    body: "Modern genomics requires significant RAM and processing power that standard laptops can't provide. We move you beyond local bottlenecks to professional HPC and Cloud environments.",
   },
   {
     icon: "🗂️",

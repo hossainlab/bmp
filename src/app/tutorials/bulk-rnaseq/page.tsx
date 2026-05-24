@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Bulk RNA-Seq Pipeline | Bioinformatics Mentorship",
   description: "Learn the standard bulk RNA-seq pipeline: QC, alignment, DESeq2 differential expression, and pathway enrichment.",
@@ -105,14 +107,12 @@ export default function BulkRnaSeqTutorial() {
           </p>
           
           <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://forms.gle/uEvaGfskpwmqdWBX9"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link 
+              href="/apply"
               className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-emerald-700 bg-white hover:bg-emerald-50 transition-colors shadow-sm"
             >
               Join the Mentorship Program
-            </a>
+            </Link>
           </div>
         </div>
       </section>

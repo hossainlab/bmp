@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const keywords = [
   { text: "RNA-seq", top: "12%", left: "5%", rotate: "-15deg" },
@@ -72,14 +73,12 @@ export default function Hero() {
 
         {/* Heading */}
         <h1 className="hero-heading">
-          Master <span className="hero-heading-highlight">Bioinformatics.</span>
+          Launch Your <span className="hero-heading-highlight">Bioinformatics</span> Research Career.
         </h1>
 
         {/* Subtitle */}
         <p className="hero-subtitle">
-          An all-in-one, <strong>intensive mentorship program</strong> designed
-          to take you from raw sequencing data to a publication-ready
-          manuscript.
+          A selective, <strong>intensive mentorship</strong> for researchers targeting international PhD programs and high-impact careers in genomics. Go beyond basics to master production-grade pipelines and research independence.
         </p>
 
         {/* Mentor */}
@@ -96,16 +95,6 @@ export default function Hero() {
             Mentored by <strong>Md. Jubayer Hossain</strong>
           </span>
         </div>
-
-        {/* CTA */}
-        <a
-          href="https://forms.gle/uEvaGfskpwmqdWBX9"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hero-cta"
-        >
-          Apply Now
-        </a>
       </div>
     </section>
   );

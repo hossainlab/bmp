@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/ui/SmoothScroll";
-import AnnouncementBar from "@/components/layout/AnnouncementBar";
+import FacebookPixel from "@/components/layout/FacebookPixel";
+import { Suspense } from "react";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bioinformatics Mentorship Program — 12-Week Cancer Genomics & Neurogenomics Research",
+  title: "Bioinformatics Mentorship Program — 12-Week Intensive Research Mentorship",
   description:
-    "An intensive 12-week mentorship program designed for undergraduate and graduate students to conduct independent research in cancer genomics or neurogenomics. Master bulk RNA-seq and multi-omics analysis, build a publication-ready research portfolio, and launch your scientific career under expert guidance from Md. Jubayer Hossain.",
+    "An intensive 12-week mentorship program designed for researchers to conduct independent, high-impact bioinformatics research across any disease area. Master production-grade pipelines, build a publication-ready portfolio, and launch your scientific career under expert guidance from Md. Jubayer Hossain.",
 };
 
 export default function RootLayout({
@@ -24,9 +25,11 @@ export default function RootLayout({
     <html
       lang="en"
       className={inter.variable}
-      suppressHydrationWarning
     >
       <body className="min-h-screen">
+        <Suspense fallback={null}>
+          <FacebookPixel />
+        </Suspense>
         <SmoothScroll />
         {children}
       </body>

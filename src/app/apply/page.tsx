@@ -1,0 +1,97 @@
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import RegisterForm from "@/components/sections/RegisterForm";
+
+export const metadata = {
+  title: "Apply — Bioinformatics Mentorship Program",
+  description: "Register for the 12-week intensive bioinformatics research mentorship program.",
+};
+
+export default function ApplyPage() {
+  return (
+    <>
+      <Navbar />
+      <main className="apply-page">
+        <section className="apply-hero">
+          <div className="apply-hero-inner">
+            <h1 className="apply-title">Start Your Research Journey</h1>
+            <p className="apply-subtitle">
+              Apply for Cohort 02 (July–September 2026). <br />
+              Join a selective group of researchers mastering production-grade bioinformatics.
+            </p>
+          </div>
+        </section>
+
+        <section className="apply-form-section">
+          <div className="apply-container">
+            <div className="apply-card">
+              <div className="apply-card-header">
+                <h2>Mentorship Registration</h2>
+                <p>Please provide accurate details about your academic and research background.</p>
+              </div>
+              <RegisterForm />
+            </div>
+            
+            <div className="apply-sidebar">
+              <div className="apply-info-box">
+                <h3>Selection Process</h3>
+                <div className="apply-deadline-sidebar">
+                  Applications close on <strong>June 15</strong>
+                </div>
+                <ol>
+                  <li>
+                    <strong>Application Review:</strong> 
+                    <span className="block text-xs mt-1 text-slate-500">No payment is required at this stage. We evaluate your research alignment and academic background.</span>
+                  </li>
+                  <li>
+                    <strong>Info Session:</strong> 
+                    <span className="block text-xs mt-1 text-slate-500">Shortlisted candidates join a 30-min fit check. This is a two-way evaluation of your technical competency and readiness.</span>
+                  </li>
+                  <li>
+                    <strong>Enrollment:</strong> 
+                    <span className="block text-xs mt-1 text-slate-500">If selected and you agree to all mentorship policies, you will receive the enrollment link.</span>
+                  </li>
+                </ol>
+              </div>
+
+              <div className="apply-info-box accent">
+                <div className="apply-accent-label">Investment</div>
+                <h3>Financial Transparency</h3>
+                
+                <div className="apply-price-display">
+                  <span className="apply-price-value">10,200 BDT</span>
+                  <span className="apply-price-period">/ per month</span>
+                </div>
+
+                <ul className="apply-price-list">
+                  <li>
+                    <span className="apply-dot"></span>
+                    No application fee or upfront cost
+                  </li>
+                  <li>
+                    <span className="apply-dot"></span>
+                    Payments due by the <strong>5th</strong> of each month
+                  </li>
+                  <li>
+                    <span className="apply-dot"></span>
+                    Standard non-negotiable fee
+                  </li>
+                </ul>
+                
+                <p className="apply-price-note">
+                  Fit check and info session are 100% free of charge.
+                </p>
+              </div>
+
+              <div className="apply-info-box warning">
+                <h3>12-Week Commitment</h3>
+                <p>This program requires 10-12 hours of independent work per week. Ensure you can commit before applying.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}

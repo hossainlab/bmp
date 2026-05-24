@@ -2,31 +2,29 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Logo } from "@/components/ui/Logo";
-import AnnouncementBar from "./AnnouncementBar";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [mounted, setHasMounted] = useState(false);
 
   useEffect(() => {
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setScrolled(window.scrollY > 20);
+    setHasMounted(true);
     const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll();
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
     <header
-      suppressHydrationWarning
       className="navbar-header"
       style={{
-        background: scrolled ? "rgba(255, 255, 255, 0.95)" : "white",
-        borderBottom: scrolled ? "1px solid var(--border)" : "1px solid var(--border)",
-        backdropFilter: scrolled ? "blur(20px)" : "none",
-        WebkitBackdropFilter: scrolled ? "blur(20px)" : "none",
+        background: mounted && scrolled ? "rgba(255, 255, 255, 0.95)" : (mounted && !scrolled ? "white" : "white"),
+        borderBottom: "1px solid var(--border)",
+        backdropFilter: mounted && scrolled ? "blur(20px)" : "none",
+        WebkitBackdropFilter: mounted && scrolled ? "blur(20px)" : "none",
       }}
     >
-      <AnnouncementBar />
       <div className="navbar-inner">
         {/* Logo */}
         <Link 
@@ -43,12 +41,18 @@ export default function Navbar() {
 
         {/* Right side */}
         <div className="navbar-right">
-          <a
+          <Link
             className="navbar-nav-link"
             href="/tutorials"
           >
             Tutorials
-          </a>
+          </Link>
+          <Link
+            className="navbar-nav-link"
+            href="/resources"
+          >
+            Resources
+          </Link>
           <a
             className="navbar-nav-link navbar-schedule-link"
             href="https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing"
@@ -57,14 +61,18 @@ export default function Navbar() {
           >
             Schedule
           </a>
-          <a
+          <Link
+            className="navbar-nav-link"
+            href="/policies"
+          >
+            Policies
+          </Link>
+          <Link
             className="navbar-cta"
-            href="https://forms.gle/uEvaGfskpwmqdWBX9"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/apply"
           >
             Apply Now →
-          </a>
+          </Link>
         </div>
       </div>
     </header>

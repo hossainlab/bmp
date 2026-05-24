@@ -1,120 +1,247 @@
-"use client";
-import { useState } from "react";
+import { FC } from "react";
 
 
 const sessions = [
   {
-    num: "Weeks 1-2",
-    category: "Literature Review & Data Acquisition",
-    title: "Define your research question and select datasets",
-    body: "Start with a compelling research gap in cancer genomics or neurogenomics. Mine TCGA, GEO, and GTEx databases to identify publicly available datasets matching your hypothesis. Review key papers and prepare your experimental design document.",
-    tags: ["Research design", "TCGA/GEO mining", "Literature review", "Hypothesis formulation"],
+    week: "Week 1",
+    topics: [
+      { 
+        num: "01",
+        title: "Bioinformatics Workflow Setup", 
+        type: "Environment Setup",
+        desc: "Build a production-grade foundation. Master environment isolation to ensure your research is reproducible across any lab cluster."
+      },
+      { 
+        num: "02",
+        title: "Mastering Linux for Bioinformatics", 
+        type: "Linux",
+        desc: "Gain the primary skill for computational biology. Navigate remote servers and automate heavy processing tasks with confidence."
+      }
+    ]
   },
   {
-    num: "Week 2-3",
-    category: "Environment Setup & Tool Installation",
-    title: "Configure your computational workspace",
-    body: "Set up Linux environment, configure conda, install Bioconductor, DESeq2, Seurat, and visualization packages. Download reference genomes and annotation files. Ensure reproducibility with version-locked environments.",
-    tags: ["Linux", "conda", "Bioconductor", "Docker optional"],
+    week: "Week 2",
+    topics: [
+      { 
+        num: "03",
+        title: "Getting Started with Slurm (HPC)", 
+        type: "HPC",
+        desc: "Learn to handle massive datasets. Master job submission on High-Performance Computing clusters—a prerequisite for top-tier PhD labs."
+      },
+      { 
+        num: "04",
+        title: "HPC Data Management", 
+        type: "HPC",
+        desc: "Professional data standards. Learn secure transfer and sharing protocols used in collaborative international research projects."
+      }
+    ]
   },
   {
-    num: "Week 3-4",
-    category: "Data Preprocessing & Quality Control",
-    title: "Raw reads to clean count matrices",
-    body: "QC with FastQC, alignment with STAR or Salmon, quantification with featureCounts. Normalize counts (TMM, TPM, or CPM). Generate sample-level QC reports (library size, rRNA contamination, alignment rates).",
-    tags: ["FastQC", "STAR/Salmon", "featureCounts", "MultiQC"],
+    week: "Week 3",
+    topics: [
+      { 
+        num: "05",
+        title: "Portable Tools with Docker", 
+        type: "Docker",
+        desc: "End dependency hell. Containerize your analysis so it runs identically on your laptop, a server, or a cloud provider."
+      },
+      { 
+        num: "06",
+        title: "Nextflow and nf-core", 
+        type: "Nextflow",
+        desc: "Master industry-standard pipelines. Build scalable, fault-tolerant workflows that are the gold standard in modern genomics."
+      }
+    ]
   },
   {
-    num: "Week 5",
-    category: "MIDPOINT CHECK",
-    title: "Mentor review & progress assessment",
-    body: "Present your quality control outputs, data exploration plots, and initial questions. Get feedback on analysis direction. Ensure all preprocessing steps are reproducible and documented.",
-    tags: ["Progress check", "Code review", "Direction refinement"],
+    week: "Week 4",
+    topics: [
+      { 
+        num: "07",
+        title: "Python for Bioinformatics", 
+        type: "Scientific Programming",
+        desc: "Go beyond basic scripts. Build custom tools to parse unique biological formats and integrate AI models into your research."
+      },
+      { 
+        num: "08",
+        title: "R for Bioinformatics", 
+        type: "Scientific Programming",
+        desc: "The language of statistical genomics. Master data wrangling and publication-quality visualization for high-impact journals."
+      }
+    ]
   },
   {
-    num: "Weeks 5-7",
-    category: "Primary Analysis Phase 1 (Differential Expression)",
-    title: "Statistical testing and gene discovery",
-    body: "Perform differential expression analysis (DESeq2 or limma-voom). PCA, batch effect detection. Extract DEG lists with adjusted p-values and fold changes. Generate volcano plots and heatmaps for top differentially expressed genes.",
-    tags: ["DESeq2", "limma", "PCA", "Volcano plots", "Heatmaps"],
+    week: "Week 5",
+    topics: [
+      { 
+        num: "09",
+        title: "Variant Calling with GATK", 
+        type: "Genomics & WGS/WES",
+        desc: "Identify disease-causing mutations. Learn the Broad Institute's best-practice workflows for germline and somatic discovery."
+      },
+      { 
+        num: "10",
+        title: "Loci Discovery with PLINK", 
+        type: "Genomics & WGS/WES",
+        desc: "Statistical genetics mastery. Perform large-scale association studies to link genetic variants to complex phenotypes."
+      }
+    ]
   },
   {
-    num: "Weeks 7-9",
-    category: "Primary Analysis Phase 2 (Advanced)",
-    title: "Pathway, trajectory, and network analysis",
-    body: "Pathway enrichment (GO, KEGG), GSEA, network analysis (STRING), or trajectory inference for single-cell data. Identify biological themes and validate top candidates with external data.",
-    tags: ["GO/KEGG", "GSEA", "Network analysis", "Seurat (if sc-RNA)"],
+    week: "Week 6",
+    topics: [
+      { 
+        num: "11",
+        title: "RNAseq: Fastq to Counts", 
+        type: "Bulk RNA-seq",
+        desc: "Upstream processing. Master quality control and high-speed alignment—the engine room of transcriptomic research."
+      },
+      { 
+        num: "12",
+        title: "RNAseq: Differential Expression", 
+        type: "Bulk RNA-seq",
+        desc: "Downstream analysis. Master DESeq2/edgeR to find biological signal in noisy data and identify key disease biomarkers."
+      }
+    ]
   },
   {
-    num: "Weeks 9-11",
-    category: "Visualization & Figure Generation",
-    title: "Publication-ready outputs",
-    body: "Create high-quality figures in ggplot2/seaborn: pathway networks, expression profiles, survival correlations (if available). Prepare supplementary figures, figure legends, and data tables. Build a reproducible figure-generation script.",
-    tags: ["ggplot2", "Figure design", "Publication standards"],
+    week: "Week 7",
+    topics: [
+      { 
+        num: "13",
+        title: "Pathways & Functional Insights", 
+        type: "Bulk RNA-seq",
+        desc: "Biological interpretation. Use GSEA and Over-Representation Analysis to turn gene lists into actionable biological mechanisms."
+      },
+      { 
+        num: "14",
+        title: "Meta-Analysis of Public Data", 
+        type: "Bulk RNA-seq",
+        desc: "Leverage global resources. Mine GEO and TCGA to validate your findings and increase the statistical power of your research."
+      }
+    ]
   },
   {
-    num: "Weeks 11-12",
-    category: "Interpretation & Final Presentation",
-    title: "From data to narrative — thesis/manuscript prep",
-    body: "Draft manuscript sections (Methods, Results, Discussion). Contextualize findings against the literature. Create a final presentation of your complete analysis pipeline, key findings, and next steps. Submit for journal consideration with mentor guidance.",
-    tags: ["Manuscript drafting", "Methods section", "Results interpretation"],
+    week: "Week 8",
+    topics: [
+      { 
+        num: "15",
+        title: "Single-Cell: Fastq to Matrix", 
+        type: "Single-Cell RNA-seq",
+        desc: "The future of genomics. Master CellRanger and pseudo-bulk processing for high-resolution cellular maps."
+      },
+      { 
+        num: "16",
+        title: "Single-Cell: QC & Filtering", 
+        type: "Single-Cell RNA-seq",
+        desc: "Ensure data integrity. Learn to identify and remove doublets and low-quality cells to prevent false discoveries."
+      }
+    ]
+  },
+  {
+    week: "Week 9",
+    topics: [
+      { 
+        num: "17",
+        title: "Integration & Clustering", 
+        type: "Single-Cell RNA-seq",
+        desc: "Batch effect correction. Merge multiple datasets and identify unique cell populations across different biological conditions."
+      },
+      { 
+        num: "18",
+        title: "Cell Type Identification", 
+        type: "Single-Cell RNA-seq",
+        desc: "Annotation expertise. Use reference-based and marker-based methods to accurately name clusters—a critical lab skill."
+      }
+    ]
+  },
+  {
+    week: "Week 10",
+    topics: [
+      { 
+        num: "19",
+        title: "Cell-Specific Dynamics", 
+        type: "Single-Cell RNA-seq",
+        desc: "Advanced single-cell logic. Perform proportion testing and trajectory inference to see how cell states change over time."
+      },
+      { 
+        num: "20",
+        title: "Harmonized Single-Cell Data", 
+        type: "Single-Cell RNA-seq",
+        desc: "Public data mastery. Learn to integrate your experimental data with large-scale human cell atlases."
+      }
+    ]
+  },
+  {
+    week: "Week 11",
+    topics: [
+      { 
+        num: "21",
+        title: "AI for Life Sciences: Intro", 
+        type: "AI",
+        desc: "The new paradigm. Learn how Large Language Models and AI agents are revolutionizing bioinformatics productivity."
+      },
+      { 
+        num: "22",
+        title: "Machine Learning Models", 
+        type: "AI",
+        desc: "Predictive biology. Master scikit-learn for classification and regression tasks on high-dimensional omics data."
+      }
+    ]
+  },
+  {
+    week: "Week 12",
+    topics: [
+      { 
+        num: "23",
+        title: "Deep Learning Models", 
+        type: "AI",
+        desc: "Advanced neural networks. Explore how transformer architectures are used for protein folding and sequence prediction."
+      },
+      { 
+        num: "24",
+        title: "Scientific Writing", 
+        type: "Writing",
+        desc: "Get published. Learn to write methods and results that meet the rigorous standards of international peer-reviewed journals."
+      }
+    ]
   },
 ];
 
 export default function Curriculum() {
-  const [open, setOpen] = useState<number | null>(null);
-
   return (
     <section id="curriculum" className="cur-section">
       <div className="cur-inner">
-        <p className="cur-eyebrow">12-Week Roadmap</p>
+        <p className="cur-eyebrow">Program Timeline</p>
 
         <h2 className="cur-heading">
-          12-Week Roadmap
+          The 12-Week Roadmap
         </h2>
         <p className="cur-subtext">
-          A structured journey from raw data to a publication-ready manuscript.
+          A rigorous, session-by-session progression from computational foundations to advanced single-cell omics and AI.
         </p>
 
-        <div className="cur-list">
-          {sessions.map((s, i) => {
-            const isOpen = open === i;
-            return (
-              <div
-                key={i}
-                className={`cur-item ${isOpen ? "cur-item-open" : "cur-item-closed"}`}
-              >
-                <button
-                  onClick={() => setOpen(isOpen ? null : i)}
-                  className="cur-trigger"
-                >
-                  <span className="cur-session-badge">SESSION {s.num}</span>
-                  <span className="cur-trigger-meta">
-                    <span className="cur-category">{s.category}</span>
-                    <span className="cur-title">{s.title}</span>
-                  </span>
-                  <span
-                    className={`cur-chevron ${isOpen ? "cur-chevron-open" : "cur-chevron-closed"}`}
-                  >
-                    +
-                  </span>
-                </button>
-
-                {isOpen && (
-                  <div className="cur-body">
-                    <p className="cur-body-text">{s.body}</p>
-                    <div className="cur-tags">
-                      {s.tags.map((t) => (
-                        <span key={t} className="cur-tag">
-                          {t}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                )}
+        <div className="cur-grid">
+          {sessions.map((s, i) => (
+            <div key={i} className="cur-card">
+              <div className="cur-card-header">
+                <span className="cur-week-badge">{s.week}</span>
               </div>
-            );
-          })}
+              <div className="cur-card-content">
+                {s.topics.map((t, j) => (
+                  <div key={j} className="cur-topic-item">
+                    <div className="cur-topic-meta">
+                      <span className="cur-session-num">Session {t.num}</span>
+                      <span className="cur-topic-type">{t.type}</span>
+                    </div>
+                    <div className="cur-topic-title">{t.title}</div>
+                    <p className="cur-topic-desc">{t.desc}</p>
+                    {j < s.topics.length - 1 && <div className="cur-topic-divider" />}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

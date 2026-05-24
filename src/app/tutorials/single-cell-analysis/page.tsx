@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const metadata = {
   title: "Single-Cell Analysis Best Practices | Bioinformatics Mentorship",
   description: "End-to-end tutorial on single-cell RNA sequencing analysis best practices. Learn QC, normalization, clustering, trajectory inference, and more.",
@@ -205,15 +207,13 @@ export default function SingleCellTutorial() {
           </p>
           
           <div className="relative z-10 flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://forms.gle/uEvaGfskpwmqdWBX9"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-colors shadow-sm"
-            >
-              Join the Mentorship Program
-            </a>
-            <a 
+                      <Link 
+                        href="/apply"
+                        className="inline-flex items-center justify-center px-8 py-3.5 border border-transparent text-base font-bold rounded-lg text-blue-700 bg-white hover:bg-blue-50 transition-colors shadow-sm"
+                      >
+                        Join the Mentorship Program
+                      </Link>
+                    </div>
               href="https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"

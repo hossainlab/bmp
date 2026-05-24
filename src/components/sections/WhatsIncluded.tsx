@@ -4,36 +4,36 @@ import { useState } from "react";
 
 const items = [
   {
-    title: "8 live mentorship sessions",
-    sub: "Monthly 2-hour sessions covering theory, logic, and troubleshooting",
+    title: "Complete Bioinformatics Roadmap",
+    sub: "A strategic career path for international academia and industry research roles",
   },
   {
-    title: "Proprietary analysis pipelines",
-    sub: "Pre-developed R/Python/Linux workflows for cancer genomics and neurogenomics",
+    title: "Reproducible Research Portfolio",
+    sub: "End-to-end projects hosted on GitHub demonstrating production-grade code",
   },
   {
-    title: "Complete research portfolio",
-    sub: "End-to-end bioinformatics project with reproducible GitHub repository",
+    title: "Nextflow & Docker Mastery",
+    sub: "Full training on containerization and scalable workflow management",
   },
   {
-    title: "Publication pathway guidance",
-    sub: "Mentor review of abstract, methods, results, and manuscript preparation",
+    title: "Publication Pathway Guidance",
+    sub: "Rigorous preparation for independent publication and earned authorship on projects",
   },
   {
-    title: "High-performance computing setup",
-    sub: "Guidance on cloud environments and local HPC configuration",
+    title: "AI Productivity Training",
+    sub: "Hands-on mastery of Claude Code and Gemini CLI for accelerated research",
   },
   {
-    title: "Dataset mining expertise",
-    sub: "Hands-on guidance accessing TCGA, GEO, GTEx, and SRA databases",
+    title: "Grad Program Readiness",
+    sub: "Strategic preparation for MS/PhD applications in USA and European labs",
   },
   {
-    title: "Publication-quality figures",
-    sub: "Suite of reproducible visualizations: volcano plots, heatmaps, networks, survival curves",
+    title: "Production-Quality Figures",
+    sub: "Suite of reproducible visualizations meeting international journal standards",
   },
   {
-    title: "Certificate of completion + Letter of Recommendation",
-    sub: "Professional credentials for graduate school and industry applications",
+    title: "Professional Credentials",
+    sub: "Certificate of completion recognized for its technical intensity and rigor",
   },
 ];
 
@@ -63,7 +63,19 @@ export default function WhatsIncluded() {
               onMouseEnter={() => setHoveredIndex(i)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <span className="wi-check">✓</span>
+              <div className="wi-check-box">
+                <svg 
+                  className="wi-check-icon" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="3" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round"
+                >
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
               <div>
                 <div className="wi-item-title">{item.title}</div>
                 <div className="wi-item-sub">{item.sub}</div>
