@@ -78,7 +78,15 @@ export default function ResourcesPage() {
   );
 }
 
-function ResourceCard({ item }: { item: any }) {
+interface ResourceItem {
+  name: string;
+  description: string;
+  url: string;
+  subcategory: string;
+  tags: string[];
+}
+
+function ResourceCard({ item }: { item: ResourceItem }) {
   return (
     <a 
       href={item.url} 
@@ -94,7 +102,7 @@ function ResourceCard({ item }: { item: any }) {
       </div>
       <p className="res-lib-card-desc">{item.description}</p>
       <div className="res-lib-card-tags">
-        {item.tags.map((tag: string) => (
+        {item.tags.map((tag) => (
           <span key={tag} className="res-lib-tag">#{tag}</span>
         ))}
       </div>

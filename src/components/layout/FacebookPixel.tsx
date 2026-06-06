@@ -11,8 +11,8 @@ export default function FacebookPixel() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
-    if (typeof window !== "undefined" && (window as any).fbq) {
-      (window as any).fbq("track", "PageView");
+    if (typeof window !== "undefined" && (window as unknown as { fbq: (cmd: string, evt: string) => void }).fbq) {
+      (window as unknown as { fbq: (cmd: string, evt: string) => void }).fbq("track", "PageView");
     }
   }, [pathname, searchParams]);
 

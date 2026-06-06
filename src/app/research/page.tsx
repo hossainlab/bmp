@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ResearchAssistant from "@/components/sections/ResearchAssistant";
 
 export const metadata = {
   title: "Research — Bioinformatics Mentorship Program",
@@ -70,8 +71,8 @@ export default function ResearchPage() {
         <section className="res-areas-section">
           <div className="res-container">
             <div className="res-grid">
-              {areas.map((area, i) => (
-                <div key={i} className="res-card">
+              {areas.map((area) => (
+                <div key={area.title} className="res-card">
                   <div className="res-card-icon">{area.icon}</div>
                   <h3 className="res-card-title">{area.title}</h3>
                   <p className="res-card-desc">{area.desc}</p>
@@ -86,7 +87,7 @@ export default function ResearchPage() {
           <div className="res-container">
             <h2 className="res-section-heading">Core Computational Workflows</h2>
             <div className="res-workflow-list">
-              {workflows.map((wf, i) => (
+              {workflows.map((wf) => (
                 <div key={wf.num} className="res-wf-item">
                   <div className="res-wf-meta">
                     <span className="res-wf-num">Workflow {wf.num}</span>
@@ -128,6 +129,44 @@ export default function ResearchPage() {
             </div>
           </div>
         </section>
+
+        {/* Research Tracks */}
+        <section className="res-tracks-section">
+          <div className="res-container">
+            <p className="res-eyebrow" style={{ textAlign: "center" }}>Active Research Programs</p>
+            <h2 className="res-section-heading">Research Tracks</h2>
+            <div className="res-tracks-grid">
+              <div className="res-track-card">
+                <div className="res-track-icon">🧬</div>
+                <h3 className="res-track-title">Track 1: Cancer Genomics</h3>
+                <p className="res-track-desc">
+                  Integrative analysis of tumor transcriptomes, somatic mutations, and immune microenvironments to identify prognostic biomarkers and therapeutic targets across multiple cancer types.
+                </p>
+                <ul className="res-track-focus">
+                  <li>Tumor subtype classification via bulk &amp; single-cell RNA-Seq</li>
+                  <li>Survival modeling with multi-omics signatures</li>
+                  <li>Immune cell deconvolution &amp; tumor microenvironment profiling</li>
+                  <li>Drug sensitivity prediction using ML/DL pipelines</li>
+                </ul>
+              </div>
+              <div className="res-track-card">
+                <div className="res-track-icon">🧠</div>
+                <h3 className="res-track-title">Track 2: Neurogenomics</h3>
+                <p className="res-track-desc">
+                  Computational dissection of gene expression landscapes in neurological and neurodegenerative disorders to uncover cell-type-specific dysregulation and novel drug targets.
+                </p>
+                <ul className="res-track-focus">
+                  <li>Single-cell atlas construction of brain regions</li>
+                  <li>Differential expression &amp; pathway analysis in neurodegeneration</li>
+                  <li>Gene regulatory network inference in neural cell types</li>
+                  <li>Cross-disorder comparative transcriptomics</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <ResearchAssistant />
       </main>
       <Footer />
     </>

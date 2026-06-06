@@ -11,6 +11,7 @@ import WhatsIncluded from "@/components/sections/WhatsIncluded";
 import InstructorBio from "@/components/sections/InstructorBio";
 import Publications from "@/components/sections/Publications";
 import CurrentMentees from "@/components/sections/CurrentMentees";
+import ResearchAssistant from "@/components/sections/ResearchAssistant";
 import MenteesFeedback from "@/components/sections/MenteesFeedback";
 import EnrollCTA from "@/components/sections/EnrollCTA";
 
@@ -30,6 +31,7 @@ export default function Home() {
         <InstructorBio />
         <Publications />
         <CurrentMentees />
+        <ResearchAssistant />
         <MenteesFeedback />
         <EnrollCTA />
       </main>

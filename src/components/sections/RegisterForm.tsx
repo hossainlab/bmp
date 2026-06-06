@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 
 export default function RegisterForm() {
   const [pending, setPending] = useState(false);
   const [success, setSuccess] = useState(false);
   const [agreed, setAgreed] = useState(false);
+  const leadFired = useRef(false);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -16,7 +17,7 @@ export default function RegisterForm() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-      const response = await fetch("https://script.google.com/macros/s/AKfycbxwu5X0SbE6ODDomRtT6qD5KjbACRQPFmleDXdMu2gFbJKYxc1nkpmcpZBbH6Qj0g4/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbxwu5X0SbE6ODDomRtT6qD5KjbACRQPFmleDXdMu2gFbJKYxc1nkpmcpZBbH6Qj0g4/exec", {
         method: "POST",
         mode: "no-cors", // Required for Google Apps Script
         headers: {
@@ -25,9 +26,15 @@ export default function RegisterForm() {
         body: JSON.stringify(data),
       });
 
-      // Track Facebook Lead Event
-      if (typeof window !== 'undefined' && (window as any).fbq) {
-        (window as any).fbq('track', 'Lead');
+      // Track Facebook Lead Event — fire exactly once per successful submission
+      if (!leadFired.current && typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
+        const email = (data.email as string || '').trim().toLowerCase();
+        const phone = (data.phone as string || '').replace(/[^0-9]/g, '');
+        (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'Lead', {}, {
+          em: email,
+          ph: phone,
+        });
+        leadFired.current = true;
       }
 
       // Since mode is 'no-cors', we won't get a standard response object

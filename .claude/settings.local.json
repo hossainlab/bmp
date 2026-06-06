@@ -33,7 +33,9 @@
       "WebFetch(domain:jbengler.de)",
       "Bash(start npm:*)",
       "Bash(curl:*)",
-      "WebFetch(domain:localhost)"
+      "WebFetch(domain:localhost)",
+      "Bash(pip install:*)",
+      "Bash(python:*)"
     ]
   }
 }

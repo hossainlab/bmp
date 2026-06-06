@@ -1,72 +1,144 @@
 <svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
   <!-- Background -->
   <rect width="1080" height="1080" fill="#FFFFFF"/>
-  <rect width="1080" height="340" fill="#F8FAFC"/>
+  <rect width="1080" height="300" fill="#F8FAFC"/>
   
   <!-- Decorative Helix Patterns -->
   <path opacity="0.05" d="M0 150C200 150 100 450 300 450C500 450 400 150 600 150C800 150 700 450 900 450C1100 450 1000 150 1200 150" stroke="#2563EB" stroke-width="60" stroke-linecap="round"/>
   <path opacity="0.05" d="M0 450C200 450 100 150 300 150C500 150 400 450 600 450C800 450 700 150 900 150C1100 150 1000 450 1200 450" stroke="#10B981" stroke-width="60" stroke-linecap="round"/>
 
   <!-- Top Logo & Brand -->
-  <g transform="translate(60, 50)">
-    <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 L16 2Z" transform="scale(2.5)" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" />
-    <path d="M16 8 L23 12 V20 L16 24 L9 20 V12 L16 8Z" transform="scale(2.5)" stroke="#10B981" stroke-width="2" stroke-linejoin="round" />
-    <circle cx="40" cy="40" r="7.5" fill="#2563EB" />
-    <circle cx="22.5" cy="30" r="5" fill="#10B981" />
-    <circle cx="57.5" cy="50" r="5" fill="#10B981" />
-    <text x="90" y="45" font-family="Inter, sans-serif" font-weight="800" font-size="40" fill="#0F172A">BMP</text>
-    <text x="90" y="70" font-family="Inter, sans-serif" font-weight="400" font-size="16" fill="#64748B">Bioinformatics Mentorship Program</text>
+  <g transform="translate(60, 40)">
+    <!-- Official BMP Logo Icon -->
+    <g transform="scale(2.2)">
+      <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 L16 2Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" />
+      <path d="M16 8 L23 12 V20 L16 24 L9 20 V12 L16 8Z" stroke="#10B981" stroke-width="2" stroke-linejoin="round" />
+      <circle cx="16" cy="16" r="3" fill="#2563EB" />
+      <circle cx="9" cy="12" r="2" fill="#10B981" />
+      <circle cx="23" cy="20" r="2" fill="#10B981" />
+      <circle cx="9" cy="20" r="2" fill="#10B981" />
+      <circle cx="23" cy="12" r="2" fill="#10B981" />
+      <path d="M9 12 L16 16 L23 20" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M9 20 L16 16 L23 12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" />
+    </g>
+    <text x="90" y="45" font-family="sans-serif" font-weight="800" font-size="36" fill="#0F172A">BMP</text>
+    <text x="90" y="68" font-family="sans-serif" font-weight="400" font-size="14" fill="#64748B">Bioinformatics Mentorship Program</text>
   </g>
 
-  <!-- Main Heading (More compact for square) -->
-  <text x="60" y="200" font-family="Inter, sans-serif" font-weight="900" font-size="64" fill="#0F172A">Master <tspan fill="#2563EB">Bioinformatics.</tspan></text>
+  <!-- Main Heading -->
+  <text x="60" y="160" font-family="sans-serif" font-weight="900" font-size="44" fill="#0F172A">Launch Your <tspan fill="#2563EB">Bioinformatics</tspan></text>
+  <text x="60" y="215" font-family="sans-serif" font-weight="900" font-size="44" fill="#0F172A">Research Career.</text>
   
   <!-- Cohort Announcement Badge -->
-  <rect x="60" y="240" width="860" height="70" rx="35" fill="#2563EB" />
-  <text x="490" y="286" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="28" fill="#FFFFFF">Application Open: Cohort 02 (July–September 2026)</text>
+  <rect x="60" y="250" width="960" height="60" rx="30" fill="#2563EB" />
+  <text x="540" y="288" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">Application Open: Cohort 02 (July–Sept 2026) | Deadline: June 15</text>
+  
+  <!-- Payment Notice -->
+  <text x="540" y="340" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#2563EB">No Payment Required Before Fit Check</text>
 
-  <!-- Content Section -->
-  <g transform="translate(60, 390)">
-    <text y="0" font-family="Inter, sans-serif" font-weight="700" font-size="32" fill="#0F172A">Intensive 12-Week Research Mentorship</text>
-    
-    <!-- Refined 'What You Get' Section -->
-    <g transform="translate(0, 80)">
-      <text y="0" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#2563EB">What You Get:</text>
-      
-      <g transform="translate(0, 45)">
-        <circle cx="10" cy="-8" r="6" fill="#2563EB" />
-        <text x="30" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="24" fill="#1E293B">1-on-1 Personalized Research Guidance</text>
+  <!-- Section 1: Core Outcomes -->
+  <g transform="translate(60, 400)">
+    <text y="0" font-family="sans-serif" font-weight="800" font-size="26" fill="#0F172A">Core Outcomes</text>
+    <g transform="translate(0, 35)">
+      <circle cx="8" cy="-8" r="5" fill="#2563EB" />
+      <text x="25" y="0" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">MS/PhD Readiness: <tspan fill="#64748B" font-weight="400">Preparation for your MS/PhD journey in bioinformatics.</tspan></text>
+      <circle cx="8" cy="32" r="5" fill="#2563EB" />
+      <text x="25" y="40" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">Production Mastery: <tspan fill="#64748B" font-weight="400">A self-built, containerized bioinformatics pipeline running on Linux/HPC.</tspan></text>
+      <circle cx="8" cy="72" r="5" fill="#2563EB" />
+      <text x="25" y="80" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">RA Recruitment Path: <tspan fill="#64748B" font-weight="400">Eligibility for our bioinformatics lab based on your final capstone score.</tspan></text>
+    </g>
+  </g>
+
+  <!-- Section 2: Technical Mastery Stack (Placeholders) -->
+  <g transform="translate(60, 560)">
+    <text y="0" font-family="sans-serif" font-weight="800" font-size="24" fill="#2563EB">Technical Mastery Stack</text>
+    <g transform="translate(0, 30)">
+      <!-- Linux/HPC -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="35" y="12" width="30" height="30" href="https://www.vectorlogo.zone/logos/linux/linux-icon.svg" />
+        <g transform="translate(80, 12)">
+          <rect width="30" height="30" rx="5" fill="#1E293B" />
+          <path d="M8 10 L12 15 L8 20" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          <line x1="13" y1="22" x2="21" y2="22" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" />
+        </g>
+        <text x="72.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="10" fill="#64748B">LINUX/HPC</text>
       </g>
       
-      <g transform="translate(0, 95)">
-        <circle cx="10" cy="-8" r="6" fill="#2563EB" />
-        <text x="30" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="24" fill="#1E293B">Publication-ready Bioinformatics Analysis</text>
+      <!-- Nextflow -->
+      <g transform="translate(160, 0)">
+        <rect width="165" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="35" y="10" width="40" height="40" href="logos/nextflow.png" />
+        <image x="90" y="10" width="40" height="40" href="logos/nf-core-logo.png" />
+        <text x="82.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="9" fill="#64748B">NEXTFLOW/CORE</text>
       </g>
       
-      <g transform="translate(0, 145)">
-        <circle cx="10" cy="-8" r="6" fill="#2563EB" />
-        <text x="30" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="24" fill="#1E293B">End-to-End Omics Data Analysis Training</text>
+      <!-- Docker -->
+      <g transform="translate(340, 0)">
+        <rect width="145" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="55" y="12" width="35" height="35" href="https://www.vectorlogo.zone/logos/docker/docker-icon.svg" />
+        <text x="72.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="10" fill="#64748B">DOCKER</text>
       </g>
       
-      <g transform="translate(0, 195)">
-        <circle cx="10" cy="-8" r="6" fill="#2563EB" />
-        <text x="30" y="0" font-family="Inter, sans-serif" font-weight="500" font-size="24" fill="#1E293B">Access to Publication-ready Bioinformatics Pipelines</text>
+      <!-- AI Tools -->
+      <g transform="translate(500, 0)">
+        <rect width="145" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="35" y="12" width="30" height="30" href="logos/claude_logo.jpg" />
+        <image x="80" y="12" width="30" height="30" href="logos/gemini-cli.jpg" />
+        <text x="72.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="10" fill="#64748B">AI TOOLS</text>
+      </g>
+      
+      <!-- Git & GitHub -->
+      <g transform="translate(660, 0)">
+        <rect width="165" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="45" y="12" width="32" height="32" href="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" />
+        <image x="85" y="12" width="32" height="32" href="https://www.vectorlogo.zone/logos/github/github-icon.svg" />
+        <text x="82.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="10" fill="#64748B">GIT &amp; GITHUB</text>
+      </g>
+      
+      <!-- R / Python -->
+      <g transform="translate(840, 0)">
+        <rect width="145" height="90" rx="10" fill="#F8FAFC" stroke="#E2E8F0" />
+        <image x="35" y="12" width="30" height="30" href="https://www.vectorlogo.zone/logos/python/python-icon.svg" />
+        <image x="80" y="12" width="30" height="30" href="https://www.vectorlogo.zone/logos/r-project/r-project-icon.svg" />
+        <text x="72.5" y="72" text-anchor="middle" font-family="monospace" font-weight="700" font-size="10" fill="#64748B">R &amp; PYTHON</text>
       </g>
     </g>
   </g>
 
+  <!-- Section 3: Process -->
+  <g transform="translate(60, 720)">
+    <text y="0" font-family="sans-serif" font-weight="800" font-size="24" fill="#0F172A">Enrollment Journey</text>
+    <g transform="translate(0, 45)">
+      <circle cx="15" cy="0" r="15" fill="#2563EB" />
+      <text x="15" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">1</text>
+      <text x="40" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Register</text>
+      <line x1="110" y1="0" x2="140" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="165" cy="0" r="15" fill="#2563EB" />
+      <text x="165" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">2</text>
+      <text x="190" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Review</text>
+      <line x1="260" y1="0" x2="280" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="305" cy="0" r="15" fill="#2563EB" />
+      <text x="305" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">3</text>
+      <text x="330" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Fit Check</text>
+      <line x1="410" y1="0" x2="430" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="455" cy="0" r="15" fill="#2563EB" />
+      <text x="455" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">4</text>
+      <text x="480" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Enroll</text>
+    </g>
+  </g>
+
   <!-- Mentor Footer -->
-  <rect y="840" width="1080" height="240" fill="#0F172A"/>
-  <g transform="translate(60, 885)">
-    <text y="30" font-family="Inter, sans-serif" font-weight="700" font-size="20" fill="#38BDF8">MENTORED BY</text>
-    <text y="75" font-family="Inter, sans-serif" font-weight="800" font-size="40" fill="#FFFFFF">Md. Jubayer Hossain</text>
-    <text y="110" font-family="Inter, sans-serif" font-weight="400" font-size="20" fill="#94A3B8">Founder &amp; CEO, DeepBio Limited</text>
+  <rect y="860" width="1080" height="220" fill="#0F172A"/>
+  <g transform="translate(60, 905)">
+    <text y="20" font-family="sans-serif" font-weight="700" font-size="18" fill="#38BDF8">MENTORED BY</text>
+    <text y="65" font-family="sans-serif" font-weight="900" font-size="40" fill="#FFFFFF">Md. Jubayer Hossain</text>
+    <text y="100" font-family="sans-serif" font-weight="400" font-size="18" fill="#94A3B8">Founder &amp; CEO, DeepBio Limited</text>
     
-    <!-- CTA Button (Side by side with mentor info for square) -->
     <g transform="translate(560, 5)">
-      <rect width="400" height="110" rx="14" fill="#2563EB" />
-      <text x="200" y="50" text-anchor="middle" font-family="Inter, sans-serif" font-weight="900" font-size="32" fill="#FFFFFF">APPLY NOW</text>
-      <text x="200" y="85" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
+      <rect width="400" height="90" rx="14" fill="#2563EB" />
+      <text x="200" y="40" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="30" fill="#FFFFFF">APPLY NOW</text>
+      <text x="200" y="72" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
     </g>
   </g>
 </svg>
