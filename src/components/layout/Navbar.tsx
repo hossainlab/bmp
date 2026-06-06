@@ -51,15 +51,21 @@ export default function Navbar() {
         <div className="navbar-right">
           <Link
             className="navbar-nav-link"
+            href="/resources"
+          >
+            Resources
+          </Link>
+          <Link
+            className="navbar-nav-link"
             href="/tutorials"
           >
             Tutorials
           </Link>
           <Link
             className="navbar-nav-link"
-            href="/resources"
+            href="/research"
           >
-            Resources
+            Join Us
           </Link>
           <a
             className="navbar-nav-link navbar-schedule-link"

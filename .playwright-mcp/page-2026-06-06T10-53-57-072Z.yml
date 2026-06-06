@@ -1,0 +1,203 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BMP Bioinformatics Mentorship Program" [ref=e4] [cursor=pointer]:
+        - /url: /bmp
+        - img [ref=e5]
+        - generic [ref=e15]:
+          - generic [ref=e16]: BMP
+          - generic [ref=e17]: Bioinformatics Mentorship Program
+      - generic [ref=e18]:
+        - link "Resources" [ref=e19] [cursor=pointer]:
+          - /url: /bmp/resources
+        - link "Tutorials" [ref=e20] [cursor=pointer]:
+          - /url: /bmp/tutorials
+        - link "Projects" [ref=e21] [cursor=pointer]:
+          - /url: /bmp/project
+        - link "Join Us" [ref=e22] [cursor=pointer]:
+          - /url: /bmp/research
+        - link "Schedule" [ref=e23] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing
+        - link "Policies" [ref=e24] [cursor=pointer]:
+          - /url: /bmp/policies
+        - link "Apply Now →" [ref=e25] [cursor=pointer]:
+          - /url: /bmp/apply
+  - main [ref=e26]:
+    - generic [ref=e28]:
+      - paragraph [ref=e29]: Research Projects
+      - heading "One-Year Research Programs" [level=1] [ref=e30]
+      - paragraph [ref=e31]: Ambitious, publication-ready research projects that participants contribute to over a full year — building real skills on real data with real impact.
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - text: 🧬
+          - generic [ref=e37]:
+            - heading "1-Year Harmonized Cancer Cell Atlas Program" [level=2] [ref=e38]
+            - paragraph [ref=e39]: 10 Publication-Ready scRNA-seq Cancer Atlases · scVicaANVI Framework · Small Team + HPC
+        - generic [ref=e40]:
+          - generic [ref=e41]: 10Cancer Types
+          - generic [ref=e42]: ~5 wkPer Atlas
+          - generic [ref=e43]: 7Stage Pipeline
+        - generic [ref=e44]:
+          - heading "12-Month Timeline" [level=3] [ref=e45]
+          - generic [ref=e46]:
+            - generic [ref=e47]: M1
+            - generic [ref=e48]: M2
+            - generic [ref=e49]: M3
+            - generic [ref=e50]: M4
+            - generic [ref=e51]: M5
+            - generic [ref=e52]: M6
+            - generic [ref=e53]: M7
+            - generic [ref=e54]: M8
+            - generic [ref=e55]: M9
+            - generic [ref=e56]: M10
+            - generic [ref=e57]: M11
+            - generic [ref=e58]: M12
+          - generic [ref=e59]:
+            - generic [ref=e60]: BRCA (Pilot)
+            - generic [ref=e61]: LUAD
+            - generic [ref=e62]: CRC
+            - generic [ref=e63]: HCC
+            - generic [ref=e64]: PDAC
+            - generic [ref=e65]: OV
+            - generic [ref=e66]: GBM
+            - generic [ref=e67]: MEL
+            - generic [ref=e68]: PRAD
+            - generic [ref=e69]: BLCA
+            - generic [ref=e70]: Cross-Atlas + Manuscripts
+        - generic [ref=e71]:
+          - heading "7-Stage Pipeline" [level=3] [ref=e72]
+          - generic [ref=e73]:
+            - generic [ref=e74]:
+              - text: "1"
+              - heading "Data Collection & Harmonization" [level=4] [ref=e75]
+              - paragraph [ref=e76]: Curate and standardize scRNA-seq datasets from public repositories
+            - generic [ref=e77]:
+              - text: "2"
+              - heading "Per-Sample QC + Doublet Removal" [level=4] [ref=e78]
+              - paragraph [ref=e79]: Quality control, ambient RNA correction, doublet detection
+            - generic [ref=e80]:
+              - text: "3"
+              - heading "scVicaANVI Integration + Benchmarking" [level=4] [ref=e81]
+              - paragraph [ref=e82]: Variational integration with cross-method benchmarking
+            - generic [ref=e83]:
+              - text: "4"
+              - heading "Cell Type Annotation" [level=4] [ref=e84]
+              - paragraph [ref=e85]: Hierarchical annotation at 3.3x L1 resolution
+            - generic [ref=e86]:
+              - text: "5"
+              - heading "Downstream Analysis" [level=4] [ref=e87]
+              - paragraph [ref=e88]: FMRI, DEG, S11 — functional, differential, and signaling analyses
+            - generic [ref=e89]:
+              - text: "6"
+              - heading "Figure Generation" [level=4] [ref=e90]
+              - paragraph [ref=e91]: 15 publication-ready figures per atlas
+            - generic [ref=e92]:
+              - text: "7"
+              - heading "Data Release + Manuscript Drafts" [level=4] [ref=e93]
+              - paragraph [ref=e94]: Open data deposition and manuscript preparation
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - text: 🧠
+          - generic [ref=e97]:
+            - heading "Neurogenomics Atlas Program" [level=2] [ref=e98]
+            - paragraph [ref=e99]: Single-Cell Atlas of Brain Regions Across Neurological Disorders
+        - generic [ref=e100]: Coming Soon
+        - generic [ref=e101]:
+          - heading "Key Focus Areas" [level=3] [ref=e102]
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - strong [ref=e105]: Alzheimer's Disease
+              - paragraph [ref=e106]: Cortical and hippocampal cell-type atlases with amyloid/tau correlation
+            - generic [ref=e107]:
+              - strong [ref=e108]: Parkinson's Disease
+              - paragraph [ref=e109]: Substantia nigra dopaminergic neuron profiling and glial interactions
+            - generic [ref=e110]:
+              - strong [ref=e111]: ALS
+              - paragraph [ref=e112]: Motor neuron degeneration signatures and astrocyte reactivity states
+            - generic [ref=e113]:
+              - strong [ref=e114]: Brain Tumors
+              - paragraph [ref=e115]: Glioblastoma microenvironment mapping and tumor-immune cell dynamics
+        - generic [ref=e116]:
+          - heading "Pipeline Approach" [level=3] [ref=e117]
+          - paragraph [ref=e118]: Similar 7-stage scRNA-seq pipeline adapted for neural tissue — including region-specific QC, neuronal subtype annotation, and cross-disorder comparative transcriptomics.
+    - generic [ref=e120]:
+      - heading "Ready to contribute?" [level=2] [ref=e121]
+      - paragraph [ref=e122]: Join a team of dedicated researchers working on publication-ready bioinformatics projects.
+      - link "Apply Now →" [ref=e123] [cursor=pointer]:
+        - /url: /bmp/apply
+  - contentinfo [ref=e124]:
+    - generic [ref=e125]:
+      - generic [ref=e126]:
+        - generic [ref=e127]:
+          - link "BMP" [ref=e128] [cursor=pointer]:
+            - /url: /bmp
+            - img [ref=e129]
+            - text: BMP
+          - paragraph [ref=e139]: An intensive 12-week mentorship program taking you from raw sequencing data to publication-ready research.
+        - generic [ref=e140]:
+          - heading "Connect with Mentor" [level=4] [ref=e141]
+          - generic [ref=e142]:
+            - link "Personal Website" [ref=e143] [cursor=pointer]:
+              - /url: https://mdjubayerhossain.com
+              - img [ref=e144]
+              - text: Personal Website
+            - link "LinkedIn" [ref=e147] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/hossainmj
+              - img [ref=e148]
+              - text: LinkedIn
+            - link "GitHub" [ref=e152] [cursor=pointer]:
+              - /url: https://github.com/hossainlab
+              - img [ref=e153]
+              - text: GitHub
+            - link "Twitter / X" [ref=e156] [cursor=pointer]:
+              - /url: https://twitter.com/hossain_lab
+              - img [ref=e157]
+              - text: Twitter / X
+        - generic [ref=e159]:
+          - heading "DeepBio Academy" [level=4] [ref=e160]
+          - generic [ref=e161]:
+            - link "Academy Website" [ref=e162] [cursor=pointer]:
+              - /url: https://deepbioacademy.com
+              - img [ref=e163]
+              - text: Academy Website
+            - link "LinkedIn" [ref=e166] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioacademy
+              - img [ref=e167]
+              - text: LinkedIn
+            - link "GitHub" [ref=e171] [cursor=pointer]:
+              - /url: https://github.com/deepbioacademy
+              - img [ref=e172]
+              - text: GitHub
+            - link "Facebook" [ref=e175] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioacademy
+              - img [ref=e176]
+              - text: Facebook
+        - generic [ref=e178]:
+          - heading "DeepBio Limited" [level=4] [ref=e179]
+          - generic [ref=e180]:
+            - link "Official Website" [ref=e181] [cursor=pointer]:
+              - /url: https://deepbioltd.com
+              - img [ref=e182]
+              - text: Official Website
+            - link "LinkedIn" [ref=e185] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioltd
+              - img [ref=e186]
+              - text: LinkedIn
+            - link "GitHub" [ref=e190] [cursor=pointer]:
+              - /url: https://github.com/deepbioltd
+              - img [ref=e191]
+              - text: GitHub
+            - link "Facebook" [ref=e194] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioltd
+              - img [ref=e195]
+              - text: Facebook
+      - generic [ref=e197]:
+        - generic [ref=e198]: © 2026 Md. Jubayer Hossain · All Rights Reserved
+        - generic [ref=e199]:
+          - link "Privacy Policy" [ref=e200] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e201] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact" [ref=e202] [cursor=pointer]:
+            - /url: "#"

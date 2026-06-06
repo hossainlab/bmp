@@ -1,0 +1,263 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BMP Bioinformatics Mentorship Program" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e15]:
+          - generic [ref=e16]: BMP
+          - generic [ref=e17]: Bioinformatics Mentorship Program
+      - generic [ref=e18]:
+        - link "Tutorials" [ref=e19] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Resources" [ref=e20] [cursor=pointer]:
+          - /url: /resources
+        - link "Schedule" [ref=e21] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing
+        - link "Join Us" [ref=e22] [cursor=pointer]:
+          - /url: /research
+        - link "Policies" [ref=e23] [cursor=pointer]:
+          - /url: /policies
+        - link "Apply Now →" [ref=e24] [cursor=pointer]:
+          - /url: /apply
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: Research Overview
+      - heading "Computational Decoding of Complex Biological Systems" [level=1] [ref=e29]
+      - paragraph [ref=e30]: We leverage large-scale public omics data to uncover biological mechanisms, identify therapeutic targets, and build predictive models for precision medicine.
+    - generic [ref=e33]:
+      - generic [ref=e34]:
+        - generic [ref=e35]: 🧪
+        - heading "Precision Medicine & Prognosis" [level=3] [ref=e36]
+        - paragraph [ref=e37]: Developing computational models to predict drug response and patient survival outcomes using multi-omics signatures.
+      - generic [ref=e38]:
+        - generic [ref=e39]: 🧬
+        - heading "Molecular Disease Classification" [level=3] [ref=e40]
+        - paragraph [ref=e41]: Identifying robust molecular subtypes across diverse cohorts to enable accurate diagnosis and targeted therapies.
+      - generic [ref=e42]:
+        - generic [ref=e43]: 🔬
+        - heading "Cellular Heterogeneity" [level=3] [ref=e44]
+        - paragraph [ref=e45]: Mapping conserved and rare cell populations in healthy and diseased states using large-scale single-cell integration.
+      - generic [ref=e46]:
+        - generic [ref=e47]: 📊
+        - heading "Biomarker Discovery" [level=3] [ref=e48]
+        - paragraph [ref=e49]: Systematic identification of diagnostic gene panels and master regulators of disease states through meta-analysis.
+    - generic [ref=e51]:
+      - heading "Core Computational Workflows" [level=2] [ref=e52]
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e56]: Workflow 01
+          - generic [ref=e57]:
+            - heading "Bulk RNA-Seq Meta-Analysis" [level=3] [ref=e58]
+            - paragraph [ref=e59]: Large-scale transcriptomic discovery using harmonized public datasets from GEO, SRA, and TCGA.
+            - generic [ref=e60]:
+              - generic [ref=e61]: FastQC
+              - generic [ref=e62]: STAR/Salmon
+              - generic [ref=e63]: DESeq2
+              - generic [ref=e64]: MetaVolcanoR
+              - generic [ref=e65]: RankProd
+        - generic [ref=e66]:
+          - generic [ref=e68]: Workflow 02
+          - generic [ref=e69]:
+            - heading "Single-Cell Harmonization" [level=3] [ref=e70]
+            - paragraph [ref=e71]: Cross-cohort atlas construction and comparative analysis using global single-cell repositories.
+            - generic [ref=e72]:
+              - generic [ref=e73]: Harmony
+              - generic [ref=e74]: scVI
+              - generic [ref=e75]: CellTypist
+              - generic [ref=e76]: PySCENIC
+              - generic [ref=e77]: Scanpy/Seurat
+        - generic [ref=e78]:
+          - generic [ref=e80]: Workflow 03
+          - generic [ref=e81]:
+            - heading "ML/DL in Genomics" [level=3] [ref=e82]
+            - paragraph [ref=e83]: Training predictive models (XGBoost, DNNs) on high-dimensional data for clinical applications.
+            - generic [ref=e84]:
+              - generic [ref=e85]: XGBoost
+              - generic [ref=e86]: Deep Learning
+              - generic [ref=e87]: SHAP/LIME
+              - generic [ref=e88]: Tidyverse/Pandas
+    - generic [ref=e91]:
+      - heading "Our Research Pillars" [level=2] [ref=e92]
+      - generic [ref=e93]:
+        - generic [ref=e94]:
+          - strong [ref=e95]: Reproducibility
+          - paragraph [ref=e96]: Independent verification of biological findings using publicly archived datasets.
+        - generic [ref=e97]:
+          - strong [ref=e98]: Scale
+          - paragraph [ref=e99]: Analyzing thousands of samples across diverse tissues, cohorts, and species.
+        - generic [ref=e100]:
+          - strong [ref=e101]: Open Science
+          - paragraph [ref=e102]: Applying FAIR principles for cross-study meta-analyses and transparent research.
+    - generic [ref=e104]:
+      - paragraph [ref=e105]: Active Research Programs
+      - heading "Research Tracks" [level=2] [ref=e106]
+      - generic [ref=e107]:
+        - generic [ref=e108]:
+          - generic [ref=e109]: 🧬
+          - 'heading "Track 1: Cancer Genomics" [level=3] [ref=e110]'
+          - paragraph [ref=e111]: Integrative analysis of tumor transcriptomes, somatic mutations, and immune microenvironments to identify prognostic biomarkers and therapeutic targets across multiple cancer types.
+          - list [ref=e112]:
+            - listitem [ref=e113]: Tumor subtype classification via bulk & single-cell RNA-Seq
+            - listitem [ref=e114]: Survival modeling with multi-omics signatures
+            - listitem [ref=e115]: Immune cell deconvolution & tumor microenvironment profiling
+            - listitem [ref=e116]: Drug sensitivity prediction using ML/DL pipelines
+        - generic [ref=e117]:
+          - generic [ref=e118]: 🧠
+          - 'heading "Track 2: Neurogenomics" [level=3] [ref=e119]'
+          - paragraph [ref=e120]: Computational dissection of gene expression landscapes in neurological and neurodegenerative disorders to uncover cell-type-specific dysregulation and novel drug targets.
+          - list [ref=e121]:
+            - listitem [ref=e122]: Single-cell atlas construction of brain regions
+            - listitem [ref=e123]: Differential expression & pathway analysis in neurodegeneration
+            - listitem [ref=e124]: Gene regulatory network inference in neural cell types
+            - listitem [ref=e125]: Cross-disorder comparative transcriptomics
+    - generic [ref=e127]:
+      - paragraph [ref=e128]: Pathway to Excellence
+      - heading "Join as Research Assistant" [level=2] [ref=e129]
+      - paragraph [ref=e130]:
+        - text: Top-performing participants who successfully complete the SBTP program and its core projects are eligible to join the
+        - strong [ref=e131]: Cancer Genomics and Neurogenomics
+        - text: lab. This position is a gateway for those targeting advanced MSc/PhD degrees.
+      - generic [ref=e132]:
+        - generic [ref=e133]:
+          - generic [ref=e134]: "01"
+          - generic [ref=e135]:
+            - generic [ref=e136]: 🎓
+            - generic [ref=e137]: Academic Requirements
+          - list [ref=e138]:
+            - listitem [ref=e139]:
+              - generic [ref=e141]: Strong motivation for research
+            - listitem [ref=e142]:
+              - generic [ref=e144]: Clear plans for future MSc/PhD studies in computational biology or bioinformatics
+        - generic [ref=e145]:
+          - generic [ref=e146]: "02"
+          - generic [ref=e147]:
+            - generic [ref=e148]: 📋
+            - generic [ref=e149]: Program Enrollment
+          - list [ref=e150]:
+            - listitem [ref=e151]:
+              - generic [ref=e153]: Currently enrolled in or have completed the BMP
+            - listitem [ref=e154]:
+              - generic [ref=e156]: Successful completion of all assigned program projects
+        - generic [ref=e157]:
+          - generic [ref=e158]: "03"
+          - generic [ref=e159]:
+            - generic [ref=e160]: ⏰
+            - generic [ref=e161]: Time Commitment
+          - list [ref=e162]:
+            - listitem [ref=e163]:
+              - generic [ref=e165]: 15–20 hours per week
+            - listitem [ref=e166]:
+              - generic [ref=e168]: Preferably evenings or weekends
+            - listitem [ref=e169]:
+              - generic [ref=e171]: Flexible during exam periods
+        - generic [ref=e172]:
+          - generic [ref=e173]: "04"
+          - generic [ref=e174]:
+            - generic [ref=e175]: 📅
+            - generic [ref=e176]: Weekly Meetings
+          - list [ref=e177]:
+            - listitem [ref=e178]:
+              - generic [ref=e180]: Attend weekly online meetings every Sunday
+            - listitem [ref=e181]:
+              - generic [ref=e183]: "Time: 9:00–11:00 PM (BST)"
+        - generic [ref=e184]:
+          - generic [ref=e185]: "05"
+          - generic [ref=e186]:
+            - generic [ref=e187]: 🤝
+            - generic [ref=e188]: Personal Qualities
+          - list [ref=e189]:
+            - listitem [ref=e190]:
+              - generic [ref=e192]: Team-oriented mindset
+            - listitem [ref=e193]:
+              - generic [ref=e195]: Dedicated and passionate about data-driven biological research
+        - generic [ref=e196]:
+          - generic [ref=e197]: "06"
+          - generic [ref=e198]:
+            - generic [ref=e199]: ⚖️
+            - generic [ref=e200]: Ethics & Commitment
+          - list [ref=e201]:
+            - listitem [ref=e202]:
+              - generic [ref=e204]: Uphold research ethics at all times
+            - listitem [ref=e205]:
+              - generic [ref=e207]: Maintain 12–18 month commitment to complete assigned projects
+            - listitem [ref=e208]:
+              - generic [ref=e210]: Willing to mentor or assist junior researchers during lab activities
+      - paragraph [ref=e211]: "* Becoming a Research Assistant is a serious commitment to high-impact research, designed to accelerate your career and build a world-class research portfolio."
+  - contentinfo [ref=e212]:
+    - generic [ref=e213]:
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - link "BMP" [ref=e216] [cursor=pointer]:
+            - /url: /
+            - img [ref=e217]
+            - generic [ref=e227]: BMP
+          - paragraph [ref=e228]: An intensive 12-week mentorship program taking you from raw sequencing data to publication-ready research.
+        - generic [ref=e229]:
+          - heading "Connect with Mentor" [level=4] [ref=e230]
+          - generic [ref=e231]:
+            - link "Personal Website" [ref=e232] [cursor=pointer]:
+              - /url: https://mdjubayerhossain.com
+              - img [ref=e233]
+              - text: Personal Website
+            - link "LinkedIn" [ref=e236] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/hossainmj
+              - img [ref=e237]
+              - text: LinkedIn
+            - link "GitHub" [ref=e241] [cursor=pointer]:
+              - /url: https://github.com/hossainlab
+              - img [ref=e242]
+              - text: GitHub
+            - link "Twitter / X" [ref=e245] [cursor=pointer]:
+              - /url: https://twitter.com/hossain_lab
+              - img [ref=e246]
+              - text: Twitter / X
+        - generic [ref=e248]:
+          - heading "DeepBio Academy" [level=4] [ref=e249]
+          - generic [ref=e250]:
+            - link "Academy Website" [ref=e251] [cursor=pointer]:
+              - /url: https://deepbioacademy.com
+              - img [ref=e252]
+              - text: Academy Website
+            - link "LinkedIn" [ref=e255] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioacademy
+              - img [ref=e256]
+              - text: LinkedIn
+            - link "GitHub" [ref=e260] [cursor=pointer]:
+              - /url: https://github.com/deepbioacademy
+              - img [ref=e261]
+              - text: GitHub
+            - link "Facebook" [ref=e264] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioacademy
+              - img [ref=e265]
+              - text: Facebook
+        - generic [ref=e267]:
+          - heading "DeepBio Limited" [level=4] [ref=e268]
+          - generic [ref=e269]:
+            - link "Official Website" [ref=e270] [cursor=pointer]:
+              - /url: https://deepbioltd.com
+              - img [ref=e271]
+              - text: Official Website
+            - link "LinkedIn" [ref=e274] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioltd
+              - img [ref=e275]
+              - text: LinkedIn
+            - link "GitHub" [ref=e279] [cursor=pointer]:
+              - /url: https://github.com/deepbioltd
+              - img [ref=e280]
+              - text: GitHub
+            - link "Facebook" [ref=e283] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioltd
+              - img [ref=e284]
+              - text: Facebook
+      - generic [ref=e286]:
+        - generic [ref=e287]: © 2026 Md. Jubayer Hossain · All Rights Reserved
+        - generic [ref=e288]:
+          - link "Privacy Policy" [ref=e289] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e290] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact" [ref=e291] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e297] [cursor=pointer]:
+    - img [ref=e298]

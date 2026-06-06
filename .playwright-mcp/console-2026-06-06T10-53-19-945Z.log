@@ -1,0 +1,13 @@
+[      45ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0oznozf~767fu.css:0
+[      46ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2:0
+[      51ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/15xjc7n-ri.fu.js:0
+[      58ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0.~2ky53fo~10.js:0
+[      58ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0t1et0tty8o9s.js:0
+[      58ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/02hox9spdtzz1.js:0
+[      58ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0pqt~8bl3ukh4.js:0
+[      58ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/turbopack-022dr0-rpk.j7.js:0
+[      62ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/05d3~i488ejbk.js:0
+[      62ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0d3shmwh5_nmn.js:0
+[      62ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/_next/static/chunks/0t4f36u3gj835.js:0
+[      68ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://localhost:3851/bmp/icon.svg?icon.14rhao7utgl6_.svg:0
+[    3071ms] [WARNING] The resource http://localhost:3851/bmp/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2 was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ http://localhost:3851/project:0

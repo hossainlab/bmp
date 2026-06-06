@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Link from "next/link";
+import EnrollCTA from "@/components/sections/EnrollCTA";
 
 export const metadata = {
   title: "Resources — Bioinformatics Mentorship Program",
@@ -62,16 +62,7 @@ export default function ResourcesPage() {
           </div>
         </section>
 
-        {/* CTA */}
-        <section className="res-lib-cta">
-          <div className="res-lib-container">
-            <div className="res-lib-cta-box">
-              <h3>Ready to Master These Tools?</h3>
-              <p>Don&apos;t just browse resources—learn to use them effectively in our intensive mentorship program.</p>
-              <Link href="/apply" className="res-lib-cta-btn">Join the Mentorship →</Link>
-            </div>
-          </div>
-        </section>
+        <EnrollCTA />
       </main>
       <Footer />
     </>

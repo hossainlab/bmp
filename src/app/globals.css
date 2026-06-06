@@ -867,9 +867,86 @@ body {
   margin: 0 auto;
 }
 
-.res-areas-section {
+.res-tracks-section {
   padding: 80px 24px;
   background: var(--bg-alt);
+}
+
+.res-programs-section {
+  padding: 80px 24px 40px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.res-programs-box {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.res-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  text-align: left;
+}
+
+.res-project-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 32px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.res-project-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent-blue);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.res-project-tag {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  background: #f1f5f9;
+  color: var(--text-label);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.res-project-card:hover .res-project-tag {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--accent-blue);
+}
+
+.res-project-icon {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.res-project-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.res-project-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+@media (max-width: 640px) {
+  .res-project-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .res-container {
@@ -1043,6 +1120,90 @@ body {
   .res-wf-content { padding: 24px; }
   .res-phi-grid { grid-template-columns: 1fr; gap: 32px; }
   .res-phi-box { padding: 40px 24px; }
+}
+
+/* === RESEARCH TRACKS === */
+
+.res-tracks-section {
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.res-tracks-section .res-track-card {
+  background: var(--bg-alt);
+}
+
+.res-tracks-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.res-track-card {
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.res-track-card:hover {
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.06);
+  transform: translateY(-4px);
+}
+
+.res-track-icon {
+  font-size: 2.4rem;
+  margin-bottom: 16px;
+}
+
+.res-track-title {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.res-track-desc {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.res-track-focus {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.res-track-focus li {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  padding-left: 20px;
+  position: relative;
+  line-height: 1.5;
+}
+
+.res-track-focus li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-blue);
+}
+
+@media (max-width: 768px) {
+  .res-tracks-grid { grid-template-columns: 1fr; }
+  .res-track-card { padding: 28px 24px; }
 }
 
 /* === POLICY PAGE === */
@@ -1781,6 +1942,8 @@ body {
   border-radius: 12px;
   padding: 28px 24px;
   transition: border-color 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .sol-icon-box {
@@ -1806,6 +1969,38 @@ body {
   font-size: 0.85rem;
   color: var(--text-muted);
   line-height: 1.7;
+}
+
+.sol-card-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+.sol-card-tool {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 6px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.sol-card-tool-logo {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.sol-card-tool-name {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-secondary);
 }
 
 /* === WHATS INCLUDED === */
@@ -3100,8 +3295,49 @@ body {
   gap: 20px;
 }
 
+.pub-policy-card {
+  grid-column: 1 / -1;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 36px;
+  text-align: left;
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0 24px;
+}
+
+.pub-policy-icon {
+  font-size: 1.6rem;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
+.pub-policy-title {
+  font-family: var(--font-main), sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  grid-column: 2 / -1;
+  margin-bottom: 8px;
+}
+
+.pub-policy-text {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
+
 @media (max-width: 767px) {
   .pub-grid { grid-template-columns: 1fr; }
+  .pub-policy-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .pub-policy-icon { margin-bottom: 8px; }
+  .pub-policy-title { margin-bottom: 12px; }
+  .pub-policy-text { margin-bottom: 8px; }
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -3237,6 +3473,56 @@ body {
   border-color: var(--accent-blue);
 }
 
+/* === FOOTER === */
+
+.footer-footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg);
+  padding: 36px 24px;
+  text-align: center;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-brand {
+  font-family: "JetBrains Mono", "Courier New", monospace;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.footer-brand-name {
+  color: var(--accent-blue);
+  font-weight: 700;
+}
+
+.footer-copyright {
+  font-size: 0.78rem;
+  color: var(--text-label);
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-link {
+  font-size: 0.78rem;
+  color: var(--text-label);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--text-primary);
+}
 
 
 

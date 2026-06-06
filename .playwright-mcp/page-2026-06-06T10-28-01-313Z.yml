@@ -1,0 +1,275 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BMP Bioinformatics Mentorship Program" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e15]:
+          - generic [ref=e16]: BMP
+          - generic [ref=e17]: Bioinformatics Mentorship Program
+      - generic [ref=e18]:
+        - link "Resources" [ref=e19] [cursor=pointer]:
+          - /url: /resources
+        - link "Tutorials" [ref=e20] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Join Us" [ref=e21] [cursor=pointer]:
+          - /url: /research
+        - link "Schedule" [ref=e22] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing
+        - link "Policies" [ref=e23] [cursor=pointer]:
+          - /url: /policies
+        - link "Apply Now →" [ref=e24] [cursor=pointer]:
+          - /url: /apply
+  - main [ref=e25]:
+    - generic [ref=e27]:
+      - paragraph [ref=e28]: Join Our Research Lab
+      - heading "Be Part of Real Research That Matters" [level=1] [ref=e29]
+      - paragraph [ref=e30]: Top-performing BMP participants get the opportunity to join active research projects in cancer genomics and neurogenomics — building publication-ready work and a path to graduate school.
+    - generic [ref=e32]:
+      - paragraph [ref=e33]: Active Research Programs
+      - heading "Research Tracks" [level=2] [ref=e34]
+      - generic [ref=e35]:
+        - generic [ref=e36]:
+          - generic [ref=e37]: 🧬
+          - 'heading "Track 1: Cancer Genomics" [level=3] [ref=e38]'
+          - paragraph [ref=e39]: Integrative analysis of tumor transcriptomes, somatic mutations, and immune microenvironments to identify prognostic biomarkers and therapeutic targets across multiple cancer types.
+          - list [ref=e40]:
+            - listitem [ref=e41]: Tumor subtype classification via bulk & single-cell RNA-Seq
+            - listitem [ref=e42]: Survival modeling with multi-omics signatures
+            - listitem [ref=e43]: Immune cell deconvolution & tumor microenvironment profiling
+            - listitem [ref=e44]: Drug sensitivity prediction using ML/DL pipelines
+        - generic [ref=e45]:
+          - generic [ref=e46]: 🧠
+          - 'heading "Track 2: Neurogenomics" [level=3] [ref=e47]'
+          - paragraph [ref=e48]: Computational dissection of gene expression landscapes in neurological and neurodegenerative disorders to uncover cell-type-specific dysregulation and novel drug targets.
+          - list [ref=e49]:
+            - listitem [ref=e50]: Single-cell atlas construction of brain regions
+            - listitem [ref=e51]: Differential expression & pathway analysis in neurodegeneration
+            - listitem [ref=e52]: Gene regulatory network inference in neural cell types
+            - listitem [ref=e53]: Cross-disorder comparative transcriptomics
+    - generic [ref=e55]:
+      - heading "Core Computational Workflows" [level=2] [ref=e56]
+      - generic [ref=e57]:
+        - generic [ref=e58]:
+          - generic [ref=e60]: Workflow 01
+          - generic [ref=e61]:
+            - heading "Bulk RNA-Seq Meta-Analysis" [level=3] [ref=e62]
+            - paragraph [ref=e63]: Large-scale transcriptomic discovery using harmonized public datasets from GEO, SRA, and TCGA.
+            - generic [ref=e64]:
+              - generic [ref=e65]: FastQC
+              - generic [ref=e66]: STAR/Salmon
+              - generic [ref=e67]: DESeq2
+              - generic [ref=e68]: MetaVolcanoR
+              - generic [ref=e69]: RankProd
+        - generic [ref=e70]:
+          - generic [ref=e72]: Workflow 02
+          - generic [ref=e73]:
+            - heading "Single-Cell Harmonization" [level=3] [ref=e74]
+            - paragraph [ref=e75]: Cross-cohort atlas construction and comparative analysis using global single-cell repositories.
+            - generic [ref=e76]:
+              - generic [ref=e77]: Harmony
+              - generic [ref=e78]: scVI
+              - generic [ref=e79]: CellTypist
+              - generic [ref=e80]: PySCENIC
+              - generic [ref=e81]: Scanpy/Seurat
+        - generic [ref=e82]:
+          - generic [ref=e84]: Workflow 03
+          - generic [ref=e85]:
+            - heading "ML/DL in Genomics" [level=3] [ref=e86]
+            - paragraph [ref=e87]: Training predictive models (XGBoost, DNNs) on high-dimensional data for clinical applications.
+            - generic [ref=e88]:
+              - generic [ref=e89]: XGBoost
+              - generic [ref=e90]: Deep Learning
+              - generic [ref=e91]: SHAP/LIME
+              - generic [ref=e92]: Tidyverse/Pandas
+    - generic [ref=e94]:
+      - heading "Selected Publications" [level=2] [ref=e95]
+      - paragraph [ref=e96]: Peer-reviewed research at the intersection of bioinformatics, computational biology, and public health data science.
+      - generic [ref=e97]:
+        - link "Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 3 Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 2 Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 1 Scientific Reports Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors 2024" [ref=e98] [cursor=pointer]:
+          - /url: https://www.nature.com/articles/s41598-025-88339-z
+          - generic [ref=e99]:
+            - img "Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 3" [ref=e100]
+            - img "Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 2" [ref=e101]
+            - img "Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors pg 1" [ref=e102]
+          - generic [ref=e103]:
+            - heading "Scientific Reports" [level=3] [ref=e104]
+            - paragraph [ref=e105]: Pan-cancer analysis reveals immunological and prognostic significance of CCT5 in human tumors
+            - paragraph [ref=e106]: "2024"
+        - link "Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 3 Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 2 Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 1 BMC Genomics Meta-Analysis of Genomic Variants Using Integrative Computational Methods 2023" [ref=e107] [cursor=pointer]:
+          - /url: https://link.springer.com/article/10.1186/s12864-025-12127-2
+          - generic [ref=e108]:
+            - img "Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 3" [ref=e109]
+            - img "Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 2" [ref=e110]
+            - img "Meta-Analysis of Genomic Variants Using Integrative Computational Methods pg 1" [ref=e111]
+          - generic [ref=e112]:
+            - heading "BMC Genomics" [level=3] [ref=e113]
+            - paragraph [ref=e114]: Meta-Analysis of Genomic Variants Using Integrative Computational Methods
+            - paragraph [ref=e115]: "2023"
+        - link "Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 3 Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 2 Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 1 Scientific Reports Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer 2023" [ref=e116] [cursor=pointer]:
+          - /url: https://www.nature.com/articles/s41598-025-13315-6
+          - generic [ref=e117]:
+            - img "Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 3" [ref=e118]
+            - img "Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 2" [ref=e119]
+            - img "Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer pg 1" [ref=e120]
+          - generic [ref=e121]:
+            - heading "Scientific Reports" [level=3] [ref=e122]
+            - paragraph [ref=e123]: Comprehensive bioinformatics analysis reveals prognostic significance and immunological roles of WNT gene family in breast cancer
+            - paragraph [ref=e124]: "2023"
+        - generic [ref=e125]:
+          - generic [ref=e126]: 📝
+          - heading "Authorship Policy" [level=3] [ref=e127]
+          - paragraph [ref=e128]: This program prepares every participant for independent publication. There is no authorship guarantee — authorship on mentor-led projects is earned through demonstrated contribution during the mentorship.
+          - paragraph [ref=e129]: "We adhere to strict ethical standards: authorship is never “gifted” or sold through course fees. It is a recognition of intellectual and technical work, ensuring the integrity of your research portfolio and future career."
+      - link "View More Publications" [ref=e131] [cursor=pointer]:
+        - /url: https://mdjubayerhossain.com/publications/
+    - generic [ref=e133]:
+      - paragraph [ref=e134]: Pathway to Excellence
+      - heading "Join as Research Assistant" [level=2] [ref=e135]
+      - paragraph [ref=e136]:
+        - text: Top-performing participants who successfully complete the SBTP program and its core projects are eligible to join the
+        - strong [ref=e137]: Cancer Genomics and Neurogenomics
+        - text: lab. This position is a gateway for those targeting advanced MSc/PhD degrees.
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - generic [ref=e140]: "01"
+          - generic [ref=e141]:
+            - generic [ref=e142]: 🎓
+            - generic [ref=e143]: Academic Requirements
+          - list [ref=e144]:
+            - listitem [ref=e145]:
+              - generic [ref=e147]: Strong motivation for research
+            - listitem [ref=e148]:
+              - generic [ref=e150]: Clear plans for future MSc/PhD studies in computational biology or bioinformatics
+        - generic [ref=e151]:
+          - generic [ref=e152]: "02"
+          - generic [ref=e153]:
+            - generic [ref=e154]: 📋
+            - generic [ref=e155]: Program Enrollment
+          - list [ref=e156]:
+            - listitem [ref=e157]:
+              - generic [ref=e159]: Currently enrolled in or have completed the BMP
+            - listitem [ref=e160]:
+              - generic [ref=e162]: Successful completion of all assigned program projects
+        - generic [ref=e163]:
+          - generic [ref=e164]: "03"
+          - generic [ref=e165]:
+            - generic [ref=e166]: ⏰
+            - generic [ref=e167]: Time Commitment
+          - list [ref=e168]:
+            - listitem [ref=e169]:
+              - generic [ref=e171]: 15–20 hours per week
+            - listitem [ref=e172]:
+              - generic [ref=e174]: Preferably evenings or weekends
+            - listitem [ref=e175]:
+              - generic [ref=e177]: Flexible during exam periods
+        - generic [ref=e178]:
+          - generic [ref=e179]: "04"
+          - generic [ref=e180]:
+            - generic [ref=e181]: 📅
+            - generic [ref=e182]: Weekly Meetings
+          - list [ref=e183]:
+            - listitem [ref=e184]:
+              - generic [ref=e186]: Attend weekly online meetings every Sunday
+            - listitem [ref=e187]:
+              - generic [ref=e189]: "Time: 9:00–11:00 PM (BST)"
+        - generic [ref=e190]:
+          - generic [ref=e191]: "05"
+          - generic [ref=e192]:
+            - generic [ref=e193]: 🤝
+            - generic [ref=e194]: Personal Qualities
+          - list [ref=e195]:
+            - listitem [ref=e196]:
+              - generic [ref=e198]: Team-oriented mindset
+            - listitem [ref=e199]:
+              - generic [ref=e201]: Dedicated and passionate about data-driven biological research
+        - generic [ref=e202]:
+          - generic [ref=e203]: "06"
+          - generic [ref=e204]:
+            - generic [ref=e205]: ⚖️
+            - generic [ref=e206]: Ethics & Commitment
+          - list [ref=e207]:
+            - listitem [ref=e208]:
+              - generic [ref=e210]: Uphold research ethics at all times
+            - listitem [ref=e211]:
+              - generic [ref=e213]: Maintain 12–18 month commitment to complete assigned projects
+            - listitem [ref=e214]:
+              - generic [ref=e216]: Willing to mentor or assist junior researchers during lab activities
+      - paragraph [ref=e217]: "* Becoming a Research Assistant is a serious commitment to high-impact research, designed to accelerate your career and build a world-class research portfolio."
+  - contentinfo [ref=e218]:
+    - generic [ref=e219]:
+      - generic [ref=e220]:
+        - generic [ref=e221]:
+          - link "BMP" [ref=e222] [cursor=pointer]:
+            - /url: /
+            - img [ref=e223]
+            - generic [ref=e233]: BMP
+          - paragraph [ref=e234]: An intensive 12-week mentorship program taking you from raw sequencing data to publication-ready research.
+        - generic [ref=e235]:
+          - heading "Connect with Mentor" [level=4] [ref=e236]
+          - generic [ref=e237]:
+            - link "Personal Website" [ref=e238] [cursor=pointer]:
+              - /url: https://mdjubayerhossain.com
+              - img [ref=e239]
+              - text: Personal Website
+            - link "LinkedIn" [ref=e242] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/hossainmj
+              - img [ref=e243]
+              - text: LinkedIn
+            - link "GitHub" [ref=e247] [cursor=pointer]:
+              - /url: https://github.com/hossainlab
+              - img [ref=e248]
+              - text: GitHub
+            - link "Twitter / X" [ref=e251] [cursor=pointer]:
+              - /url: https://twitter.com/hossain_lab
+              - img [ref=e252]
+              - text: Twitter / X
+        - generic [ref=e254]:
+          - heading "DeepBio Academy" [level=4] [ref=e255]
+          - generic [ref=e256]:
+            - link "Academy Website" [ref=e257] [cursor=pointer]:
+              - /url: https://deepbioacademy.com
+              - img [ref=e258]
+              - text: Academy Website
+            - link "LinkedIn" [ref=e261] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioacademy
+              - img [ref=e262]
+              - text: LinkedIn
+            - link "GitHub" [ref=e266] [cursor=pointer]:
+              - /url: https://github.com/deepbioacademy
+              - img [ref=e267]
+              - text: GitHub
+            - link "Facebook" [ref=e270] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioacademy
+              - img [ref=e271]
+              - text: Facebook
+        - generic [ref=e273]:
+          - heading "DeepBio Limited" [level=4] [ref=e274]
+          - generic [ref=e275]:
+            - link "Official Website" [ref=e276] [cursor=pointer]:
+              - /url: https://deepbioltd.com
+              - img [ref=e277]
+              - text: Official Website
+            - link "LinkedIn" [ref=e280] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioltd
+              - img [ref=e281]
+              - text: LinkedIn
+            - link "GitHub" [ref=e285] [cursor=pointer]:
+              - /url: https://github.com/deepbioltd
+              - img [ref=e286]
+              - text: GitHub
+            - link "Facebook" [ref=e289] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioltd
+              - img [ref=e290]
+              - text: Facebook
+      - generic [ref=e292]:
+        - generic [ref=e293]: © 2026 Md. Jubayer Hossain · All Rights Reserved
+        - generic [ref=e294]:
+          - link "Privacy Policy" [ref=e295] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e296] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact" [ref=e297] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e303] [cursor=pointer]:
+    - img [ref=e304]

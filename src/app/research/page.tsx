@@ -1,36 +1,15 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Publications from "@/components/sections/Publications";
 import ResearchAssistant from "@/components/sections/ResearchAssistant";
+import EnrollCTA from "@/components/sections/EnrollCTA";
 
 export const metadata = {
-  title: "Research — Bioinformatics Mentorship Program",
-  description: "Explore the research areas and computational workflows led by Md. Jubayer Hossain.",
+  title: "Join Us — Bioinformatics Mentorship Program",
+  description: "Explore research tracks, computational workflows, and join as a research assistant.",
 };
 
 export default function ResearchPage() {
-  const areas = [
-    {
-      title: "Precision Medicine & Prognosis",
-      desc: "Developing computational models to predict drug response and patient survival outcomes using multi-omics signatures.",
-      icon: "🧪"
-    },
-    {
-      title: "Molecular Disease Classification",
-      desc: "Identifying robust molecular subtypes across diverse cohorts to enable accurate diagnosis and targeted therapies.",
-      icon: "🧬"
-    },
-    {
-      title: "Cellular Heterogeneity",
-      desc: "Mapping conserved and rare cell populations in healthy and diseased states using large-scale single-cell integration.",
-      icon: "🔬"
-    },
-    {
-      title: "Biomarker Discovery",
-      desc: "Systematic identification of diagnostic gene panels and master regulators of disease states through meta-analysis.",
-      icon: "📊"
-    }
-  ];
-
   const workflows = [
     {
       num: "01",
@@ -52,6 +31,33 @@ export default function ResearchPage() {
     }
   ];
 
+  const projects = [
+    {
+      title: "Harmonized Cancer Cell Atlas",
+      tag: "Cancer Genomics",
+      desc: "Constructing high-resolution single-cell atlases across 10+ cancer types using variational integration.",
+      icon: "🧬"
+    },
+    {
+      title: "Neurogenomics Reference Map",
+      tag: "Neuroscience",
+      desc: "Mapping cell-type-specific dysregulation in neurodegenerative disorders via cross-cohort harmonization.",
+      icon: "🧠"
+    },
+    {
+      title: "Pan-Cancer TME Analysis",
+      tag: "Immunology",
+      desc: "Computational profiling of the tumor immune microenvironment to identify universal prognostic markers.",
+      icon: "🛡️"
+    },
+    {
+      title: "Genomic Drug Discovery",
+      tag: "Precision Medicine",
+      desc: "Training deep learning models on multi-omics data to predict patient-specific therapeutic responses.",
+      icon: "💊"
+    }
+  ];
+
   return (
     <>
       <Navbar />
@@ -59,81 +65,18 @@ export default function ResearchPage() {
         {/* Hero */}
         <section className="res-hero">
           <div className="res-hero-inner">
-            <p className="res-eyebrow">Research Overview</p>
-            <h1 className="res-title">Computational Decoding of Complex Biological Systems</h1>
+            <p className="res-eyebrow">Join Our Research Lab</p>
+            <h1 className="res-title">Be Part of Real Research That Matters</h1>
             <p className="res-subtitle">
-              We leverage large-scale public omics data to uncover biological mechanisms, identify therapeutic targets, and build predictive models for precision medicine.
+              Top-performing BMP participants get the opportunity to join active research projects in cancer genomics and neurogenomics — building publication-ready work and a path to graduate school.
             </p>
-          </div>
-        </section>
-
-        {/* Areas */}
-        <section className="res-areas-section">
-          <div className="res-container">
-            <div className="res-grid">
-              {areas.map((area) => (
-                <div key={area.title} className="res-card">
-                  <div className="res-card-icon">{area.icon}</div>
-                  <h3 className="res-card-title">{area.title}</h3>
-                  <p className="res-card-desc">{area.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Workflows */}
-        <section className="res-workflow-section">
-          <div className="res-container">
-            <h2 className="res-section-heading">Core Computational Workflows</h2>
-            <div className="res-workflow-list">
-              {workflows.map((wf) => (
-                <div key={wf.num} className="res-wf-item">
-                  <div className="res-wf-meta">
-                    <span className="res-wf-num">Workflow {wf.num}</span>
-                  </div>
-                  <div className="res-wf-content">
-                    <h3 className="res-wf-name">{wf.name}</h3>
-                    <p className="res-wf-goal">{wf.goal}</p>
-                    <div className="res-wf-tech">
-                      {wf.tech.map(t => (
-                        <span key={t} className="res-wf-tag">{t}</span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Philosophy */}
-        <section className="res-philosophy-section">
-          <div className="res-container">
-            <div className="res-phi-box">
-              <h2 className="res-phi-title">Our Research Pillars</h2>
-              <div className="res-phi-grid">
-                <div className="res-phi-item">
-                  <strong>Reproducibility</strong>
-                  <p>Independent verification of biological findings using publicly archived datasets.</p>
-                </div>
-                <div className="res-phi-item">
-                  <strong>Scale</strong>
-                  <p>Analyzing thousands of samples across diverse tissues, cohorts, and species.</p>
-                </div>
-                <div className="res-phi-item">
-                  <strong>Open Science</strong>
-                  <p>Applying FAIR principles for cross-study meta-analyses and transparent research.</p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
 
         {/* Research Tracks */}
         <section className="res-tracks-section">
           <div className="res-container">
-            <p className="res-eyebrow" style={{ textAlign: "center" }}>Active Research Programs</p>
+            <p className="res-eyebrow" style={{ textAlign: "center" }}>Active Research Focus</p>
             <h2 className="res-section-heading">Research Tracks</h2>
             <div className="res-tracks-grid">
               <div className="res-track-card">
@@ -166,7 +109,58 @@ export default function ResearchPage() {
           </div>
         </section>
 
+        {/* One-Year Research Programs */}
+        <section className="res-programs-section">
+          <div className="res-container">
+            <div className="res-programs-box">
+              <p className="res-eyebrow" style={{ color: "var(--accent-blue)" }}>Career Acceleration</p>
+              <h2 className="res-section-heading" style={{ marginBottom: "20px" }}>One-Year Research Programs</h2>
+              <p className="res-subtitle" style={{ margin: "0 auto 60px", fontSize: "1.1rem" }}>
+                Participate in ambitious, publication-ready research projects. Our programs are designed to build real-world skills through the construction of large-scale single-cell atlases.
+              </p>
+
+              <div className="res-project-grid">
+                {projects.map((proj) => (
+                  <div key={proj.title} className="res-project-card">
+                    <div className="res-project-tag">{proj.tag}</div>
+                    <div className="res-project-icon">{proj.icon}</div>
+                    <h3 className="res-project-title">{proj.title}</h3>
+                    <p className="res-project-desc">{proj.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Workflows */}
+        <section className="res-workflow-section">
+          <div className="res-container">
+            <h2 className="res-section-heading">Core Computational Workflows</h2>
+            <div className="res-workflow-list">
+              {workflows.map((wf) => (
+                <div key={wf.num} className="res-wf-item">
+                  <div className="res-wf-meta">
+                    <span className="res-wf-num">Workflow {wf.num}</span>
+                  </div>
+                  <div className="res-wf-content">
+                    <h3 className="res-wf-name">{wf.name}</h3>
+                    <p className="res-wf-goal">{wf.goal}</p>
+                    <div className="res-wf-tech">
+                      {wf.tech.map(t => (
+                        <span key={t} className="res-wf-tag">{t}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <Publications />
         <ResearchAssistant />
+        <EnrollCTA />
       </main>
       <Footer />
     </>

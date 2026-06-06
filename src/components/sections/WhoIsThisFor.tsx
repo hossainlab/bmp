@@ -64,16 +64,6 @@ export default function WhoIsThisFor() {
             </ul>
           </div>
         </div>
-
-        <div className="witf-pub-note">
-          <strong>On publication:</strong>
-          <p>
-            This program prepares every participant for independent publication. There is no authorship guarantee — authorship on mentor-led projects is earned through demonstrated contribution during the mentorship.
-          </p>
-          <p style={{ marginTop: "16px" }}>
-            We adhere to strict ethical standards: authorship is never &quot;gifted&quot; or sold through course fees. It is a recognition of intellectual and technical work, ensuring the integrity of your research portfolio and future career.
-          </p>
-        </div>
       </div>
     </section>
   );

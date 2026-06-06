@@ -1,5 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import EnrollCTA from "@/components/sections/EnrollCTA";
 
 export const metadata = {
   title: "Mentorship Policies — Bioinformatics Mentorship Program",
@@ -100,6 +101,7 @@ export default function PoliciesPage() {
           </div>
         </section>
       </main>
+      <EnrollCTA />
       <Footer />
     </>
   );

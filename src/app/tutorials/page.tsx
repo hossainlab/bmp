@@ -1,6 +1,6 @@
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Link from "next/link";
+import EnrollCTA from "@/components/sections/EnrollCTA";
 
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 
@@ -153,6 +153,7 @@ export default function TutorialsPage() {
           </div>
         </div>
       </main>
+      <EnrollCTA />
       <Footer />
     </>
   );
