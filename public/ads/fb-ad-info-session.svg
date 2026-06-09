@@ -1,0 +1,99 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: Clean white -->
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+
+  <!-- Subtle decorative -->
+  <circle cx="950" cy="200" r="350" fill="#2563EB" opacity="0.03"/>
+  <circle cx="130" cy="900" r="300" fill="#10B981" opacity="0.03"/>
+
+  <!-- Top accent -->
+  <rect width="1080" height="6" fill="#2563EB"/>
+
+  <!-- Logo -->
+  <g transform="translate(60, 35)">
+    <g transform="scale(2)">
+      <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 L16 2Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+      <path d="M16 8 L23 12 V20 L16 24 L9 20 V12 L16 8Z" stroke="#10B981" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      <circle cx="16" cy="16" r="3" fill="#2563EB"/>
+      <circle cx="9" cy="12" r="2" fill="#10B981"/>
+      <circle cx="23" cy="20" r="2" fill="#10B981"/>
+      <circle cx="9" cy="20" r="2" fill="#10B981"/>
+      <circle cx="23" cy="12" r="2" fill="#10B981"/>
+      <path d="M9 12 L16 16 L23 20" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M9 20 L16 16 L23 12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <text x="72" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="30" fill="#0F172A">BMP</text>
+    <text x="72" y="58" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#64748B">Bioinformatics Mentorship Program</text>
+  </g>
+
+  <!-- Mentor badge -->
+  <rect x="680" y="35" width="345" height="44" rx="22" fill="#2563EB" opacity="0.08"/>
+  <text x="852" y="64" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" fill="#2563EB">Mentor with 5+ Years Experience</text>
+
+  <!-- FREE badge -->
+  <g transform="translate(540, 130)">
+    <rect x="-80" y="-25" width="160" height="46" rx="23" fill="#10B981"/>
+    <text text-anchor="middle" y="5" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="24" fill="#FFFFFF">FREE</text>
+  </g>
+
+  <!-- Main headline -->
+  <text x="540" y="230" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="62" fill="#0F172A">Join Our Live</text>
+  <text x="540" y="305" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="62" fill="#2563EB">Info Session</text>
+
+  <!-- Subheadline - honest, transparent -->
+  <text x="540" y="370" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="24" fill="#64748B">A 30-minute Zoom call to see if the program</text>
+  <text x="540" y="402" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="24" fill="#64748B">fits your goals. No commitment. No payment.</text>
+
+  <!-- Divider -->
+  <line x1="340" y1="440" x2="740" y2="440" stroke="#E2E8F0" stroke-width="2"/>
+
+  <!-- What you'll discover -->
+  <text x="540" y="490" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="26" fill="#0F172A">In 30 Minutes, You'll Discover:</text>
+
+  <!-- Discovery items -->
+  <g transform="translate(120, 525)">
+    <g transform="translate(0, 0)">
+      <rect width="840" height="58" rx="12" fill="#F8FAFC"/>
+      <circle cx="35" cy="29" r="14" fill="#2563EB"/>
+      <text x="35" y="35" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">1</text>
+      <text x="65" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="21" fill="#0F172A">Exactly what you'll build in 12 weeks</text>
+    </g>
+
+    <g transform="translate(0, 70)">
+      <rect width="840" height="58" rx="12" fill="#F8FAFC"/>
+      <circle cx="35" cy="29" r="14" fill="#2563EB"/>
+      <text x="35" y="35" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">2</text>
+      <text x="65" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="21" fill="#0F172A">How the mentorship prepares you for PhD programs</text>
+    </g>
+
+    <g transform="translate(0, 140)">
+      <rect width="840" height="58" rx="12" fill="#F8FAFC"/>
+      <circle cx="35" cy="29" r="14" fill="#10B981"/>
+      <text x="35" y="35" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">3</text>
+      <text x="65" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="21" fill="#0F172A">Live curriculum walkthrough &amp; Q&amp;A with the mentor</text>
+    </g>
+
+    <g transform="translate(0, 210)">
+      <rect width="840" height="58" rx="12" fill="#F8FAFC"/>
+      <circle cx="35" cy="29" r="14" fill="#10B981"/>
+      <text x="35" y="35" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#FFFFFF">4</text>
+      <text x="65" y="35" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="21" fill="#0F172A">Honest answers — is this the right fit for you?</text>
+    </g>
+  </g>
+
+  <!-- Transparency note -->
+  <g transform="translate(540, 840)">
+    <rect x="-380" y="-22" width="760" height="44" rx="8" fill="#FFFBEB" stroke="#FCD34D" stroke-width="1"/>
+    <text text-anchor="middle" y="6" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="19" fill="#92400E">You decide after the session. Zero pressure.</text>
+  </g>
+
+  <!-- Bottom CTA -->
+  <rect y="900" width="1080" height="180" fill="#0F172A"/>
+  <rect x="190" y="925" width="700" height="65" rx="33" fill="#2563EB"/>
+  <text x="540" y="968" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="30" fill="#FFFFFF">Register for Free Info Session</text>
+  <text x="540" y="1030" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="22" fill="#94A3B8">Cohort 02: July–Sept 2026</text>
+  <text x="540" y="1062" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
+
+  <!-- Bottom accent -->
+  <rect y="1074" width="1080" height="6" fill="#10B981"/>
+</svg>

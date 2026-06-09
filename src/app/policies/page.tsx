@@ -28,9 +28,10 @@ export default function PoliciesPage() {
     {
       title: "3. Financial Policy",
       points: [
-        "The monthly mentorship fee is 10,200 BDT.",
+        "The standard monthly mentorship fee is 10,200 BDT.",
+        "June Flash Offer: Participants who join by June 25, 2026, are eligible for a 50% discount (5,100 BDT per month) for the duration of the cohort.",
         "Payments must be cleared by the 5th of each month. Late payments may result in suspension of access to program resources.",
-        "The fee is non-negotiable. Discounts are only considered for documented cases of extreme financial hardship.",
+        "The fee is non-negotiable outside of official promotional offers.",
         "Refund Policy: Once a mentorship month commences, the fee for that month is non-refundable.",
       ]
     },

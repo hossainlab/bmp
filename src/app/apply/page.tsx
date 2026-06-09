@@ -58,9 +58,23 @@ export default function ApplyPage() {
                 <div className="apply-accent-label">Investment</div>
                 <h3>Financial Transparency</h3>
                 
-                <div className="apply-price-display">
-                  <span className="apply-price-value">10,200 BDT</span>
-                  <span className="apply-price-period">/ per month</span>
+                <div className="apply-price-display mb-2">
+                  <div className="flex flex-col">
+                    <span className="apply-price-value text-indigo-600">5,100 BDT <span className="text-sm font-medium text-slate-500">/ month</span></span>
+                    <span className="text-xs text-slate-400 line-through">Previously 10,200 BDT</span>
+                  </div>
+                </div>
+                
+                <div className="bg-indigo-50 border border-indigo-100 rounded-lg p-3 mb-4">
+                  <p className="text-xs text-indigo-700 font-medium">
+                    ✨ <strong>June Flash Offer:</strong> Join by <strong>June 25</strong> to lock in a 50% discount for the entire cohort.
+                  </p>
+                </div>
+
+                <div className="bg-slate-50 border border-slate-200 rounded-md p-2 mb-4">
+                  <p className="text-[10px] text-slate-600 font-bold uppercase tracking-tight flex items-center gap-1.5">
+                    📅 Payment Deadline: 5th of each month
+                  </p>
                 </div>
 
                 <ul className="apply-price-list">
@@ -70,11 +84,11 @@ export default function ApplyPage() {
                   </li>
                   <li>
                     <span className="apply-dot"></span>
-                    Payments due by the <strong>5th</strong> of each month
+                    Early-bird discount applied
                   </li>
                   <li>
                     <span className="apply-dot"></span>
-                    Standard non-negotiable fee
+                    100% free fit-check session
                   </li>
                 </ul>
                 

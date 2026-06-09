@@ -25,59 +25,35 @@
     <text x="90" y="68" font-family="sans-serif" font-weight="400" font-size="14" fill="#64748B">Bioinformatics Mentorship Program</text>
   </g>
 
-  <!-- Top Mentor & Heading Section -->
-  <defs>
-    <clipPath id="circleView">
-      <circle cx="100" cy="100" r="100" />
-    </clipPath>
-  </defs>
-
-  <g transform="translate(60, 120)">
-    <!-- Mentor Photo -->
-    <g transform="translate(780, 0)">
-      <circle cx="90" cy="90" r="92" fill="#2563EB" opacity="0.1" />
-      <g clip-path="url(#circleView)" transform="scale(0.9)">
-        <image width="200" height="200" href="jubayer.jpg" />
-      </g>
-      <text y="210" x="90" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="18" fill="#0F172A">Md. Jubayer Hossain</text>
-      <text y="235" x="90" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="14" fill="#64748B">Founder, DeepBio Limited</text>
-    </g>
-
-    <!-- Main Heading -->
-    <text y="50" font-family="sans-serif" font-weight="900" font-size="54" fill="#0F172A">Launch Your <tspan x="0" dy="70" fill="#2563EB">Bioinformatics</tspan></text>
-    <text x="0" y="195" font-family="sans-serif" font-weight="900" font-size="54" fill="#0F172A">Research Career.</text>
-  </g>
+  <!-- Main Heading -->
+  <text x="60" y="170" font-family="sans-serif" font-weight="900" font-size="54" fill="#0F172A">Bioinformatics</text>
+  <text x="60" y="235" font-family="sans-serif" font-weight="900" font-size="54" fill="#2563EB">Mentorship Program</text>
   
   <!-- Cohort Announcement Badge -->
-  <rect x="60" y="380" width="960" height="60" rx="30" fill="#2563EB" />
-  <text x="540" y="418" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">Application Open: Cohort 02 (July–Sept 2026) | Deadline: June 25</text>
+  <rect x="60" y="270" width="960" height="60" rx="30" fill="#2563EB" />
+  <text x="540" y="308" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="22" fill="#FFFFFF">Application Open: Cohort 02 (July–Sept 2026) | Deadline: June 15</text>
   
   <!-- Payment & Info Session Notice -->
-  <g transform="translate(540, 480)">
-    <text text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="28" fill="#2563EB">No Payment Required Before Info Session</text>
-    <text y="45" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="20" fill="#64748B">Info Session: Shortlisted applicants get a Zoom link for a live preview</text>
-    <text y="72" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="20" fill="#64748B">of the curriculum to decide if it's the right fit before enrolling.</text>
+  <g transform="translate(540, 360)">
+    <text text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="24" fill="#2563EB">No Payment Required Before Info Session</text>
+    <text y="35" text-anchor="middle" font-family="sans-serif" font-weight="500" font-size="18" fill="#64748B">Info Session: A friendly 30-min call to see if the program fits your goals.</text>
   </g>
 
-  <!-- Section 1: Program Outcomes -->
-  <g transform="translate(60, 600)">
-    <text y="0" font-family="sans-serif" font-weight="800" font-size="26" fill="#0F172A">Program Outcomes</text>
+  <!-- Section 1: Core Outcomes -->
+  <g transform="translate(60, 440)">
+    <text y="0" font-family="sans-serif" font-weight="800" font-size="26" fill="#0F172A">Core Outcomes</text>
     <g transform="translate(0, 35)">
       <circle cx="8" cy="-8" r="5" fill="#2563EB" />
-      <text x="25" y="0" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">MS/PhD Readiness: <tspan fill="#64748B" font-weight="400">Preparation for international research journeys.</tspan></text>
-      
+      <text x="25" y="0" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">MS/PhD Readiness: <tspan fill="#64748B" font-weight="400">Preparation for your MS/PhD journey in bioinformatics.</tspan></text>
       <circle cx="8" cy="32" r="5" fill="#2563EB" />
-      <text x="25" y="40" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">Production Mastery: <tspan fill="#64748B" font-weight="400">Self-built pipelines on Linux/HPC with Nextflow.</tspan></text>
-      
-      <circle cx="8" cy="72" r="5" fill="#10B981" />
-      <text x="25" y="80" font-family="sans-serif" font-weight="800" font-size="20" fill="#059669">Research Assistantship Path:</text>
-      <text x="25" y="105" font-family="sans-serif" font-weight="500" font-size="18" fill="#1E293B">Top performers eligible for <tspan font-weight="700">2-year RA positions</tspan></text>
-      <text x="25" y="130" font-family="sans-serif" font-weight="400" font-size="16" fill="#64748B">Involves 2 publications in Single-Cell &amp; Deep Learning domains.</text>
+      <text x="25" y="40" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">Production Mastery: <tspan fill="#64748B" font-weight="400">A self-built, containerized bioinformatics pipeline running on Linux/HPC.</tspan></text>
+      <circle cx="8" cy="72" r="5" fill="#2563EB" />
+      <text x="25" y="80" font-family="sans-serif" font-weight="700" font-size="20" fill="#1E293B">RA Recruitment Path: <tspan fill="#64748B" font-weight="400">Eligibility for our bioinformatics lab based on your final capstone score.</tspan></text>
     </g>
   </g>
 
-  <!-- Section 2: Technical Mastery Stack (Placeholders) -->
-  <g transform="translate(60, 720)">
+  <!-- Section 2: Technical Mastery Stack -->
+  <g transform="translate(60, 580)">
     <text y="0" font-family="sans-serif" font-weight="800" font-size="24" fill="#2563EB">Technical Mastery Stack</text>
     <g transform="translate(0, 30)">
       <!-- Linux/HPC -->
@@ -133,9 +109,39 @@
     </g>
   </g>
 
-  <!-- CTA Footer -->
-  <g transform="translate(540, 960)">
-    <rect x="-250" y="-10" width="500" height="80" rx="10" fill="#2563EB" opacity="0.05" />
-    <text text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="36" fill="#2563EB">Apply Now: <tspan font-weight="700" fill="#0F172A">mdjubayerhossain.com/bmp</tspan></text>
+  <!-- Section 3: Process -->
+  <g transform="translate(60, 740)">
+    <text y="0" font-family="sans-serif" font-weight="800" font-size="24" fill="#0F172A">Enrollment Journey</text>
+    <g transform="translate(0, 45)">
+      <circle cx="15" cy="0" r="15" fill="#2563EB" />
+      <text x="15" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">1</text>
+      <text x="40" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Register</text>
+      <line x1="110" y1="0" x2="140" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="165" cy="0" r="15" fill="#2563EB" />
+      <text x="165" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">2</text>
+      <text x="190" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Review</text>
+      <line x1="260" y1="0" x2="280" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="305" cy="0" r="15" fill="#2563EB" />
+      <text x="305" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">3</text>
+      <text x="330" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Info Session</text>
+      <line x1="435" y1="0" x2="455" y2="0" stroke="#E2E8F0" stroke-width="1.5" stroke-dasharray="3 3" />
+      <circle cx="480" cy="0" r="15" fill="#2563EB" />
+      <text x="480" y="5" text-anchor="middle" font-family="sans-serif" font-weight="800" font-size="14" fill="#FFFFFF">4</text>
+      <text x="505" y="4" font-family="sans-serif" font-weight="700" font-size="17" fill="#1E293B">Enroll</text>
+    </g>
+  </g>
+
+  <!-- Mentor Footer -->
+  <rect y="860" width="1080" height="220" fill="#0F172A"/>
+  <g transform="translate(60, 905)">
+    <text y="20" font-family="sans-serif" font-weight="700" font-size="18" fill="#38BDF8">MENTORED BY</text>
+    <text y="65" font-family="sans-serif" font-weight="900" font-size="40" fill="#FFFFFF">Md. Jubayer Hossain</text>
+    <text y="100" font-family="sans-serif" font-weight="400" font-size="18" fill="#94A3B8">Founder &amp; CEO, DeepBio Limited</text>
+    
+    <g transform="translate(560, 5)">
+      <rect width="400" height="90" rx="14" fill="#2563EB" />
+      <text x="200" y="40" text-anchor="middle" font-family="sans-serif" font-weight="900" font-size="30" fill="#FFFFFF">APPLY NOW</text>
+      <text x="200" y="72" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="20" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
+    </g>
   </g>
 </svg>

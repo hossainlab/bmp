@@ -24,9 +24,8 @@ export default function Home() {
         <Solutions />
         <Curriculum />
         <WhatsIncluded />
-        <InstructorBio />
-        <CurrentMentees />
         <EnrollCTA />
+        <InstructorBio />
       </main>
       <Footer />
     </>

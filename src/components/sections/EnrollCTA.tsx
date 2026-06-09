@@ -67,12 +67,37 @@ export default function EnrollCTA() {
         {/* Pricing */}
         <div className="enroll-pricing-grid stack-on-mobile">
           {/* Monthly fee */}
-          <div className="enroll-fee-card">
-            <div className="enroll-fee-banner">Monthly Fee</div>
-            <div className="enroll-fee-body">
-              <div className="enroll-fee-amount">10,200 BDT</div>
-              <div className="enroll-fee-sub">Standard non-negotiable fee</div>
+          <div className="enroll-fee-card border-indigo-200 bg-indigo-50/50 relative overflow-hidden flex flex-col items-center justify-center p-8">
+            <div className="absolute top-0 right-0">
+              <div className="bg-indigo-600 text-white text-[10px] px-3 py-1 font-bold uppercase tracking-widest rounded-bl-lg">
+                50% OFF
+              </div>
             </div>
+            
+            <div className="text-indigo-600 font-mono text-[10px] uppercase tracking-widest mb-2 font-bold">
+              Monthly Mentorship Fee
+            </div>
+            
+            <div className="flex flex-col items-center gap-1 mb-4">
+              <div className="flex items-baseline gap-2">
+                <span className="text-indigo-600 text-4xl font-black">5,100 BDT</span>
+                <span className="text-slate-500 font-medium text-sm">/ month</span>
+              </div>
+              <div className="text-slate-400 line-through text-sm font-medium">
+                Was 10,200 BDT
+              </div>
+            </div>
+
+            <div className="bg-white/80 border border-indigo-100 rounded-full px-4 py-1.5 mb-2">
+              <p className="text-[11px] text-indigo-700 font-semibold flex items-center gap-1.5">
+                <span className="w-1.5 h-1.5 bg-indigo-500 rounded-full animate-pulse"></span>
+                Pay by 5th of each month
+              </p>
+            </div>
+            
+            <p className="text-[10px] text-slate-500 font-medium italic">
+              June Flash Offer: Join by June 25
+            </p>
           </div>
 
           {/* Commitment */}
@@ -89,8 +114,8 @@ export default function EnrollCTA() {
           </div>
         </div>
 
-        <p className="text-center text-slate-500 text-sm mt-6 max-w-2xl mx-auto">
-          Fee is non-negotiable. Participants facing genuine financial hardship may contact the mentor directly with supporting documentation for consideration of a discount.
+        <p className="text-center text-slate-500 text-sm mt-6 max-w-2xl mx-auto italic font-medium">
+          Fee is non-negotiable.
         </p>
 
         {/* Enrollment Timeline */}
