@@ -2576,6 +2576,13 @@ body {
   display: flex;
   flex-direction: column;
   cursor: default;
+  transition: height 0.3s ease;
+  min-height: 280px;
+}
+
+.mf-card-expanded {
+  height: auto;
+  min-height: 280px;
 }
 
 .mf-quote-glyph {

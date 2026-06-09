@@ -1,4 +1,5 @@
 "use client";
+import { useState } from "react";
 import Image from "next/image";
 
 
@@ -131,6 +132,22 @@ const mentees: Mentee[] = [
     quote:
       "One of the most valuable parts was learning how to read and write a research paper. After Jubayer Bhai's sessions, many of my confusions were cleared. I have personally benefited a lot.",
   },
+  {
+    name: "MD AZIZUL ISLAM",
+    university: "Jatiya Kabi Kazi Nazrul Islam University",
+    department: "Economics",
+    photo: "/Mentees_Photo/Azizul Islam.jpg",
+    quote:
+      "Through the courses offered by Research Help Bangladesh, I had the opportunity to attend many classes. Among all the classes I have attended, these were some of the most interactive and engaging ones. I started learning R analysis through these classes. Currently, I am working with a professor at my university, which is helping me gain more practical experience. In the past, most of the work around me was done using STATA. However, through your course and research-related guidance, I have been able to learn R and apply it in real work. My professor also appreciated the course and said that my motivation and foundation for learning R analysis came from this training. I am truly grateful for the knowledge and confidence I gained through your course.",
+  },
+  {
+    name: "Jannatul Mawya Metu",
+    university: "Jagannath University",
+    department: "Economics",
+    photo: "/Mentees_Photo/Mawya Jannat.jpg",
+    quote:
+      "Thanks vaiya for making easier way to learn each and every details of R programming. I hope this will be helpful for my research journey. I'm so grateful that I am learning things like R programming in more easiest way from you. Best wishes for u vaiya and Thanks for being our instructor.",
+  },
 ];
 
 const stats = [
@@ -160,47 +177,65 @@ function getInitials(name: string) {
 }
 
 function Card({ m }: { m: Mentee }) {
+  const [isExpanded, setIsExpanded] = useState(false);
+  const isLong = m.quote.length > 200;
+  const displayQuote = isLong && !isExpanded ? `${m.quote.slice(0, 197)}...` : m.quote;
+
   return (
-    <div className="mf-card">
+    <div className={`mf-card ${isExpanded ? "mf-card-expanded" : ""}`}>
       {/* Large decorative left curly quote */}
       <div className="mf-quote-glyph">&#8220;</div>
 
       {/* Quote text */}
-      <p className="mf-quote-text">{m.quote}</p>
-
-      {/* Divider */}
-      <div className="mf-divider" />
-
-      {/* Profile row */}
-      <div className="mf-profile">
-        {/* Avatar */}
-        <div className="mf-avatar">
-          {m.photo ? (
-            <Image
-              src={photoSrc(m.photo)}
-              alt={m.name}
-              width={48}
-              height={48}
-              style={{ objectFit: "cover", width: "100%", height: "100%" }}
-            />
-          ) : (
-            <div className="mf-avatar-initials">{getInitials(m.name)}</div>
+      <div className="flex-1 flex flex-col justify-between">
+        <div className="mb-4">
+          <p className="mf-quote-text mb-2">
+            {displayQuote}
+          </p>
+          {isLong && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-indigo-600 text-xs font-bold hover:underline focus:outline-none transition-colors"
+            >
+              {isExpanded ? "Show Less" : "Read More"}
+            </button>
           )}
         </div>
 
-        {/* Name / university / dept */}
-        <div>
-          <div className="mf-profile-name">{m.name}</div>
-          <div className="mf-profile-university">{m.university}</div>
-          <div className="mf-profile-dept">{m.department}</div>
-        </div>
-      </div>
+        {/* Divider */}
+        <div className="mf-divider" />
 
-      {/* Stars */}
-      <div className="mf-stars">
-        {[1, 2, 3, 4, 5].map((i) => (
-          <span key={i} className="mf-star">★</span>
-        ))}
+        {/* Profile row */}
+        <div className="mf-profile">
+          {/* Avatar */}
+          <div className="mf-avatar">
+            {m.photo ? (
+              <Image
+                src={photoSrc(m.photo)}
+                alt={m.name}
+                width={48}
+                height={48}
+                style={{ objectFit: "cover", width: "100%", height: "100%" }}
+              />
+            ) : (
+              <div className="mf-avatar-initials">{getInitials(m.name)}</div>
+            )}
+          </div>
+
+          {/* Name / university / dept */}
+          <div>
+            <div className="mf-profile-name">{m.name}</div>
+            <div className="mf-profile-university">{m.university}</div>
+            <div className="mf-profile-dept">{m.department}</div>
+          </div>
+        </div>
+
+        {/* Stars */}
+        <div className="mf-stars">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <span key={i} className="mf-star">★</span>
+          ))}
+        </div>
       </div>
     </div>
   );
