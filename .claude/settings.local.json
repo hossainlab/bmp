@@ -35,7 +35,9 @@
       "Bash(curl:*)",
       "WebFetch(domain:localhost)",
       "Bash(pip install:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(npx:*)",
+      "Bash(do:*)"
     ]
   }
 }

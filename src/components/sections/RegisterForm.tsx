@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 
 export default function RegisterForm() {
@@ -8,6 +8,16 @@ export default function RegisterForm() {
   const [success, setSuccess] = useState(false);
   const [agreed, setAgreed] = useState(false);
   const leadFired = useRef(false);
+
+  // Fire ViewContent when user reaches the apply form — helps Facebook optimize for intent
+  useEffect(() => {
+    if (typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
+      (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'ViewContent', {
+        content_name: 'BMP Application Page',
+        content_category: 'Mentorship',
+      });
+    }
+  }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
@@ -26,14 +36,33 @@ export default function RegisterForm() {
         body: JSON.stringify(data),
       });
 
-      // Track Facebook Lead Event — fire exactly once per successful submission
-      if (!leadFired.current && typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
+      // Track Facebook Lead Event — fire exactly once per successful submission.
+      // Same eventID goes to browser pixel AND server CAPI so Meta dedups to one Lead.
+      if (!leadFired.current) {
+        const eventID = `lead_${Date.now()}_${Math.random().toString(36).slice(2)}`;
         const email = (data.email as string || '').trim().toLowerCase();
         const phone = (data.phone as string || '').replace(/[^0-9]/g, '');
-        (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'Lead', {}, {
-          em: email,
-          ph: phone,
-        });
+
+        if (typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
+          (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'Lead', {
+            content_name: 'BMP Cohort 02 Application',
+            content_category: 'Mentorship',
+          }, { eventID });
+        }
+
+        // Server-side Conversions API — survives adblock / iOS / cookie loss
+        fetch('/api/capi', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            eventID,
+            email,
+            phone,
+            eventName: 'Lead',
+            sourceUrl: typeof window !== 'undefined' ? window.location.href : undefined,
+          }),
+        }).catch(() => {});
+
         leadFired.current = true;
       }
 

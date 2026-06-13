@@ -1,0 +1,127 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background: White -->
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+
+  <!-- Top section: dark -->
+  <rect width="1080" height="520" fill="#0F172A"/>
+
+  <!-- DNA helix decoration -->
+  <path opacity="0.04" d="M-100 100C100 100 0 400 200 400C400 400 300 100 500 100C700 100 600 400 800 400C1000 400 900 100 1100 100" stroke="#2563EB" stroke-width="100" stroke-linecap="round"/>
+  <path opacity="0.04" d="M-100 400C100 400 0 100 200 100C400 100 300 400 500 400C700 400 600 100 800 100C1000 100 900 400 1100 400" stroke="#10B981" stroke-width="100" stroke-linecap="round"/>
+
+  <!-- Logo -->
+  <g transform="translate(60, 40)">
+    <g transform="scale(2)">
+      <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 L16 2Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+      <path d="M16 8 L23 12 V20 L16 24 L9 20 V12 L16 8Z" stroke="#10B981" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      <circle cx="16" cy="16" r="3" fill="#2563EB"/>
+      <circle cx="9" cy="12" r="2" fill="#10B981"/>
+      <circle cx="23" cy="20" r="2" fill="#10B981"/>
+      <circle cx="9" cy="20" r="2" fill="#10B981"/>
+      <circle cx="23" cy="12" r="2" fill="#10B981"/>
+      <path d="M9 12 L16 16 L23 20" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M9 20 L16 16 L23 12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <text x="75" y="42" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="32" fill="#FFFFFF">BMP</text>
+    <text x="75" y="62" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#94A3B8">Bioinformatics Mentorship Program</text>
+  </g>
+
+  <!-- Badge -->
+  <rect x="680" y="35" width="345" height="44" rx="22" fill="#2563EB" opacity="0.2"/>
+  <text x="852" y="64" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" fill="#38BDF8">12-Week Intensive Program</text>
+
+  <!-- Main question -->
+  <text x="540" y="160" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="48" fill="#FFFFFF">Where Can You Work</text>
+  <text x="540" y="225" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="48" fill="#2563EB">After This Program?</text>
+
+  <!-- Research fields grid -->
+  <g transform="translate(70, 280)">
+    <!-- Row 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="290" height="55" rx="28" fill="#EF4444" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#EF4444"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#FCA5A5">Cancer Genomics</text>
+    </g>
+    <g transform="translate(310, 0)">
+      <rect width="290" height="55" rx="28" fill="#8B5CF6" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#8B5CF6"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#C4B5FD">Neurogenomics</text>
+    </g>
+    <g transform="translate(620, 0)">
+      <rect width="290" height="55" rx="28" fill="#F59E0B" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#F59E0B"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#FCD34D">Precision Medicine</text>
+    </g>
+    <!-- Row 2 -->
+    <g transform="translate(0, 70)">
+      <rect width="290" height="55" rx="28" fill="#06B6D4" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#06B6D4"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#67E8F9">Drug Discovery</text>
+    </g>
+    <g transform="translate(310, 70)">
+      <rect width="290" height="55" rx="28" fill="#10B981" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#10B981"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#6EE7B7">Immunology</text>
+    </g>
+    <g transform="translate(620, 70)">
+      <rect width="290" height="55" rx="28" fill="#EC4899" opacity="0.15"/>
+      <circle cx="28" cy="28" r="10" fill="#EC4899"/>
+      <text x="48" y="34" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#F9A8D4">Rare Diseases</text>
+    </g>
+  </g>
+
+  <!-- Transition arrow -->
+  <g transform="translate(540, 540)">
+    <polygon points="0,-20 30,20 -30,20" fill="#2563EB"/>
+  </g>
+
+  <!-- What makes it possible -->
+  <text x="540" y="610" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="38" fill="#0F172A">Real Skills. Real Research Fields.</text>
+
+  <!-- Outcome cards -->
+  <g transform="translate(60, 650)">
+    <!-- Card 1 -->
+    <g transform="translate(0, 0)">
+      <rect width="460" height="110" rx="16" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+      <text x="25" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="22" fill="#0F172A">Bulk RNA-Seq Analysis</text>
+      <text x="25" y="72" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">DESeq2, edgeR — differential expression,</text>
+      <text x="25" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">pathway analysis, meta-analysis</text>
+    </g>
+
+    <!-- Card 2 -->
+    <g transform="translate(480, 0)">
+      <rect width="460" height="110" rx="16" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+      <text x="25" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="22" fill="#0F172A">Single-Cell &amp; Transcriptomics</text>
+      <text x="25" y="72" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">Map cell types, discover biomarkers,</text>
+      <text x="25" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">profile tumor microenvironments</text>
+    </g>
+  </g>
+
+  <g transform="translate(60, 780)">
+    <!-- Card 3 -->
+    <g transform="translate(0, 0)">
+      <rect width="460" height="110" rx="16" fill="#EFF6FF" stroke="#BFDBFE" stroke-width="1.5"/>
+      <text x="25" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="22" fill="#0F172A">AI &amp; Deep Learning</text>
+      <text x="25" y="72" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">Predict drug response, classify tumors,</text>
+      <text x="25" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">automate research with AI tools</text>
+    </g>
+
+    <!-- Card 4 -->
+    <g transform="translate(480, 0)">
+      <rect width="460" height="110" rx="16" fill="#ECFDF5" stroke="#A7F3D0" stroke-width="1.5"/>
+      <text x="25" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="22" fill="#0F172A">Reproducible Pipelines</text>
+      <text x="25" y="72" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">Nextflow + Docker — production-grade</text>
+      <text x="25" y="95" font-family="Arial, Helvetica, sans-serif" font-weight="500" font-size="17" fill="#64748B">workflows for any research lab</text>
+    </g>
+  </g>
+
+  <!-- Bottom CTA -->
+  <rect y="930" width="1080" height="150" fill="#0F172A"/>
+  <rect x="60" y="955" width="500" height="60" rx="30" fill="#2563EB"/>
+  <text x="310" y="995" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="28" fill="#FFFFFF">Apply → Cohort 02</text>
+  <text x="770" y="985" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="20" fill="#94A3B8">Deadline: June 25</text>
+  <text x="770" y="1015" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="22" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
+
+  <!-- Bottom accent -->
+  <rect y="1074" width="1080" height="6" fill="#10B981"/>
+</svg>
