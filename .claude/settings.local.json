@@ -37,7 +37,11 @@
       "Bash(pip install:*)",
       "Bash(python:*)",
       "Bash(npx:*)",
-      "Bash(do:*)"
+      "Bash(do:*)",
+      "Read(//tmp/**)",
+      "Bash(break)",
+      "Bash(pkill -f \"next dev\")",
+      "Bash(pkill -f \"next-server\")"
     ]
   }
 }

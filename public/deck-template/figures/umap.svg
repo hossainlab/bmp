@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225">
+  <rect width="300" height="225" fill="#ffffff" rx="6"/>
+
+  <!-- Plot background -->
+  <rect x="18" y="14" width="264" height="192" fill="#f8fafc" rx="4"/>
+
+  <!-- ── T cells (red #ef4444) center≈(65,72) ── -->
+  <circle cx="58"  cy="65"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="72"  cy="70"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="60"  cy="78"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="78"  cy="72"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="55"  cy="82"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="68"  cy="60"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="82"  cy="78"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="65"  cy="88"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="50"  cy="72"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="75"  cy="60"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="88"  cy="82"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="62"  cy="90"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="70"  cy="55"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="84"  cy="68"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="48"  cy="80"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="72"  cy="86"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="80"  cy="65"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="55"  cy="58"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="90"  cy="72"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="65"  cy="96"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="42"  cy="76"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="78"  cy="96"  r="2.2" fill="#ef4444" opacity="0.82"/>
+  <circle cx="94"  cy="82"  r="2.2" fill="#ef4444" opacity="0.82"/>
+
+  <!-- ── B cells (blue #3b82f6) center≈(148,52) ── -->
+  <circle cx="138" cy="44"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="150" cy="50"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="142" cy="58"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="158" cy="48"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="130" cy="54"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="145" cy="40"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="160" cy="55"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="136" cy="62"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="122" cy="50"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="152" cy="34"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="165" cy="50"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="132" cy="66"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="148" cy="42"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="120" cy="60"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="162" cy="62"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="140" cy="70"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="125" cy="42"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="170" cy="44"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+  <circle cx="145" cy="28"  r="2.2" fill="#3b82f6" opacity="0.82"/>
+
+  <!-- ── NK cells (green #10b981) center≈(225,80) ── -->
+  <circle cx="216" cy="72"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="228" cy="80"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="220" cy="90"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="235" cy="76"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="208" cy="84"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="222" cy="66"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="238" cy="88"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="215" cy="98"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="205" cy="65"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="232" cy="95"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="245" cy="78"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="210" cy="100" r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="228" cy="62"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="242" cy="94"  r="2.2" fill="#10b981" opacity="0.82"/>
+  <circle cx="200" cy="78"  r="2.2" fill="#10b981" opacity="0.82"/>
+
+  <!-- ── Monocytes (amber #f59e0b) center≈(222,162) ── -->
+  <circle cx="212" cy="154" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="228" cy="162" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="216" cy="172" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="235" cy="158" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="204" cy="166" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="222" cy="148" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="240" cy="168" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="218" cy="178" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="200" cy="158" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="232" cy="178" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="245" cy="162" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="210" cy="185" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="235" cy="148" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="248" cy="172" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="205" cy="178" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="238" cy="185" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="252" cy="155" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="218" cy="190" r="2.2" fill="#f59e0b" opacity="0.85"/>
+  <circle cx="245" cy="145" r="2.2" fill="#f59e0b" opacity="0.85"/>
+
+  <!-- ── Dendritic cells (violet #8b5cf6) center≈(160,178) ── -->
+  <circle cx="154" cy="172" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="165" cy="180" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="158" cy="188" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="172" cy="175" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="148" cy="182" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="162" cy="168" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="176" cy="185" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="155" cy="195" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="142" cy="178" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="170" cy="165" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="180" cy="178" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="148" cy="195" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+  <circle cx="168" cy="160" r="2.2" fill="#8b5cf6" opacity="0.85"/>
+
+  <!-- ── Macrophages (teal #0d9488) center≈(82,162) ── -->
+  <circle cx="76"  cy="155" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="90"  cy="162" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="78"  cy="172" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="96"  cy="158" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="68"  cy="165" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="85"  cy="150" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="100" cy="168" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="80"  cy="178" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="62"  cy="158" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="95"  cy="178" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="108" cy="162" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="72"  cy="182" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="88"  cy="145" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="105" cy="175" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="62"  cy="172" r="2.2" fill="#0d9488" opacity="0.85"/>
+  <circle cx="98"  cy="185" r="2.2" fill="#0d9488" opacity="0.85"/>
+
+  <!-- ── Plasma cells (pink #ec4899) center≈(268,52) ── -->
+  <circle cx="260" cy="44"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="272" cy="50"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="264" cy="58"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="278" cy="46"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="254" cy="52"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="268" cy="38"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="280" cy="56"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="262" cy="64"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="248" cy="48"  r="2.2" fill="#ec4899" opacity="0.85"/>
+  <circle cx="276" cy="62"  r="2.2" fill="#ec4899" opacity="0.85"/>
+
+  <!-- ── Epithelial (lime #84cc16) center≈(152,122) ── -->
+  <circle cx="145" cy="115" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="158" cy="120" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="150" cy="130" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="162" cy="116" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="140" cy="124" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="154" cy="108" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="168" cy="124" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="145" cy="134" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="133" cy="118" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="165" cy="132" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="172" cy="115" r="2.2" fill="#84cc16" opacity="0.85"/>
+  <circle cx="140" cy="138" r="2.2" fill="#84cc16" opacity="0.85"/>
+
+  <!-- ── Cluster labels ── -->
+  <text x="65"  y="106" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#be123c">T cells</text>
+  <text x="147" y="78"  text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#1d4ed8">B cells</text>
+  <text x="224" y="108" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#065f46">NK cells</text>
+  <text x="224" y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#92400e">Monocytes</text>
+  <text x="162" y="205" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#5b21b6">DC</text>
+  <text x="83"  y="200" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#134e4a">Macrophages</text>
+  <text x="268" y="77"  text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#9d174d">Plasma</text>
+  <text x="153" y="148" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7" font-weight="700" fill="#3f6212">Epithelial</text>
+
+  <!-- Axes labels -->
+  <text x="150" y="215" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7.5" font-weight="600" fill="#475569">UMAP 1</text>
+  <text x="10"  y="113" text-anchor="middle" font-family="Inter,system-ui,sans-serif" font-size="7.5" font-weight="600" fill="#475569" transform="rotate(-90,10,113)">UMAP 2</text>
+
+  <!-- Axes -->
+  <line x1="24" y1="202" x2="278" y2="202" stroke="#cbd5e1" stroke-width="0.8"/>
+  <line x1="24" y1="202" x2="24"  y2="20"  stroke="#cbd5e1" stroke-width="0.8"/>
+  <polygon points="278,200 283,202 278,204" fill="#cbd5e1"/>
+  <polygon points="22,20 24,15 26,20"       fill="#cbd5e1"/>
+</svg>

@@ -36,7 +36,7 @@ export default function ApplyPage() {
               <div className="apply-info-box">
                 <h3>Selection Process</h3>
                 <div className="apply-deadline-sidebar">
-                  Applications close on <strong>June 15</strong>
+                  Applications close on <strong>June 25</strong>
                 </div>
                 <ol>
                   <li>

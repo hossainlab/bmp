@@ -9,14 +9,22 @@ export default function RegisterForm() {
   const [agreed, setAgreed] = useState(false);
   const leadFired = useRef(false);
 
-  // Fire ViewContent when user reaches the apply form — helps Facebook optimize for intent
+  // Fire ViewContent when user reaches the apply form — helps Facebook optimize for intent.
+  // Pixel script loads afterInteractive, so fbq may not exist on first mount — retry until ready.
   useEffect(() => {
-    if (typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
-      (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'ViewContent', {
-        content_name: 'BMP Application Page',
-        content_category: 'Mentorship',
-      });
-    }
+    let tries = 0;
+    const fire = () => {
+      const fbq = (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq;
+      if (fbq) {
+        fbq('track', 'ViewContent', {
+          content_name: 'BMP Application Page',
+          content_category: 'Mentorship',
+        });
+        return;
+      }
+      if (tries++ < 20) setTimeout(fire, 300); // give up after ~6s
+    };
+    if (typeof window !== 'undefined') fire();
   }, []);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -24,7 +32,19 @@ export default function RegisterForm() {
     setPending(true);
 
     const formData = new FormData(e.currentTarget);
-    const data = Object.fromEntries(formData.entries());
+    const data = Object.fromEntries(formData.entries()) as Record<string, string>;
+
+    // One eventID shared by browser pixel + server CAPI (sent via Apps Script) so Meta dedups to one Lead.
+    const eventID = `lead_${Date.now()}_${Math.random().toString(36).slice(2)}`;
+    const getCookie = (name: string) =>
+      document.cookie.split('; ').find((c) => c.startsWith(name + '='))?.split('=')[1] || '';
+
+    // Pass Meta matching signals to Apps Script (it runs CAPI server-side and holds the token).
+    data.fb_event_id = eventID;
+    data.fb_source_url = window.location.href;
+    data.fb_fbp = getCookie('_fbp');
+    data.fb_fbc = getCookie('_fbc');
+    data.fb_user_agent = navigator.userAgent;
 
     try {
       await fetch("https://script.google.com/macros/s/AKfycbxwu5X0SbE6ODDomRtT6qD5KjbACRQPFmleDXdMu2gFbJKYxc1nkpmcpZBbH6Qj0g4/exec", {
@@ -36,33 +56,14 @@ export default function RegisterForm() {
         body: JSON.stringify(data),
       });
 
-      // Track Facebook Lead Event — fire exactly once per successful submission.
-      // Same eventID goes to browser pixel AND server CAPI so Meta dedups to one Lead.
+      // Track Facebook Lead Event in the browser — fire exactly once per successful submission.
       if (!leadFired.current) {
-        const eventID = `lead_${Date.now()}_${Math.random().toString(36).slice(2)}`;
-        const email = (data.email as string || '').trim().toLowerCase();
-        const phone = (data.phone as string || '').replace(/[^0-9]/g, '');
-
         if (typeof window !== 'undefined' && (window as unknown as { fbq?: (...args: unknown[]) => void }).fbq) {
           (window as unknown as { fbq: (...args: unknown[]) => void }).fbq('track', 'Lead', {
             content_name: 'BMP Cohort 02 Application',
             content_category: 'Mentorship',
           }, { eventID });
         }
-
-        // Server-side Conversions API — survives adblock / iOS / cookie loss
-        fetch('/api/capi', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            eventID,
-            email,
-            phone,
-            eventName: 'Lead',
-            sourceUrl: typeof window !== 'undefined' ? window.location.href : undefined,
-          }),
-        }).catch(() => {});
-
         leadFired.current = true;
       }
 
