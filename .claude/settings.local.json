@@ -41,7 +41,12 @@
       "Read(//tmp/**)",
       "Bash(break)",
       "Bash(pkill -f \"next dev\")",
-      "Bash(pkill -f \"next-server\")"
+      "Bash(pkill -f \"next-server\")",
+      "Bash(awk -F: '$2>1575 && $2<1750 {print}')",
+      "Bash(awk -F: '$2>1575 && $2<1760 {print}')",
+      "Bash(brew install *)",
+      "Bash(pdftotext /Users/jubayer/Inbox/bmp/public/deck-template/cohort01-output/gbm-draft.pdf -)",
+      "Bash(python3 *)"
     ]
   }
 }
