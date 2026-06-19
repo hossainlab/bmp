@@ -17,7 +17,8 @@ export default function ResearchAssistant() {
       title: "Program Enrollment",
       items: [
         "Currently enrolled in or have completed the BMP",
-        "Successful completion of all assigned program projects",
+        "Minimum 85% attendance in mentoring sessions (mandatory)",
+        "Minimum 85% task / project completion (mandatory)",
       ],
     },
     {
@@ -70,6 +71,30 @@ export default function ResearchAssistant() {
         <p className="ra-subtext">
           Top-performing participants who successfully complete the SBTP program and its core projects are eligible to join the <strong>Cancer Genomics and Neurogenomics</strong> lab. This position is a gateway for those targeting advanced MSc/PhD degrees.
         </p>
+
+        <div className="ra-eligibility">
+          <div className="ra-eligibility-label">Mandatory Eligibility</div>
+          <p className="ra-eligibility-text">
+            To be eligible to apply as a Research Assistant, a participant must
+            meet <strong>both</strong> of the following minimum thresholds:
+          </p>
+          <div className="ra-eligibility-metrics">
+            <div className="ra-eligibility-metric">
+              <span className="ra-eligibility-value">≥ 85%</span>
+              <span className="ra-eligibility-key">Mentoring session attendance</span>
+            </div>
+            <div className="ra-eligibility-metric">
+              <span className="ra-eligibility-value">≥ 85%</span>
+              <span className="ra-eligibility-key">Task / project completion</span>
+            </div>
+          </div>
+          <p className="ra-eligibility-note">
+            These are <strong>strict, non-negotiable minimum requirements</strong>.
+            Participants who fall below either threshold are <strong>not eligible</strong>
+            to apply and applications will not be considered, regardless of other
+            qualifications.
+          </p>
+        </div>
 
         <div className="ra-grid">
           {cards.map((card) => (
