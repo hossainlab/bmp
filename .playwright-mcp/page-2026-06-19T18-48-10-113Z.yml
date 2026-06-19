@@ -1,0 +1,217 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "BMP Bioinformatics Mentorship Program" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img [ref=e5]
+        - generic [ref=e15]:
+          - generic [ref=e16]: BMP
+          - generic [ref=e17]: Bioinformatics Mentorship Program
+      - generic [ref=e18]:
+        - link "Resources" [ref=e19] [cursor=pointer]:
+          - /url: /resources
+        - link "Tutorials" [ref=e20] [cursor=pointer]:
+          - /url: /tutorials
+        - link "Stories" [ref=e21] [cursor=pointer]:
+          - /url: /#mentee-stories
+        - link "Join Us" [ref=e22] [cursor=pointer]:
+          - /url: /research
+        - link "Schedule" [ref=e23] [cursor=pointer]:
+          - /url: https://docs.google.com/spreadsheets/d/1_1Cj7DarlaLFG2UZq_whijYMnW2HbdDxj4wTewBK3mI/edit?usp=sharing
+        - link "Policies" [ref=e24] [cursor=pointer]:
+          - /url: /policies
+        - link "Apply Now →" [ref=e25] [cursor=pointer]:
+          - /url: /apply
+  - main [ref=e26]:
+    - article [ref=e27]:
+      - link "← All stories" [ref=e28] [cursor=pointer]:
+        - /url: /blog
+      - generic [ref=e29]:
+        - generic [ref=e30]: RNA-Seq
+        - generic [ref=e31]: Cancer
+      - heading "The Summer I Stopped Being Afraid to Ask Questions" [level=1] [ref=e32]
+      - generic [ref=e33]:
+        - generic [ref=e34]: FA
+        - generic [ref=e35]:
+          - generic [ref=e36]: Fayez Ahmad · GSA Bioinformatics Intern
+          - generic [ref=e37]: Notre Dame College, Dhaka · June 15, 2026
+      - img "The Summer I Stopped Being Afraid to Ask Questions" [ref=e39]
+      - generic [ref=e40]:
+        - paragraph [ref=e41]: At the start of my internship journey, I was a 12th-grade student at Notre Dame College, Dhaka. While my preparation for the International Biology Olympiad and online bioinformatics courses had given me strong theoretical knowledge, my only hands-on research experience was working on designing a computational model of a photosynthetic microbial consortium for Mars during the Non-Trivial Research Foundation Camp. I was eager to turn that theory into real-world impact, wanting to know what it truly meant to be a computational biology researcher and to see if academia was my true calling. However, walking into the program as the youngest and least experienced of the five interns, a wave of hesitation hit me. I found myself holding back questions, constantly worried that my age would be blamed for any gap in my understanding.
+        - heading "A culture that dissolved the imposter syndrome" [level=2] [ref=e42]
+        - paragraph [ref=e43]: That initial imposter syndrome did not last long, thanks to the welcoming culture established by our mentors, Md. Jubayer Hossain, Muhibullah Shahjahan, and Muntasim Fuad. Instead of throwing us directly into the deep end of complex data, they dedicated the first couple of weeks entirely to conducting foundational classes in R. Throughout the internship, whenever a project demanded a specialized skill set, the mentors were right there to teach a targeted class, suggest literature, or point us toward the exact resources we needed. Jubayer Vai's patient, structured guidance completely dissolved any hesitation, allowing me to research alongside the team with confidence.
+        - heading "Researching esophageal cancer" [level=2] [ref=e44]
+        - paragraph [ref=e45]: My primary research focused on Esophageal Cancer, which is the leading cause of cancer fatalities for both sexes in Bangladesh. To overcome the limitations of small sample sizes in existing studies, we combined 16 RNA-seq datasets from NCBI GEO to conduct a large-scale meta-analysis of Esophageal Squamous Cell Carcinoma and Esophageal Adenocarcinoma. Leveraging the R programming and bioinformatics skills mastered in our early weeks, we used R packages such as DESeq2 and MetaVolcanoR, alongside bioinformatics tools like STRING, UALCAN, and cBioPortal, to perform multi-omics analyses and identify consensus biomarkers of esophageal cancer.
+        - heading "Presenting and teaching" [level=2] [ref=e46]
+        - paragraph [ref=e47]: Sharing the early version of the research at the BSM International Conference 2025 as the only high school presenter was an unforgettable experience. Standing before veteran scientists, handling technical questions about my pipeline, and networking with peers taught me lessons in scientific communication I couldn't have learned any other way.
+        - paragraph [ref=e48]: As part of the internship, I also taught classes for the School of Bioinformatics. I've always loved teaching, so getting to pass on fundamental bioinformatics skills to the next generation and answer their curious questions was genuinely one of my favorite parts of the experience.
+        - heading "The first building blocks toward MIT" [level=2] [ref=e49]
+        - paragraph [ref=e50]: This transformative experience became central to my next academic chapter. When applying to the Massachusetts Institute of Technology, I submitted my research abstract alongside a heartfelt Letter of Recommendation from Mr. Md. Jubayer Hossain. Showcasing the genuine computational and analytical skills I developed during this internship was pivotal in securing my admission to MIT's incoming freshman class. As I prepare to step onto campus, the multi-omic workflows I learned under Mr. Hossain are the first building blocks toward my long-term vision of developing open, low-cost early-detection computational models and deploying them directly into hospitals in Bangladesh to diagnose esophageal cancer before it is too late.
+        - blockquote [ref=e51]:
+          - paragraph [ref=e52]: "To future interns entering the GSA Bioinformatics program, my advice is simple: never stop asking questions. Whenever you're confused, ask your mentors and clear it up on the spot. With a solid foundation and hard work, the sky really is the limit."
+  - generic [ref=e54]:
+    - paragraph [ref=e55]: Enrollment
+    - heading "Start Your Journey" [level=2] [ref=e56]
+    - paragraph [ref=e57]: This is an intensive, hands-on program for serious researchers. Limited to 20 participants to ensure personalized mentorship and accountability.
+    - generic [ref=e58]:
+      - paragraph [ref=e59]: Selection Criteria
+      - generic [ref=e60]:
+        - generic [ref=e61]:
+          - generic [ref=e62]: 🎯
+          - generic [ref=e63]: Career Alignment
+          - generic [ref=e64]: Committed to MS/PhD or research career path.
+        - generic [ref=e65]:
+          - generic [ref=e66]: ⏰
+          - generic [ref=e67]: Punctual
+          - generic [ref=e68]: Attend sessions on time. Submit work by deadlines.
+        - generic [ref=e69]:
+          - generic [ref=e70]: 🤝
+          - generic [ref=e71]: Team player
+          - generic [ref=e72]: Collaborate and support peers in a professional setting.
+        - generic [ref=e73]:
+          - generic [ref=e74]: 📚
+          - generic [ref=e75]: 10+ hrs/week
+          - generic [ref=e76]: Willingness to dedicate significant time to research.
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - generic [ref=e79]: Program Duration
+        - generic [ref=e80]: 12 weeks
+      - generic [ref=e81]:
+        - generic [ref=e82]: Monthly Sessions
+        - generic [ref=e83]: 8 hours total
+      - generic [ref=e84]:
+        - generic [ref=e85]: Independent Work
+        - generic [ref=e86]: 10–12 hours/week
+      - generic [ref=e87]:
+        - generic [ref=e88]: Cohort Size
+        - generic [ref=e89]: 20 participants max
+    - paragraph [ref=e90]: Session times and cohort start dates coordinated based on mentor and participant availability.
+    - generic [ref=e91]:
+      - generic [ref=e92]:
+        - generic [ref=e94]: 50% OFF
+        - generic [ref=e95]: Monthly Mentorship Fee
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]: 5,100 BDT
+            - generic [ref=e99]: / month
+          - generic [ref=e100]: Was 10,200 BDT
+        - paragraph [ref=e102]: Pay by 5th of each month
+        - paragraph [ref=e104]: "June Flash Offer: Join by June 25"
+      - generic [ref=e106]:
+        - generic [ref=e107]: 12-week commitment
+        - generic [ref=e108]: A serious investment in your research career
+        - generic [ref=e109]: ⚠ Non-refundable once month commences
+    - paragraph [ref=e110]: Fee is non-negotiable.
+    - generic [ref=e111]:
+      - paragraph [ref=e112]: Enrollment Process
+      - generic [ref=e113]:
+        - generic [ref=e114]:
+          - generic [ref=e115]: "1"
+          - generic [ref=e116]:
+            - generic [ref=e117]: Register
+            - generic [ref=e118]: Submit application via website form — no payment required
+        - generic [ref=e120]:
+          - generic [ref=e121]: "2"
+          - generic [ref=e122]:
+            - generic [ref=e123]: Review
+            - generic [ref=e124]: Applications evaluated based on career alignment
+        - generic [ref=e126]:
+          - generic [ref=e127]: "3"
+          - generic [ref=e128]:
+            - generic [ref=e129]: Info Session
+            - generic [ref=e130]: Shortlisted applicants invited to 30-min fit check
+        - generic [ref=e132]:
+          - generic [ref=e133]: "4"
+          - generic [ref=e134]:
+            - generic [ref=e135]: Payment
+            - generic [ref=e136]: Payment link sent post-info session to confirmed participants
+        - generic [ref=e138]:
+          - generic [ref=e139]: "5"
+          - generic [ref=e140]:
+            - generic [ref=e141]: Cohort Start
+            - generic [ref=e142]: 2 weeks after payment window closes
+    - generic [ref=e143]:
+      - paragraph [ref=e144]: Applications reviewed within 7 days. Cohort confirmed 2 weeks before start date.
+      - link "Apply Now →" [ref=e145] [cursor=pointer]:
+        - /url: /apply
+      - paragraph [ref=e146]:
+        - text: Questions about the program?
+        - link "Contact Md. Jubayer Hossain directly." [ref=e147] [cursor=pointer]:
+          - /url: mailto:info@mdjubayerhossain.com
+  - contentinfo [ref=e148]:
+    - generic [ref=e149]:
+      - generic [ref=e150]:
+        - generic [ref=e151]:
+          - link "BMP" [ref=e152] [cursor=pointer]:
+            - /url: /
+            - img [ref=e153]
+            - generic [ref=e163]: BMP
+          - paragraph [ref=e164]: An intensive 12-week mentorship program taking you from raw sequencing data to publication-ready research.
+        - generic [ref=e165]:
+          - heading "Connect with Mentor" [level=4] [ref=e166]
+          - generic [ref=e167]:
+            - link "Personal Website" [ref=e168] [cursor=pointer]:
+              - /url: https://mdjubayerhossain.com
+              - img [ref=e169]
+              - text: Personal Website
+            - link "LinkedIn" [ref=e172] [cursor=pointer]:
+              - /url: https://www.linkedin.com/in/hossainmj
+              - img [ref=e173]
+              - text: LinkedIn
+            - link "GitHub" [ref=e177] [cursor=pointer]:
+              - /url: https://github.com/hossainlab
+              - img [ref=e178]
+              - text: GitHub
+            - link "Twitter / X" [ref=e181] [cursor=pointer]:
+              - /url: https://twitter.com/hossain_lab
+              - img [ref=e182]
+              - text: Twitter / X
+        - generic [ref=e184]:
+          - heading "DeepBio Academy" [level=4] [ref=e185]
+          - generic [ref=e186]:
+            - link "Academy Website" [ref=e187] [cursor=pointer]:
+              - /url: https://deepbioacademy.com
+              - img [ref=e188]
+              - text: Academy Website
+            - link "LinkedIn" [ref=e191] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioacademy
+              - img [ref=e192]
+              - text: LinkedIn
+            - link "GitHub" [ref=e196] [cursor=pointer]:
+              - /url: https://github.com/deepbioacademy
+              - img [ref=e197]
+              - text: GitHub
+            - link "Facebook" [ref=e200] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioacademy
+              - img [ref=e201]
+              - text: Facebook
+        - generic [ref=e203]:
+          - heading "DeepBio Limited" [level=4] [ref=e204]
+          - generic [ref=e205]:
+            - link "Official Website" [ref=e206] [cursor=pointer]:
+              - /url: https://deepbioltd.com
+              - img [ref=e207]
+              - text: Official Website
+            - link "LinkedIn" [ref=e210] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/deepbioltd
+              - img [ref=e211]
+              - text: LinkedIn
+            - link "GitHub" [ref=e215] [cursor=pointer]:
+              - /url: https://github.com/deepbioltd
+              - img [ref=e216]
+              - text: GitHub
+            - link "Facebook" [ref=e219] [cursor=pointer]:
+              - /url: https://www.facebook.com/deepbioltd
+              - img [ref=e220]
+              - text: Facebook
+      - generic [ref=e222]:
+        - generic [ref=e223]: © 2026 Md. Jubayer Hossain · All Rights Reserved
+        - generic [ref=e224]:
+          - link "Privacy Policy" [ref=e225] [cursor=pointer]:
+            - /url: "#"
+          - link "Terms of Service" [ref=e226] [cursor=pointer]:
+            - /url: "#"
+          - link "Contact" [ref=e227] [cursor=pointer]:
+            - /url: "#"
+  - button "Open Next.js Dev Tools" [ref=e233] [cursor=pointer]:
+    - img [ref=e234]

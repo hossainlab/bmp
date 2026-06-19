@@ -46,7 +46,14 @@
       "Bash(awk -F: '$2>1575 && $2<1760 {print}')",
       "Bash(brew install *)",
       "Bash(pdftotext /Users/jubayer/Inbox/bmp/public/deck-template/cohort01-output/gbm-draft.pdf -)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "Bash(pdftotext -f 1 -l 1 \"public/deck-template/cohort01-output/gbm-draft.pdf\" -)",
+      "mcp__playwright__browser_run_code_unsafe",
+      "Bash(awk '{printf \"%.1f MB\\\\t%s\\\\n\", $1/1048576, $2}')",
+      "Bash(awk '{s+=$1} END{printf \"%.1f MB\\\\n\", s/1048576}')",
+      "Bash(MAXEDGE=1500 node scripts/imgopt.mjs public/publications public/deck-template public/project public/project_figures public/brand-template public/ads)",
+      "Bash(MAXEDGE=1500 node scripts/imgopt.mjs public/publications public/deck-template public/project public/brand-template public/ads)",
+      "Bash(awk '{printf \"%.1f MB\\\\t%s\\\\n\",$1/1048576,$2}')"
     ]
   }
 }

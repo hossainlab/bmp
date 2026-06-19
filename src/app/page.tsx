@@ -10,6 +10,8 @@ import WhatsIncluded from "@/components/sections/WhatsIncluded";
 import InstructorBio from "@/components/sections/InstructorBio";
 import CurrentMentees from "@/components/sections/CurrentMentees";
 import MenteesFeedback from "@/components/sections/MenteesFeedback";
+import MenteeStories from "@/components/sections/MenteeStories";
+import ResearchOutput from "@/components/sections/ResearchOutput";
 import EnrollCTA from "@/components/sections/EnrollCTA";
 
 export default function Home() {
@@ -19,11 +21,14 @@ export default function Home() {
       <main>
         <Hero />
         <WhoIsThisFor />
-        <MenteesFeedback />
         <WhyBeginnersGetStuck />
         <Solutions />
         <Curriculum />
         <WhatsIncluded />
+        <CurrentMentees />
+        <MenteesFeedback />
+        <MenteeStories />
+        <ResearchOutput />
         <EnrollCTA />
         <InstructorBio />
       </main>
