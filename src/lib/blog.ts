@@ -73,13 +73,21 @@ export function getPost(slug: string): Post | null {
   return post;
 }
 
+const MONTHS = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
 export function formatDate(date: string): string {
   if (!date) return "";
-  const d = new Date(date);
-  if (Number.isNaN(d.getTime())) return date;
-  return d.toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  // Parse the date parts directly to avoid timezone-dependent rendering:
+  // `new Date("2026-06-21")` is UTC midnight, and `toLocaleDateString` would
+  // then shift the day in timezones west of UTC — causing SSR/client
+  // hydration mismatches in production.
+  const m = /^(\d{4})-(\d{2})-(\d{2})/.exec(date);
+  if (!m) return date;
+  const [, year, month, day] = m;
+  const name = MONTHS[Number(month) - 1];
+  if (!name) return date;
+  return `${name} ${Number(day)}, ${year}`;
 }
