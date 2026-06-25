@@ -1,0 +1,185 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - img
+  - application [ref=e2]:
+    - generic:
+      - generic:
+        - generic: Today's Session
+        - heading [level=2]: What we'll cover today
+        - paragraph: ~30 minutes · open Q&A to follow
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "01"
+                - generic: The Problem & Solution
+              - generic: Why learners stall — and how this program fixes it
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "02"
+                - generic: What You'll Learn
+              - generic: Curriculum, tools, workflows, and career outcomes
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "03"
+                - generic: Real Mentee Output
+              - generic: Published papers and research from Cohort 01 & GSA interns
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "04"
+                - generic: Enroll & Start
+              - generic: Who this is for, pricing, and how to secure your seat tonight
+      - generic:
+        - generic: About the Mentor
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - generic: 5+
+                - generic: Years Research
+              - generic:
+                - generic: 5+
+                - generic: Years Mentoring
+              - generic:
+                - generic: 3K+
+                - generic: Students Trained
+              - generic:
+                - generic: 20+
+                - generic: Publications
+          - generic:
+            - generic:
+              - heading [level=2]: Md. Jubayer Hossain
+              - generic: Founder & CEO, DeepBio Ltd
+            - paragraph: Bioinformatician and computational biologist with 5+ years of experience in active research and teaching. Since 2020, he has trained 3,000+ students in practical skills for real-world biological data analysis.
+            - generic:
+              - generic:
+                - heading [level=4]: Interests
+                - list:
+                  - listitem: Transcriptomics
+                  - listitem: Single-Cell Analysis
+                  - listitem: Cancer Genomics
+                  - listitem: Neurogenomics
+                  - listitem: AI in Biomedicine
+              - generic:
+                - heading [level=4]: Education
+                - generic:
+                  - strong: MS, Microbiology
+                  - text: Jagannath University
+                  - strong: BS, Microbiology
+                  - text: Jagannath University
+              - generic:
+                - heading [level=4]: Affiliations
+                - list:
+                  - listitem: Founder & CEO, DeepBio Limited
+                  - listitem: Founder & Lead Instructor, DeepBio Academy
+                  - listitem: Founder & Director, CHIRAL Bangladesh
+                  - listitem: Faculty, cBLAST, University of Dhaka
+                  - listitem: Visiting Scholar, Daffodil International University
+                  - listitem: Program Lead, GSA Bioinformatics Internship
+            - generic: "\"My role is to accelerate your journey from question to discovery. You bring the curiosity; I bring the roadmap, the tools, and the accountability.\""
+      - generic [ref=e3]:
+        - generic [ref=e4]: The Journey
+        - heading "Journey to Bioinformatics" [level=2] [ref=e5]
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - generic [ref=e11]: "2016"
+            - generic [ref=e12]:
+              - strong [ref=e13]: The Start
+              - paragraph [ref=e14]:
+                - text: Lost in Microbiology BS. Found direction in
+                - strong [ref=e15]: Python & R
+                - text: self-study.
+          - generic [ref=e16]:
+            - generic [ref=e18]: "2019"
+            - generic [ref=e19]:
+              - strong [ref=e20]: The Pivot
+              - paragraph [ref=e21]:
+                - text: Pandemic. Taught R/Python online to juniors. Founded
+                - strong [ref=e22]: HDRO
+                - text: .
+          - generic [ref=e23]:
+            - generic [ref=e25]: "2020"
+            - generic [ref=e26]:
+              - strong [ref=e27]: Establishment
+              - paragraph [ref=e28]:
+                - text: June 10. HDRO evolved into
+                - strong [ref=e29]: CHIRAL Bangladesh
+                - text: .
+          - generic [ref=e30]:
+            - generic [ref=e32]: "2024"
+            - generic [ref=e33]:
+              - strong [ref=e34]: Scaling
+              - paragraph [ref=e35]:
+                - text: Launched
+                - strong [ref=e36]: DeepBio Limited
+                - text: "&"
+                - strong [ref=e37]: Academy
+                - text: .
+        - generic [ref=e38]:
+          - generic [ref=e39]: The Current Ecosystem
+          - generic [ref=e40]:
+            - generic [ref=e41]:
+              - generic [ref=e42]: 🔬
+              - heading "Research" [level=4] [ref=e43]
+              - paragraph [ref=e44]: CHIRAL Bangladesh
+            - generic [ref=e45]:
+              - generic [ref=e46]: 💻
+              - heading "Services" [level=4] [ref=e47]
+              - paragraph [ref=e48]: DeepBio Limited
+            - generic [ref=e49]:
+              - generic [ref=e50]: 🎓
+              - heading "Training" [level=4] [ref=e51]
+              - paragraph [ref=e52]: DeepBio Academy
+      - generic:
+        - generic: Section 01
+        - heading [level=2]: The need. The problem. The solution.
+        - paragraph: Why NGS literacy is now essential — and exactly how this program gets you there.
+      - generic:
+        - generic: Why This Mentorship Matters
+        - heading [level=2]: NGS data analysis is no longer optional
+        - paragraph: Whether you're in academia or industry, the ability to analyze your own sequencing data is rapidly becoming a baseline expectation — not a bonus skill.
+        - generic:
+          - generic:
+            - generic: "01"
+            - generic:
+              - img
+              - generic: Academia
+            - heading [level=4]: You understand your biology — own your data too
+            - paragraph: RNA-seq has become routine in labs of every size. No external bioinformatician knows your experimental system, your controls, or your biological hypotheses the way you do. Analyzing your own data doesn't just save time — it generates deeper, more accurate insights.
+          - generic:
+            - generic: "02"
+            - generic:
+              - img
+              - generic: Industry
+            - heading [level=4]: Wet lab + dry lab = an unfair advantage
+            - paragraph: Top pharmaceutical and biotech companies actively seek researchers who can move fluidly between bench and computation. This hybrid profile is rare, commands higher salaries, and opens doors that remain closed to specialists on either side alone.
+          - generic:
+            - generic: "03"
+            - generic:
+              - img
+              - generic: Career
+            - heading [level=4]: The field has moved. Don't get left behind.
+            - paragraph: NGS data is now universal across life sciences. Labs without dedicated bioinformaticians are competing for collaborators, waiting months for results, and missing publication deadlines. Knowing how to handle this data is simply part of being a competitive researcher today.
+        - paragraph:
+          - text: Perspective adapted from
+          - strong: Dr. Lei Guo
+          - text: ", Computational Biologist · UT Southwestern Medical Center"
+      - text: → → → → → → → → → → → → → → → → → → → → → → → → → → → → ✓ ✓ ✓ ✓ ✓ ✗ ✗ ✗ ✗ ✗ → → → → → → → → → → → → → →
+    - link "4 / 31" [ref=e57] [cursor=pointer]:
+      - /url: "#/3"
+    - text: Speaker notes
+    - generic [ref=e60]: The Journey Journey to Bioinformatics 2016 The Start Lost in Microbiology BS. Found direction in Python & R self-study. 2019 The Pivot Pandemic. Taught R/Python online to juniors. Founded HDRO . 2020 Establishment June 10. HDRO evolved into CHIRAL Bangladesh . 2024 Scaling Launched DeepBio Limited & Academy . The Current Ecosystem 🔬 Research CHIRAL Bangladesh 💻 Services DeepBio Limited 🎓 Training DeepBio Academy

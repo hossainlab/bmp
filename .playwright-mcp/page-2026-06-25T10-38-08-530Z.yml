@@ -1,0 +1,119 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - img
+  - application [ref=e2]:
+    - generic:
+      - generic [ref=e3]:
+        - generic [ref=e4]: Info Session 2026 · Bioinformatics Mentorship Program
+        - heading "Launch Your Bioinformatics Career" [level=1] [ref=e5]:
+          - text: Launch Your
+          - text: Bioinformatics Career
+        - generic [ref=e7]:
+          - generic [ref=e8]: Md. Jubayer Hossain · Founder & CEO
+          - generic [ref=e9]: DeepBio Limited · Bioinformatics Mentor
+        - generic [ref=e10]:
+          - link "mdjubayerhossain.com" [ref=e11] [cursor=pointer]:
+            - /url: https://mdjubayerhossain.com
+          - link [ref=e13] [cursor=pointer]:
+            - /url: https://github.com/hossainlab
+            - img [ref=e14]
+          - link [ref=e17] [cursor=pointer]:
+            - /url: https://www.linkedin.com/in/hossainmj/
+            - img [ref=e18]
+          - link [ref=e21] [cursor=pointer]:
+            - /url: https://www.youtube.com/@hossainlab
+            - img [ref=e22]
+        - paragraph [ref=e24]: © 2026 Md. Jubayer Hossain
+      - generic:
+        - generic: Today's Session
+        - heading [level=2]: What we'll cover today
+        - paragraph: ~30 minutes · open Q&A to follow
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "01"
+                - generic: The Problem & Solution
+              - generic: Why learners stall — and how this program fixes it
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "02"
+                - generic: What You'll Learn
+              - generic: Curriculum, tools, workflows, and career outcomes
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "03"
+                - generic: Real Mentee Output
+              - generic: Published papers and research from Cohort 01 & GSA interns
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "04"
+                - generic: Enroll & Start
+              - generic: Who this is for, pricing, and how to secure your seat tonight
+      - generic:
+        - generic: About the Mentor
+        - generic:
+          - generic:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic:
+                - generic: 5+
+                - generic: Years Research
+              - generic:
+                - generic: 5+
+                - generic: Years Mentoring
+              - generic:
+                - generic: 3K+
+                - generic: Students Trained
+              - generic:
+                - generic: 20+
+                - generic: Publications
+          - generic:
+            - generic:
+              - heading [level=2]: Md. Jubayer Hossain
+              - generic: Founder & CEO, DeepBio Ltd
+            - paragraph: Bioinformatician and computational biologist with 5+ years of experience in active research and teaching. Since 2020, he has trained 3,000+ students in practical skills for real-world biological data analysis.
+            - generic:
+              - generic:
+                - heading [level=4]: Interests
+                - list:
+                  - listitem: Transcriptomics
+                  - listitem: Single-Cell Analysis
+                  - listitem: Cancer Genomics
+                  - listitem: Neurogenomics
+                  - listitem: AI in Biomedicine
+              - generic:
+                - heading [level=4]: Education
+                - generic:
+                  - strong: MS, Microbiology
+                  - text: Jagannath University
+                  - strong: BS, Microbiology
+                  - text: Jagannath University
+              - generic:
+                - heading [level=4]: Affiliations
+                - list:
+                  - listitem: Founder & CEO, DeepBio Limited
+                  - listitem: Founder & Lead Instructor, DeepBio Academy
+                  - listitem: Founder & Director, CHIRAL Bangladesh
+                  - listitem: Faculty, cBLAST, University of Dhaka
+                  - listitem: Visiting Scholar, Daffodil International University
+                  - listitem: Program Lead, GSA Bioinformatics Internship
+            - generic: "\"My role is to accelerate your journey from question to discovery. You bring the curiosity; I bring the roadmap, the tools, and the accountability.\""
+      - text: → → → → → → → → → → → → → → → → → → → → → → → → → → → → ✓ ✓ ✓ ✓ ✓ ✗ ✗ ✗ ✗ ✗ → → → → → → → → → → → → → →
+    - link "1 / 31" [ref=e29] [cursor=pointer]:
+      - /url: "#/"
+    - text: Speaker notes
+    - generic [ref=e31]: Info Session 2026 · Bioinformatics Mentorship Program Launch Your Bioinformatics Career Md. Jubayer Hossain · Founder & CEO DeepBio Limited · Bioinformatics Mentor mdjubayerhossain.com © 2026 Md. Jubayer Hossain

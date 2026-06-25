@@ -1,0 +1,174 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - img
+  - application [ref=e2]:
+    - generic:
+      - generic:
+        - generic: Info Session 2026 · Bioinformatics Mentorship Program
+        - heading [level=1]: Launch Your Bioinformatics Career
+        - generic:
+          - generic: Md. Jubayer Hossain · Founder & CEO
+          - generic: DeepBio Limited · Bioinformatics Mentor
+        - generic:
+          - link:
+            - /url: https://mdjubayerhossain.com
+            - text: mdjubayerhossain.com
+          - link:
+            - /url: https://github.com/hossainlab
+            - img
+          - link:
+            - /url: https://www.linkedin.com/in/hossainmj/
+            - img
+          - link:
+            - /url: https://www.youtube.com/@hossainlab
+            - img
+        - paragraph: © 2026 Md. Jubayer Hossain
+      - generic:
+        - generic: Today's Session
+        - heading [level=2]: What we'll cover today
+        - paragraph: ~30 minutes · open Q&A to follow
+        - generic:
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "01"
+                - generic: The Problem & Solution
+              - generic: Why learners stall — and how this program fixes it
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "02"
+                - generic: What You'll Learn
+              - generic: Curriculum, tools, workflows, and career outcomes
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "03"
+                - generic: Real Mentee Output
+              - generic: Published papers and research from Cohort 01 & GSA interns
+          - generic:
+            - generic:
+              - img
+            - generic:
+              - generic:
+                - generic: "04"
+                - generic: Enroll & Start
+              - generic: Who this is for, pricing, and how to secure your seat tonight
+      - generic [ref=e3]:
+        - generic [ref=e4]: About the Mentor
+        - generic [ref=e5]:
+          - generic [ref=e6]:
+            - img "Md. Jubayer Hossain" [ref=e10]
+            - generic [ref=e11]:
+              - generic [ref=e12]:
+                - generic [ref=e13]: 5+
+                - generic [ref=e14]: Years Research
+              - generic [ref=e15]:
+                - generic [ref=e16]: 5+
+                - generic [ref=e17]: Years Mentoring
+              - generic [ref=e18]:
+                - generic [ref=e19]: 3K+
+                - generic [ref=e20]: Students Trained
+              - generic [ref=e21]:
+                - generic [ref=e22]: 20+
+                - generic [ref=e23]: Publications
+          - generic [ref=e24]:
+            - generic [ref=e25]:
+              - heading "Md. Jubayer Hossain" [level=2] [ref=e26]
+              - generic [ref=e27]: Founder & CEO, DeepBio Ltd
+            - paragraph [ref=e28]: Bioinformatician and computational biologist with 5+ years of experience in active research and teaching. Since 2020, he has trained 3,000+ students in practical skills for real-world biological data analysis.
+            - generic [ref=e29]:
+              - generic [ref=e30]:
+                - heading "Interests" [level=4] [ref=e31]
+                - list [ref=e32]:
+                  - listitem [ref=e33]: Transcriptomics
+                  - listitem [ref=e34]: Single-Cell Analysis
+                  - listitem [ref=e35]: Cancer Genomics
+                  - listitem [ref=e36]: Neurogenomics
+                  - listitem [ref=e37]: AI in Biomedicine
+              - generic [ref=e38]:
+                - heading "Education" [level=4] [ref=e39]
+                - generic [ref=e40]:
+                  - strong [ref=e41]: MS, Microbiology
+                  - text: Jagannath University
+                  - strong [ref=e42]: BS, Microbiology
+                  - text: Jagannath University
+              - generic [ref=e43]:
+                - heading "Affiliations" [level=4] [ref=e44]
+                - list [ref=e45]:
+                  - listitem [ref=e46]: Founder & CEO, DeepBio Limited
+                  - listitem [ref=e47]: Founder & Lead Instructor, DeepBio Academy
+                  - listitem [ref=e48]: Founder & Director, CHIRAL Bangladesh
+                  - listitem [ref=e49]: Faculty, cBLAST, University of Dhaka
+                  - listitem [ref=e50]: Visiting Scholar, Daffodil International University
+                  - listitem [ref=e51]: Program Lead, GSA Bioinformatics Internship
+            - generic [ref=e52]: "\"My role is to accelerate your journey from question to discovery. You bring the curiosity; I bring the roadmap, the tools, and the accountability.\""
+      - generic:
+        - generic: The Journey
+        - heading [level=2]: Journey to Bioinformatics
+        - generic:
+          - generic:
+            - generic:
+              - generic: "2016"
+              - generic:
+                - strong: The Start
+                - paragraph:
+                  - text: Lost in Microbiology BS. Found direction in
+                  - strong: Python & R
+                  - text: self-study.
+            - generic:
+              - generic: "2019"
+              - generic:
+                - strong: The Pivot
+                - paragraph:
+                  - text: Pandemic. Taught R/Python online to juniors. Founded
+                  - strong: HDRO
+                  - text: .
+            - generic:
+              - generic: "2020"
+              - generic:
+                - strong: Establishment
+                - paragraph:
+                  - text: June 10. HDRO evolved into
+                  - strong: CHIRAL Bangladesh
+                  - text: .
+            - generic:
+              - generic: "2024"
+              - generic:
+                - strong: Scaling
+                - paragraph:
+                  - text: Launched
+                  - strong: DeepBio Limited
+                  - text: "&"
+                  - strong: Academy
+                  - text: .
+        - generic:
+          - generic: The Current Ecosystem
+          - generic:
+            - generic:
+              - generic: 🔬
+              - heading [level=4]: Research
+              - paragraph: CHIRAL Bangladesh
+            - generic:
+              - generic: 💻
+              - heading [level=4]: Services
+              - paragraph: DeepBio Limited
+            - generic:
+              - generic: 🎓
+              - heading [level=4]: Training
+              - paragraph: DeepBio Academy
+      - generic:
+        - generic: Section 01
+        - heading [level=2]: The need. The problem. The solution.
+        - paragraph: Why NGS literacy is now essential — and exactly how this program gets you there.
+      - text: → → → → → → → → → → → → → → → → → → → → → → → → → → → → ✓ ✓ ✓ ✓ ✓ ✗ ✗ ✗ ✗ ✗ → → → → → → → → → → → → → →
+    - link "3 / 31" [ref=e65] [cursor=pointer]:
+      - /url: "#/2"
+    - text: Speaker notes
+    - generic [ref=e67]: About the Mentor 5+ Years Research 5+ Years Mentoring 3K+ Students Trained 20+ Publications Md. Jubayer Hossain Founder & CEO, DeepBio Ltd Bioinformatician and computational biologist with 5+ years of experience in active research and teaching. Since 2020, he has trained 3,000+ students in practical skills for real-world biological data analysis. Interests Transcriptomics Single-Cell Analysis Cancer Genomics Neurogenomics AI in Biomedicine Education MS, Microbiology Jagannath University BS, Microbiology Jagannath University Affiliations Founder & CEO, DeepBio Limited Founder & Lead Instructor, DeepBio Academy Founder & Director, CHIRAL Bangladesh Faculty, cBLAST, University of Dhaka Visiting Scholar, Daffodil International University Program Lead, GSA Bioinformatics Internship "My role is to accelerate your journey from question to discovery. You bring the curiosity; I bring the roadmap, the tools, and the accountability."
