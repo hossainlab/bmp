@@ -1,0 +1,67 @@
+<svg width="1080" height="1080" viewBox="0 0 1080 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1080" height="1080" fill="#FFFFFF"/>
+  <circle cx="950" cy="200" r="350" fill="#F59E0B" opacity="0.04"/>
+  <circle cx="130" cy="900" r="300" fill="#10B981" opacity="0.03"/>
+
+  <!-- Top accent -->
+  <rect width="1080" height="6" fill="#F59E0B"/>
+
+  <!-- Logo -->
+  <g transform="translate(60, 35)">
+    <g transform="scale(2)">
+      <path d="M16 2 L29 9.5 V22.5 L16 30 L3 22.5 V9.5 L16 2Z" stroke="#2563EB" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+      <path d="M16 8 L23 12 V20 L16 24 L9 20 V12 L16 8Z" stroke="#10B981" stroke-width="2" stroke-linejoin="round" fill="none"/>
+      <circle cx="16" cy="16" r="3" fill="#2563EB"/>
+      <circle cx="9" cy="12" r="2" fill="#10B981"/>
+      <circle cx="23" cy="20" r="2" fill="#10B981"/>
+      <circle cx="9" cy="20" r="2" fill="#10B981"/>
+      <circle cx="23" cy="12" r="2" fill="#10B981"/>
+      <path d="M9 12 L16 16 L23 20" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M9 20 L16 16 L23 12" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round"/>
+    </g>
+    <text x="72" y="40" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="30" fill="#0F172A">BMP</text>
+    <text x="72" y="58" font-family="Arial, Helvetica, sans-serif" font-weight="400" font-size="12" fill="#64748B">Bioinformatics Mentorship Program</text>
+  </g>
+
+  <!-- Start-date badge -->
+  <rect x="760" y="35" width="265" height="44" rx="22" fill="#F59E0B" opacity="0.12"/>
+  <text x="892" y="64" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="18" fill="#B45309">Starts Tomorrow, July 3</text>
+
+  <!-- Eyebrow -->
+  <text x="540" y="180" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="26" letter-spacing="6" fill="#B45309">LAST CHANCE TO JOIN</text>
+
+  <!-- Hexagon countdown signature -->
+  <g transform="translate(0, 30)">
+    <path d="M540 255 L713 355 L713 555 L540 655 L367 555 L367 355 Z" fill="#FFFBEB" stroke="#F59E0B" stroke-width="6" stroke-linejoin="round"/>
+    <path d="M540 312 L664 383 L664 527 L540 598 L416 527 L416 383 Z" fill="none" stroke="#10B981" stroke-width="3" stroke-linejoin="round" opacity="0.5"/>
+    <circle cx="540" cy="255" r="9" fill="#F59E0B"/>
+    <circle cx="713" cy="355" r="9" fill="#10B981"/>
+    <circle cx="713" cy="555" r="9" fill="#10B981"/>
+    <circle cx="540" cy="655" r="9" fill="#F59E0B"/>
+    <circle cx="367" cy="555" r="9" fill="#10B981"/>
+    <circle cx="367" cy="355" r="9" fill="#10B981"/>
+    <text x="540" y="500" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="220" fill="#0F172A">1</text>
+    <text x="540" y="710" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="34" letter-spacing="8" fill="#B45309">DAY TO GO</text>
+  </g>
+
+  <!-- Day track: 1 of 4 remaining -->
+  <g transform="translate(290, 760)">
+    <rect x="0"   y="0" width="115" height="16" rx="8" fill="#F59E0B"/>
+    <rect x="130" y="0" width="115" height="16" rx="8" fill="#E2E8F0"/>
+    <rect x="260" y="0" width="115" height="16" rx="8" fill="#E2E8F0"/>
+    <rect x="390" y="0" width="115" height="16" rx="8" fill="#E2E8F0"/>
+  </g>
+
+  <!-- Reassurance line -->
+  <text x="540" y="845" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="600" font-size="22" fill="#64748B">Final seats closing · Enroll before tonight</text>
+
+  <!-- Bottom CTA -->
+  <rect y="900" width="1080" height="180" fill="#0F172A"/>
+  <rect x="190" y="925" width="700" height="65" rx="33" fill="#F59E0B"/>
+  <text x="540" y="968" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="900" font-size="30" fill="#0F172A">Claim Your Seat Before It's Gone</text>
+  <text x="540" y="1030" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="700" font-size="22" fill="#94A3B8">Cohort 02 · July–Sept 2026</text>
+  <text x="540" y="1062" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-weight="800" font-size="24" fill="#FFFFFF">mdjubayerhossain.com/bmp</text>
+
+  <rect y="1074" width="1080" height="6" fill="#10B981"/>
+</svg>

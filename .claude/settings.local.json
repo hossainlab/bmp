@@ -54,7 +54,10 @@
       "Bash(MAXEDGE=1500 node scripts/imgopt.mjs public/publications public/deck-template public/project public/project_figures public/brand-template public/ads)",
       "Bash(MAXEDGE=1500 node scripts/imgopt.mjs public/publications public/deck-template public/project public/brand-template public/ads)",
       "Bash(awk '{printf \"%.1f MB\\\\t%s\\\\n\",$1/1048576,$2}')",
-      "Bash(awk '{s+=$1} END{printf \"%.1f MB across %d files\\\\n\", s/1048576, NR}')"
+      "Bash(awk '{s+=$1} END{printf \"%.1f MB across %d files\\\\n\", s/1048576, NR}')",
+      "Bash(command -v rsvg-convert)",
+      "Bash(command -v magick)",
+      "Bash(command -v inkscape)"
     ]
   }
 }
